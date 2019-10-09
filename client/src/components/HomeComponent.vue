@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <div class="description">
+    <div class="description span-width--66">
         <h1>History</h1>
         <p>Mo’s Hockey Ho’s was founded in 2018 by Commissioner Mo.</p>
         <p>After trying out many different Fantasy Hockey Leagues, 
@@ -27,7 +27,7 @@
         <p>Sincerely,</p>
         <p>Commissioner Mo</p>
     </div>
-    <div class="twitter">
+    <div class="twitter span-width--33">
       <h2>The Penalty Box</h2>
       <component-view id="moromiles" class="twitter__timeline" sourceType="profile" :options="{ tweetLimit: '5'}"></component-view>
     </div>

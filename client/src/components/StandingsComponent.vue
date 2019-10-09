@@ -1,7 +1,8 @@
 <template>
     <div>
-        <h1>Standings</h1>
-        <div>
+        <div class="content-wrapper">
+          <div class="table-wrapper  span-width--66">
+            <h1>Standings</h1>
             <table class="standings-table">
                 <tr>
                     <th>Position</th>
@@ -21,6 +22,11 @@
                     <td>{{team.points}}</td>
                 </tr>
             </table>
+          </div>
+            <div class="twitter span-width--33">
+              <h2>The Penalty Box</h2>
+              <component-view id="moromiles" class="twitter__timeline" sourceType="profile" :options="{ tweetLimit: '5'}"></component-view>
+            </div>
         </div>
     </div>
 </template>
@@ -29,6 +35,9 @@
 import TeamsService from '../TeamsService';
 
 export default {
+  components: {
+    'component-view': Timeline
+  },
   name: 'TeamsComponent',
   data() {
     return {
@@ -61,22 +70,6 @@ export default {
     }
   },
 };
-</script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+import { Timeline } from 'vue-tweet-embed';
+</script>

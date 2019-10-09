@@ -1,0 +1,29 @@
+.rink {
+  float: left;
+  width: 100%;
+  border: 1.5rem solid @border;
+  border-radius: 10vw;
+  overflow: hidden;
+  &-line {
+    width: 100%;
+    padding: 1rem 2rem;
+    position: relative;
+    &--defensemen {
+      border-bottom: 1rem solid @blue;
+    }
+    &--forwards {
+      border-bottom: 1rem solid @red;
+      &:after {
+        content:'';
+        width: 10rem;
+        height: 10rem;
+        border: 1rem solid @blue;
+        border-radius: 50%;
+        background: transparent;
+        position: absolute;
+        bottom: -6.5rem;
+        left: calc(50% - 5.5rem);
+      }
+    }
+  }
+}
