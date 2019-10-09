@@ -26,6 +26,7 @@ npm run serve
 - [ ] Add rink display for each team either in a horixontal gallery and/or on the team submission
 - [ ] Most importantly add Easter eggs all over the site
 - [ ] Style error p element on team submission page
+- [ ] Make team points div sticky
 - [ ] Figure out how to track goalie goals and assists
 - [x] Add penalty box to standings page
 - [x] Add images to errors div on team submission page
