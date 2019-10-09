@@ -20,7 +20,8 @@
                     <td v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50>  {{team.name}}</td>
                     <td v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50>  {{team.name}}</td>
                     <td v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50>  {{team.name}}</td>
-                    <td>{{team.points}}</td>
+                    <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
+                    <td v-if="team.points != 69">{{team.points}}</td>
                 </tr>
             </table>
           </div>
