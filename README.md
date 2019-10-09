@@ -27,6 +27,7 @@ npm run serve
 - [ ] Most importantly add Easter eggs all over the site
 - [ ] Style error p element on team submission page
 - [ ] Make team points div sticky
+- [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Figure out how to track goalie goals and assists
 - [x] Add penalty box to standings page
 - [x] Add images to errors div on team submission page
