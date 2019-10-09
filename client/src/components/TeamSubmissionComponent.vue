@@ -38,6 +38,12 @@
                     <img src="../../public/images/sid-the-beast.jpg" width=150 alt="Sid the Beast">
                   </label>
                 </div>
+                <div class="form__item form__item--radio-option">
+                  <input type="radio" name="gender" id="mo" value="mo" class="sr-only" v-model="sid">
+                  <label class="form__label" for="mo">
+                    <img src="../../public/images/mo_8.jpg" style="position:fixed;opacity:0" width=150 alt="Commissioner Mo">
+                  </label>
+                </div>
               </div>
             </div>
           </div>
