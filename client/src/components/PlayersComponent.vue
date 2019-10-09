@@ -43,7 +43,7 @@ export default {
       players: [],
       error: '',
       currentSort:'team',
-      currentSortDir:'asc'
+      currentSortDir:'desc'
     }
   },
   async created() {
