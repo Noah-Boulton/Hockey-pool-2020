@@ -13,7 +13,8 @@
                 v-bind:item="team"
                 v-bind:index="index"
                 v-bind:key="team._id">
-                    <td>{{team.rank}}</td>
+                    <td v-if="team.tied"><a href="https://getyarn.io/yarn-clip/ab19ac3c-6518-4da7-9043-6e0ce0038c5b#/SJZWeWPh5dH.copy" style="color:black; text-decoration:none">{{team.rank}}</a></td>
+                    <td v-if="!team.tied">{{team.rank}}</td>
                     <td v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50>  {{team.name}}</td>
                     <td v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50>  {{team.name}}</td>
                     <td v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50>  {{team.name}}</td>
@@ -43,10 +44,14 @@ export default {
       this.standings.forEach(team => {
         if(prev === null){
           team.rank = i;
+          team.tied = false;
         } else if(team.points === prev.points){
           team.rank = prev.rank;
+          prev.tied = true;
+          team.tied = true;
         } else{
           team.rank = i;
+          team.tied = false;
         }
         i++;
         prev = team;
