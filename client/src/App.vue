@@ -18,7 +18,9 @@
     </header>
     <router-view></router-view>
     <footer class="footer">
-      <div class="footer__copyright">&copy; {{ new Date().getFullYear() }} Commissioner Mo</div>
+      <div class="footer__copyright">
+        <a href="https://getyarn.io/yarn-clip/ab19ac3c-6518-4da7-9043-6e0ce0038c5b#/SJZWeWPh5dH.copy" style="color:black; text-decoration:none">&copy; {{ new Date().getFullYear() }} Commissioner Mo</a>
+        </div>
     </footer>
   </div>
 </template>
