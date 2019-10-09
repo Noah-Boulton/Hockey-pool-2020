@@ -20,7 +20,6 @@ npm run serve
 ## TODO
 - [ ] Add penalty box to standings page
 - [ ] Add eliminated tag to each player on a team so the player image can be updated with "Hosed" stamp
-- [ ] Add images to errors div on team submission page
 - [ ] Add heading highlight on sort for players page
 - [ ] Style soundcloud page
 - [ ] Add team dropdown on click for each team on the standings page
@@ -29,6 +28,7 @@ npm run serve
 - [ ] Last and most importantly add Easter eggs all over the site
 - [ ] Style error p element on team submission page
 - [ ] Figure out how to track goalie goals and assists
+- [x] Add images to errors div on team submission page
 - [x] Add winning team from previous years top ho's and record books
 - [x] Automatically send email after team submission
 - [x] Add email to team submission page

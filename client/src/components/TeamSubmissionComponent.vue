@@ -159,13 +159,14 @@
               </div>
             </div>
           </div>
-          <p v-if="errors.length">
+          <div v-if="errors.length">
+            <img src="../../public/images/error_mo.jpg" width=25% alt="Angry Commissioner Mo">
             <b>Please correct the following error(s):</b>
               <ul>
                 <li v-for="(error, index) in errors"
                 v-bind:key="index">{{ error }}</li>
               </ul>
-          </p>
+          </div>
           <button class="button">Submit!</button>
         </form>
     </div>
