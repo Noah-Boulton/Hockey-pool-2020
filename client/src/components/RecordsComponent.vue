@@ -39,7 +39,7 @@
         <div class="card card--horizontal card--team">
           <img :src="require('../../public/images/top-ho-'+team.year+'.jpg')" class="card__image" width=150 :alt="`${team.year} Winner`">
           <div class="card__content">
-            <h2 class="card__title">{{ `${team.name}` }}</h2>
+            <h2 class="card__title">{{ `${team.name}` }} {{team.year}}</h2>
             <h3 class="card__subtitle">{{ `${team.owner}` }}</h3>
             <h3 class="card__subtitle">{{ `Points: ${team.points}` }}</h3>
           </div>

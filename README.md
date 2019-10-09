@@ -28,6 +28,7 @@ npm run serve
 - [ ] Add rink display for each team either in a horixontal gallery and/or on the team submission
 - [ ] Last and most importantly add Easter eggs all over the site
 - [ ] Style error p element on team submission page
+- [ ] Figure out how to track goalie goals and assists
 - [x] Add winning team from previous years top ho's and record books
 - [x] Automatically send email after team submission
 - [x] Add email to team submission page
