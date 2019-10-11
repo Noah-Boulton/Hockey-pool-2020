@@ -65,6 +65,7 @@ router.post('/', async (req, res) => {
         points: 0,
         createdAt: new Date()
     });
+    updateTeams();
     sendMail(req.body.team.name, req.body.team.email, req.body.team.owner);
     res.status(201).send();
 });
