@@ -2,7 +2,7 @@
   <div class="Home">
     <div class="description span-width--66">
         <h1>History</h1>
-        <p>Mo’s Hockey Ho’s was founded in 2018 by Commissioner Mo.</p>
+        <p>Mo’s Hockey Hosers <em>(Mo's Hockey Ho's)</em> was founded in 2018 by Commissioner Mo.</p>
         <p>After trying out many different Fantasy Hockey Leagues, 
             Mo just couldn’t seem to find a format that fit his style. 
             He wanted a way to be involved with fantasy hockey without 
