@@ -18,6 +18,33 @@ table {
     font-family: @font;
     font-weight: @bold;
     font-size: 1.25rem;
+    &.sortable {
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+      &[data-sort]:after {
+        content:'>';
+        display: inline-block;
+        position: relative;
+        padding-left: 0.5rem;
+        transform-origin: center center;
+        transform:rotate(0deg);
+        vertical-align: middle;
+        transition: transform 0.5s ease-in-out;
+      }
+      &[data-sort="asc"]:after {
+        transform:rotate(-90deg);
+        padding-left: 0;
+        padding-top: 1rem;
+      }
+      &[data-sort="desc"]:after {
+        transform:rotate(90deg);
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+      }
+    }
   }
   td {
     padding: 0.5rem 1rem;

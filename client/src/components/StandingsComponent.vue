@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="Standings">
         <div class="content-wrapper">
           <div class="table-wrapper  span-width--66">
             <h1>Standings</h1>

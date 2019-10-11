@@ -49,7 +49,7 @@
           </div>
           <div class="rink">
             <div class="form__item form__item--player-group rink-line rink-line--goalies">
-              <label class="form__label" for="goalies">Pick your goalies</label>
+              <h3 class="form__label" for="goalies">Pick your goalies</h3>
               <div class="player-group player-group--2">
                 <div class="form__item form__item--player-picker">
                   <input type="text" class="player-picker" id="goalies" name="g1" form="g1"  v-model="g1query" placeholder="Search..."/>
@@ -76,7 +76,7 @@
               </div>
             </div>
             <div class="form__item form__item--player-group rink-line rink-line--defensemen">
-              <label class="form__label" for="defensemen">Pick your defensemen</label>
+              <h3 class="form__label" for="defensemen">Pick your defensemen</h3>
               <div class="player-group player-group--3">
                 <div class="form__item form__item--player-picker">
                   <input type="text" class="player-picker" id="defensemen" name="d1" form="d1" v-model="d1query" placeholder="Search..."/>
@@ -110,7 +110,7 @@
               </div>
             </div>
             <div class="form__item form__item--player-group rink-line rink-line--forwards">
-              <label class="form__label" for="forwards">Pick your forwards</label>
+              <h3 class="form__label" for="forwards">Pick your forwards</h3>
               <div class="player-group player-group--5">
                 <div class="form__item form__item--player-picker">
                   <input type="text" class="player-picker" id="forwards" name="f1" form="f1" v-model="f1query" placeholder="Search..."/>
@@ -165,15 +165,17 @@
               </div>
             </div>
           </div>
-          <div v-if="errors.length">
-            <img src="../../public/images/error_mo.jpg" width=25% alt="Angry Commissioner Mo">
-            <b>Please correct the following error(s):</b>
+          <div v-if="errors.length" class="card card--horizontal card--errors">
+            <img src="../../public/images/error_mo.jpg" alt="Angry Commissioner Mo" class="card__image">
+            <div class="card__content">
+              <h4 class="card__title">Please correct the following error(s):</h4>
               <ul>
                 <li v-for="(error, index) in errors"
                 v-bind:key="index">{{ error }}</li>
               </ul>
+            </div>
           </div>
-          <button class="button">Submit!</button>
+          <button class="button button--team-submit">Submit!</button>
         </form>
     </div>
   </div>
