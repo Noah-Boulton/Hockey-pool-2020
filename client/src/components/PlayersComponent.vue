@@ -7,9 +7,9 @@
                 <table class="players-table">
                   <thead>
                 <tr>
-                    <th @click="sort('name')" class="sortable" data-sort="asc">Player</th>
+                    <th @click="sort('name')" class="sortable">Player</th>
                     <th @click="sort('pos')" class="sortable">Position</th>
-                    <th @click="sort('team')" class="sortable" data-sort="desc">Team</th>
+                    <th @click="sort('team')" class="sortable">Team</th>
                     <th @click="sort('pv')" class="sortable">Point Value</th>
                     <th @click="sort('points')" class="sortable">Points</th>
                 </tr>
