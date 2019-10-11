@@ -7,11 +7,11 @@
                 <table class="players-table">
                   <thead>
                 <tr>
-                    <th @click="sort('name')" class="sortable">Player</th>
-                    <th @click="sort('pos')" class="sortable">Position</th>
-                    <th @click="sort('team')" class="sortable">Team</th>
-                    <th @click="sort('pv')" class="sortable">Point Value</th>
-                    <th @click="sort('points')" class="sortable">Points</th>
+                    <th @click="sort('name')" class="sortable" v-bind:data-sort="nameSort">Player</th>
+                    <th @click="sort('pos')" class="sortable" v-bind:data-sort="posSort">Position</th>
+                    <th @click="sort('team')" class="sortable" v-bind:data-sort="teamSort">Team</th>
+                    <th @click="sort('pv')" class="sortable" v-bind:data-sort="pvSort">Point Value</th>
+                    <th @click="sort('points')" class="sortable" v-bind:data-sort="pointsSort">Points</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -43,7 +43,12 @@ export default {
       players: [],
       error: '',
       currentSort:'team',
-      currentSortDir:'desc'
+      currentSortDir:'desc',
+      nameSort: '',
+      posSort: '',
+      teamSort: '',
+      pvSort: '',
+      pointsSort: ''
     }
   },
   async created() {
@@ -58,6 +63,37 @@ export default {
     //if s == current sort, reverse
     if(s === this.currentSort) {
       this.currentSortDir = this.currentSortDir==='asc'?'desc':'asc';
+    }
+    if(s == 'name'){
+      this.nameSort = this.currentSortDir;
+      this.posSort = '';
+      this.teamSort = '';
+      this.pvSort = '';
+      this.pointsSort = '';
+    } else if(s == 'pos'){
+      this.nameSort = '';
+      this.posSort = this.currentSortDir;
+      this.teamSort = '';
+      this.pvSort = '';
+      this.pointsSort = '';
+    }else if(s == 'team'){
+      this.nameSort = '';
+      this.posSort = '';
+      this.teamSort = this.currentSortDir;
+      this.pvSort = '';
+      this.pointsSort = '';
+    }else if(s == 'pv'){
+      this.nameSort = '';
+      this.posSort = '';
+      this.teamSort = '';
+      this.pvSort = this.currentSortDir;
+      this.pointsSort = '';
+    }else if(s == 'points'){
+      this.nameSort = '';
+      this.posSort = '';
+      this.teamSort = '';
+      this.pvSort = '';
+      this.pointsSort = this.currentSortDir;
     }
     this.currentSort = s;
     }

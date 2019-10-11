@@ -19,17 +19,17 @@ npm run serve
 
 ## TODO
 - [ ] Add eliminated tag to each player on a team so the player image can be updated with "Hosed" stamp
-- [x] Add heading highlight on sort for players page
-- [ ] Toggle `data-sort` between `asc` and `desc` (or remove) on `<th>` w/ class `sortable`
 - [ ] Style soundcloud page
 - [ ] Add team dropdown on click for each team on the standings page
 - [ ] Fix player and team update errors to reduce database calls
 - [ ] Add rink display for each team either in a horizontal gallery and/or on the team submission
 - [ ] Most importantly add Easter eggs all over the site
-- [x] Style error p element on team submission page
-- [x] Make team points div sticky
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Figure out how to track goalie goals and assists
+- [x] Toggle `data-sort` between `asc` and `desc` (or remove) on `<th>` w/ class `sortable`
+- [x] Style error p element on team submission page
+- [x] Make team points div sticky
+- [x] Add heading highlight on sort for players page
 - [x] Add penalty box to standings page
 - [x] Add images to errors div on team submission page
 - [x] Add winning team from previous years top ho's and record books
