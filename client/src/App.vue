@@ -19,7 +19,7 @@
     <router-view></router-view>
     <footer class="footer">
       <div class="footer__copyright">
-        <a href="https://im.ezgif.com/tmp/ezgif-1-174e2f1debe1.gif" style="color:black; text-decoration:none">&copy; {{ new Date().getFullYear() }} Commissioner Mo</a>
+        <a href="https://media.giphy.com/media/ZD2qFuKCzo2lc2RRgR/giphy.gif" style="color:black; text-decoration:none">&copy; {{ new Date().getFullYear() }} Commissioner Mo</a>
         </div>
     </footer>
   </div>
