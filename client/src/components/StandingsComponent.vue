@@ -9,20 +9,79 @@
                     <th>Team</th>
                     <th>Points</th>
                 </tr>
-                <tr
+                <tbody
                 v-for="(team, index) in standings"
                 v-bind:item="team"
                 v-bind:index="index"
                 v-bind:key="team._id">
+                  <tr>
                     <td v-if="team.tied"><a href="https://getyarn.io/yarn-clip/ab19ac3c-6518-4da7-9043-6e0ce0038c5b#/SJZWeWPh5dH.copy" style="color:black; text-decoration:none">{{team.rank}}</a></td>
                     <td v-if="!team.tied">{{team.rank}}</td>
-                    <td v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50>  {{team.name}}</td>
+                    <td v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50>{{team.name}}</td>
                     <td v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50>  {{team.name}}</td>
                     <td v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50>  {{team.name}}</td>
                     <td v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50>  {{team.name}}</td>
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
-                </tr>
+                  </tr>
+                  <table>
+                    <tr>
+                      <th>Position</th>
+                      <th>Player</th>
+                      <th>Points</th>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>{{team.team.forwards.f1.name}}</td>
+                      <td>{{team.team.forwards.f1.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>{{team.team.forwards.f2.name}}</td>
+                      <td>{{team.team.forwards.f2.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>{{team.team.forwards.f3.name}}</td>
+                      <td>{{team.team.forwards.f3.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>{{team.team.forwards.f4.name}}</td>
+                      <td>{{team.team.forwards.f4.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>{{team.team.forwards.f5.name}}</td>
+                      <td>{{team.team.forwards.f5.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>{{team.team.defensemen.d1.name}}</td>
+                      <td>{{team.team.defensemen.d1.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>{{team.team.defensemen.d2.name}}</td>
+                      <td>{{team.team.defensemen.d2.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>{{team.team.defensemen.d3.name}}</td>
+                      <td>{{team.team.defensemen.d3.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>G</td>
+                      <td>{{team.team.goalies.g1.name}}</td>
+                      <td>{{team.team.goalies.g1.points}}</td>
+                    </tr>
+                    <tr>
+                      <td>G</td>
+                      <td>{{team.team.goalies.g2.name}}</td>
+                      <td>{{team.team.goalies.g2.points}}</td>
+                    </tr>
+                  </table>
+                </tbody>
             </table>
           </div>
             <div class="twitter span-width--33">
@@ -44,7 +103,8 @@ export default {
   data() {
     return {
       standings: [],
-      error: ''
+      error: '',
+      display: []
     }
   },
   async created() {
