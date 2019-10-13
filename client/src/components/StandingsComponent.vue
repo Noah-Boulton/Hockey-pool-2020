@@ -17,14 +17,14 @@
                   <tr>
                     <td v-if="team.tied"><a href="https://getyarn.io/yarn-clip/ab19ac3c-6518-4da7-9043-6e0ce0038c5b#/SJZWeWPh5dH.copy" style="color:black; text-decoration:none">{{team.rank}}</a></td>
                     <td v-if="!team.tied">{{team.rank}}</td>
-                    <td v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50>{{team.name}}</td>
-                    <td v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50>  {{team.name}}</td>
-                    <td v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50>  {{team.name}}</td>
-                    <td v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50>  {{team.name}}</td>
+                    <td v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50 @click="showTeam(index)">{{team.name}}</td>
+                    <td v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50 @click="showTeam(index)">  {{team.name}}</td>
+                    <td v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50 @click="showTeam(index)">  {{team.name}}</td>
+                    <td v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50 @click="showTeam(index)">  {{team.name}}</td>
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
                   </tr>
-                  <table>
+                  <table v-if="show == index">
                     <tr>
                       <th>Position</th>
                       <th>Player</th>
@@ -104,7 +104,7 @@ export default {
     return {
       standings: [],
       error: '',
-      display: []
+      show: -1
     }
   },
   async created() {
@@ -126,9 +126,24 @@ export default {
         }
         i++;
         prev = team;
+        team.show = false;
       });
     } catch(error) {
       this.error = error.message;
+    }
+  },
+  methods:{
+    showTeam(index){
+      if(this.show == index){
+        this.show = -1;
+      } else {
+        this.show = index;
+      }
+    }
+  },
+  watch:{
+    show:function(){
+      
     }
   },
 };
