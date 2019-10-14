@@ -9,7 +9,7 @@
                     <th>Team</th>
                     <th>Points</th>
                 </tr>
-                <tbody
+                <tbody 
                 v-for="(team, index) in standings"
                 v-bind:item="team"
                 v-bind:index="index"
@@ -24,63 +24,61 @@
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
                   </tr>
-                  <table v-if="show == index">
-                    <tr>
+                    <tr v-if="show == index">
                       <th>Position</th>
                       <th>Player</th>
                       <th>Points</th>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>F</td>
                       <td>{{team.team.forwards.f1.name}}</td>
                       <td>{{team.team.forwards.f1.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>F</td>
                       <td>{{team.team.forwards.f2.name}}</td>
                       <td>{{team.team.forwards.f2.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>F</td>
                       <td>{{team.team.forwards.f3.name}}</td>
                       <td>{{team.team.forwards.f3.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>F</td>
                       <td>{{team.team.forwards.f4.name}}</td>
                       <td>{{team.team.forwards.f4.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>F</td>
                       <td>{{team.team.forwards.f5.name}}</td>
                       <td>{{team.team.forwards.f5.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>D</td>
                       <td>{{team.team.defensemen.d1.name}}</td>
                       <td>{{team.team.defensemen.d1.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>D</td>
                       <td>{{team.team.defensemen.d2.name}}</td>
                       <td>{{team.team.defensemen.d2.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>D</td>
                       <td>{{team.team.defensemen.d3.name}}</td>
                       <td>{{team.team.defensemen.d3.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>G</td>
                       <td>{{team.team.goalies.g1.name}}</td>
                       <td>{{team.team.goalies.g1.points}}</td>
                     </tr>
-                    <tr>
+                    <tr v-if="show == index">
                       <td>G</td>
                       <td>{{team.team.goalies.g2.name}}</td>
                       <td>{{team.team.goalies.g2.points}}</td>
                     </tr>
-                  </table>
                 </tbody>
             </table>
           </div>
