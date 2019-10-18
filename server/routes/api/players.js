@@ -38,18 +38,22 @@ async function loadPlayersCollection() {
 }
 
 async function updatePlayers() {
-    const playersdb = await loadPlayersCollection();
-    const players = await playersdb.find({}).toArray();
+    try {
+        const playersdb = await loadPlayersCollection();
+        const players = await playersdb.find({}).toArray();
+    } catch(e){
+        console.error(e);
+    }
     players.forEach(async (player) => {
         const query = {p_id : player.p_id};
         const url = `https://statsapi.web.nhl.com/api/v1/people/${player.p_id}/stats?stats=statsSingleSeason`
-       //  const url = `https://statsapi.web.nhl.com/api/v1/people/${player.p_id}/stats?stats=statsSingleSeasonPlayoffs&season=20182019`;
-        const res = await axios.get(url);
-        if(res.err){
-            console.error(err);
+        try{
+            const res = await axios.get(url);
+        } catch(e){
+            console.error(e);
         }
         if(!res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){
-            
+                
             const data = res.data.stats[0].splits[0].stat;
             var points = 0;
             var pv = 1;
@@ -59,11 +63,11 @@ async function updatePlayers() {
                 if(data.shutouts){
                     points += data.shutouts;
                 }
-                pv = round(((2*data.shutouts + data.wins)/data.games+1)*1.8)
+                pv = Math.round(((2*data.shutouts + data.wins)/data.games+1)*1.8)
             } else {
                 // Skater
                 points = data.goals + data.assists;
-                pv = round(((2*data.goals + data.assists)/data.games+1)*1.5)
+                pv = Math.round(((2*data.goals + data.assists)/data.games+1)*1.5)
             }
             if(isNaN(points)){
                 points = 0;
