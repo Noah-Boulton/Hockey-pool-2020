@@ -25,6 +25,7 @@
             Ho’s and I hope to continue to run this league for 
             years to come.</p>
         <p>Sincerely,</p>
+        <img src="../../public/images/signature.png" alt="Signature" width=200>
         <p>Commissioner Mo</p>
     </div>
     <div class="twitter span-width--33">

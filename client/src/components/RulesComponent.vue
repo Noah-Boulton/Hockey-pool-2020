@@ -19,6 +19,7 @@
       </ol>
       <p>MAY THE TOP HO WIN!</p>
       <p>Sincerely,</p>
+      <img src="../../public/images/signature.png" alt="Signature" width=200>
       <p>Commissioner Mo</p>
   </div>
 </template>
