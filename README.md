@@ -25,6 +25,7 @@ npm run serve
 - [ ] Most importantly add Easter eggs all over the site
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Figure out how to track goalie goals and assists
+- [ ] Add signature to automated team submission email
 - [x] Add team dropdown on click for each team on the standings page
 - [x] Toggle `data-sort` between `asc` and `desc` (or remove) on `<th>` w/ class `sortable`
 - [x] Style error p element on team submission page
