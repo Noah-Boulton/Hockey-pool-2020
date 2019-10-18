@@ -30,16 +30,16 @@ for p_id in player_ids:
     if(player['people'][0]['primaryPosition']['type'] == 'Goalie'):
         pos = "G"
 
-    stats = requests.get('https://statsapi.web.nhl.com/api/v1/people/' + str(p_id) + '/stats?stats=statsSingleSeason&season=20182019')
+    stats = requests.get('https://statsapi.web.nhl.com/api/v1/people/' + str(p_id) + '/stats?stats=statsSingleSeason&season=20192020')
     stats = stats.json()
     if(stats['stats'][0]['splits']):
         stats = stats['stats'][0]['splits'][0]['stat']
         if(pos == "F"):
-            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1)*1.5)
+            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1.5))
         elif(pos == "D"):
-            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1)*2)
+            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1.5))
         elif(pos == "G"):
-            pv = round(((2*stats['shutouts'] + stats['wins'])/stats['games']+1)*2.5)
+            pv = round(((2*stats['shutouts'] + stats['wins'])/stats['games']+1)*1.8)
     if(pv > 4):
         pv = 4
     if(pv < 1):

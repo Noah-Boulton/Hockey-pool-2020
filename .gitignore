@@ -95,3 +95,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Google sheets config
+Mo's Hockey Hos-c2a22ebeb71a.json

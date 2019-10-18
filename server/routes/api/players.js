@@ -52,21 +52,24 @@ async function updatePlayers() {
             
             const data = res.data.stats[0].splits[0].stat;
             var points = 0;
+            var pv = 1;
             if(data.wins){
                 // Goalie
                 points = 2*data.wins;
                 if(data.shutouts){
                     points += data.shutouts;
                 }
+                pv = round(((2*data.shutouts + data.wins)/data.games+1)*1.8)
             } else {
                 // Skater
                 points = data.goals + data.assists;
+                pv = round(((2*data.goals + data.assists)/data.games+1)*1.5)
             }
             if(isNaN(points)){
                 points = 0;
             }
             if(points != player.points){
-                var newValues = { $set: {points: points} };
+                var newValues = { $set: {points: points, pv: pv} };
                 await playersdb.updateOne(query, newValues, (err, res) => {
                     if (err) throw err;
                 });
