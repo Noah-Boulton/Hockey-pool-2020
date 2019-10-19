@@ -70,9 +70,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="form__team__points">
-                  <h2>Team Point Value: {{teamPoints}}</h2> 
-                </div>
+                <img src="../assets/images/faceoff--red.png" class="rink-line__faceoff rink-line__faceoff--left">
+                <img src="../assets/images/faceoff--red.png" class="rink-line__faceoff rink-line__faceoff--right">
               </div>
             </div>
             <div class="form__item form__item--player-group rink-line rink-line--defensemen">
@@ -121,7 +120,6 @@
                     </div>
                   </div>
                 </div>
-    
 
                 <div class="form__item form__item--player-picker">
                   <input type="text" class="player-picker" id="forwards" name="f2" form="f2" v-model="f2query" placeholder="Search..."/>
@@ -175,6 +173,7 @@
               </ul>
             </div>
           </div>
+          <div class="form__team__points"><h2>Team Point Value: {{teamPoints}}</h2></div>
           <button class="button button--team-submit">Submit!</button>
         </form>
     </div>
