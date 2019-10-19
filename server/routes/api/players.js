@@ -8,7 +8,7 @@ const mongodb = require('mongodb');
 
 const router = express.Router();
 
-cron.schedule('0,30 * * * *', () => {
+cron.schedule('0 * * * *', () => {
     console.log("Updating players");
     updatePlayers();
 });

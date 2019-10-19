@@ -16,7 +16,7 @@ let transporter = nodemailer.createTransport({
 
 const router = express.Router();
 
-cron.schedule('15,45 * * * *', () => {
+cron.schedule('15 * * * *', () => {
     console.log("Updating teams");
     updateTeams();
 });
