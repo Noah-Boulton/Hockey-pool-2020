@@ -72,6 +72,12 @@ async function updatePlayers() {
             if(isNaN(points)){
                 points = 0;
             }
+            if(pv < 1){
+                pv = 1;
+            }
+            if(pv > 4){
+                pv = 4;
+            }
             if(points != player.points){
                 var newValues = { $set: {points: points, pv: pv} };
                 await playersdb.updateOne(query, newValues, (err, res) => {
