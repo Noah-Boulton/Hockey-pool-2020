@@ -41,7 +41,7 @@ class PlayersService {
                 const defensemen = res.data.filter(player => player.pos == "D");
                 const goalies = res.data.filter(player => player.pos == "G");
                 resolve(
-                    {forwards:forwards, defensemen: defensemen, goalies:goalies}
+                    [forwards, defensemen, goalies]
                 );
             } catch(err) {
                 reject(err);

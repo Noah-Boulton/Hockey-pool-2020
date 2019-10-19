@@ -246,7 +246,10 @@ export default {
   // },
   async created() {
     try {
-      this.forwards, this.defensemen, this.goalies = await PlayersService.getPlayersArrays();
+      const skaters = await PlayersService.getPlayersArrays();
+      this.forwards = skaters[0];
+      this.defensemen = skaters[1];
+      this.goalies = skaters[2];
       this.forwards.forEach(player => {
         player.f1visible = true;
         player.f2visible = true;
@@ -272,9 +275,6 @@ export default {
   methods: {
     async createTeam() {
       this.errors = [];
-
-      // Once a PV attribute is added from database add a check for team point value
-
       if(!this.name){
         this.errors.push('Please add a team name');
       }
