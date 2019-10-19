@@ -220,9 +220,34 @@ export default {
       g2: ''
     }
   },
+  // async created() {
+  //   try {
+  //     this.forwards= await PlayersService.getPlayersByType("F");
+  //     this.forwards.forEach(player => {
+  //       player.f1visible = true;
+  //       player.f2visible = true;
+  //       player.f3visible = true;
+  //       player.f4visible = true;
+  //       player.f5visible = true;
+  //     });
+  //     this.defensemen= await PlayersService.getPlayersByType("D");
+  //     this.defensemen.forEach(player => {
+  //       player.d1visible = true;
+  //       player.d2visible = true;
+  //       player.d3visible = true;
+  //     });
+  //     this.goalies= await PlayersService.getPlayersByType("G");
+  //     this.goalies.forEach(player => {
+  //       player.g1visible = true;
+  //       player.g2visible = true;
+  //     });
+  //   } catch(error) {
+  //     this.error = error.message;
+  //   }
+  // },
   async created() {
     try {
-      this.forwards= await PlayersService.getPlayersByType("F");
+      this.forwards, this.defensemen, this.goalies = await PlayersService.getPlayersArrays();
       this.forwards.forEach(player => {
         player.f1visible = true;
         player.f2visible = true;
@@ -230,13 +255,13 @@ export default {
         player.f4visible = true;
         player.f5visible = true;
       });
-      this.defensemen= await PlayersService.getPlayersByType("D");
+      // this.defensemen= await PlayersService.getPlayersByType("D");
       this.defensemen.forEach(player => {
         player.d1visible = true;
         player.d2visible = true;
         player.d3visible = true;
       });
-      this.goalies= await PlayersService.getPlayersByType("G");
+      // this.goalies= await PlayersService.getPlayersByType("G");
       this.goalies.forEach(player => {
         player.g1visible = true;
         player.g2visible = true;
