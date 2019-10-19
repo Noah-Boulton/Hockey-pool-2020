@@ -63,11 +63,11 @@ async function updatePlayers() {
                 if(data.shutouts){
                     points += data.shutouts;
                 }
-                pv = Math.round(((2*data.shutouts + data.wins)/data.games+1)*1.8)
+                pv = Math.round(((2*data.shutouts + data.wins)/(data.games+1))*1.8)
             } else {
                 // Skater
                 points = data.goals + data.assists;
-                pv = Math.round(((2*data.goals + data.assists)/data.games+1)*1.5)
+                pv = Math.round(((2*data.goals + data.assists)/(data.games+1))*1.5)
             }
             if(isNaN(points)){
                 points = 0;

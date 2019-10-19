@@ -33,11 +33,11 @@ for i in range(1, len(player_ids)):
     if(stats['stats'][0]['splits']):
         stats = stats['stats'][0]['splits'][0]['stat']
         if(pos == "F"):
-            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1)*0.9)
+            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1)*1.5)
         elif(pos == "D"):
-            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1)*0.95)
+            pv = round(((2*stats['goals'] + stats['assists'])/stats['games']+1)*1.5)
         elif(pos == "G"):
-            pv = round(((2*stats['shutouts'] + stats['wins'])/stats['games']+1)*1.75)
+            pv = round(((2*stats['shutouts'] + stats['wins'])/stats['games']+1)*1.8)
     if(pv > 4):
         pv = 4
     if(pv < 1):
