@@ -43,8 +43,11 @@ async function updatePlayers() {
         const players = await playersdb.find({}).toArray();
         players.forEach(async (player) => {
             const query = {p_id : player.p_id};
+            if(player.p_id == 1){
+                return;
+            }
             const url = `https://statsapi.web.nhl.com/api/v1/people/${player.p_id}/stats?stats=statsSingleSeason`;
-            const res = await axios.get(url);
+            const res = await axios.get(url).catch((err) => console.error(err));
             if(!res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){
                     
                 const data = res.data.stats[0].splits[0].stat;
@@ -78,11 +81,11 @@ async function updatePlayers() {
                     });
                 }
             }
+        });
         client.close();
-    } catch(e){
+    }catch(e){
         console.error(e);
     }
-    });
 }
 
 module.exports = router;
