@@ -15,13 +15,16 @@ cron.schedule('0 * * * *', () => {
 
 // Get Players
 router.get('/', async (req, res) => {
-    const players = await loadPlayersCollection();
+    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const players = client.db('players').collection('players');
     res.send(await players.find({}).toArray());
+    client.close();
 });
 
 // Add Players
 router.post('/', async (req, res) => {
-    const players = await loadPlayersCollection();
+    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const players = client.db('players').collection('players');
     await players.insertOne({
         name: req.body.name,
         p_id: req.body.p_id,
@@ -29,17 +32,14 @@ router.post('/', async (req, res) => {
         team: req.body.team,
         points: 0
     });
+    client.close();
     res.status(201).send();
 });
 
-async function loadPlayersCollection() {
-    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    return client.db('players').collection('players');
-}
-
 async function updatePlayers() {
     try {
-        const playersdb = await loadPlayersCollection();
+        const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+        const playersdb = client.db('players').collection('players');
         const players = await playersdb.find({}).toArray();
     } catch(e){
         console.error(e);
@@ -85,6 +85,7 @@ async function updatePlayers() {
                 });
             }
         }
+        client.close();
     });
 }
 

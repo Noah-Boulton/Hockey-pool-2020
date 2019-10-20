@@ -23,13 +23,15 @@ cron.schedule('15 * * * *', () => {
 
 // Get Teams
 router.get('/', async (req, res) => {
-    const teams = await loadTeamsCollection();
+    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const teams = client.db('teams').collection('teams');
     res.send(await teams.find({}).toArray());
 });
 
 // Add Team
 router.post('/', async (req, res) => {
-    const teams = await loadTeamsCollection();
+    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const teams = client.db('teams').collection('teams');
     const f1 = req.body.team.team.forwards.f1;
     const f2 = req.body.team.team.forwards.f2;
     const f3 = req.body.team.team.forwards.f3;
@@ -70,11 +72,6 @@ router.post('/', async (req, res) => {
     res.status(201).send();
 });
 
-async function loadTeamsCollection() {
-    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    return client.db('teams').collection('teams');
-}
-
 function sendMail(name, email, person) {
     let mailOptions = {
         from: process.env.EMAIL,
@@ -101,9 +98,11 @@ Sincerely,
 }
 
 async function updateTeams() {
-    const teamsdb = await loadTeamsCollection();
+    const teamsClient = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const teamsdb = teamsClient.db('teams').collection('teams');
     const teams = await teamsdb.find({}).toArray();
-    const playersdb = await loadPlayersCollection();
+    const playersClient = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const playersdb = playersClient.db('players').collection('players');
     const players = await playersdb.find({}).toArray();
     teams.forEach(async (team) => {
         var newTeam = {
@@ -164,12 +163,9 @@ async function updateTeams() {
         await teamsdb.replaceOne({_id: team._id}, newTeam, (err, res) => {
             if (err) throw err;
         });
+        playersClient.close();
+        teamsClient.close();
     });
-}
-
-async function loadPlayersCollection() {
-    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    return client.db('players').collection('players');
 }
 
 module.exports = router;
