@@ -7,11 +7,11 @@
 {"name": "Brendan Guhle", "p_id": 8478425, "pos": "D", "number": "2", "team": "Anaheim Ducks", "games": 5, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Jacob Larsson", "p_id": 8478491, "pos": "D", "number": "32", "team": "Anaheim Ducks", "games": 11, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Ryan Getzlaf", "p_id": 8470612, "pos": "F", "number": "15", "team": "Anaheim Ducks", "games": 11, "points": 5, "goals": 3, "assists": 2, "pv": 1}
-{"name": "Adam Henrique", "p_id": 8474641, "pos": "F", "number": "14", "team": "Anaheim Ducks", "games": 11, "points": 6, "goals": 5, "assists": 1, "pv": 1}
+{"name": "Adam Henrique", "p_id": 8474641, "pos": "F", "number": "14", "team": "Anaheim Ducks", "games": 11, "points": 6, "goals": 5, "assists": 1, "pv": 2}
 {"name": "Derek Grant", "p_id": 8474683, "pos": "F", "number": "38", "team": "Anaheim Ducks", "games": 11, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Jakob Silfverberg", "p_id": 8475164, "pos": "F", "number": "33", "team": "Anaheim Ducks", "games": 11, "points": 8, "goals": 5, "assists": 3, "pv": 2}
 {"name": "Nicolas Deslauriers", "p_id": 8475235, "pos": "F", "number": "20", "team": "Anaheim Ducks", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Rickard Rakell", "p_id": 8476483, "pos": "F", "number": "67", "team": "Anaheim Ducks", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Rickard Rakell", "p_id": 8476483, "pos": "F", "number": "67", "team": "Anaheim Ducks", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Devin Shore", "p_id": 8476913, "pos": "F", "number": "29", "team": "Anaheim Ducks", "games": 7, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Carter Rowney", "p_id": 8477240, "pos": "F", "number": "24", "team": "Anaheim Ducks", "games": 11, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Nick Ritchie", "p_id": 8477941, "pos": "F", "number": "37", "team": "Anaheim Ducks", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
@@ -31,13 +31,13 @@
 {"name": "Kyle Capobianco", "p_id": 8478476, "pos": "D", "number": "75", "team": "Arizona Coyotes", "games": 5, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Jakob Chychrun", "p_id": 8479345, "pos": "D", "number": "6", "team": "Arizona Coyotes", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Brad Richardson", "p_id": 8470755, "pos": "F", "number": "15", "team": "Arizona Coyotes", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
-{"name": "Carl Soderberg", "p_id": 8471262, "pos": "F", "number": "34", "team": "Arizona Coyotes", "games": 9, "points": 6, "goals": 2, "assists": 4, "pv": 1}
+{"name": "Carl Soderberg", "p_id": 8471262, "pos": "F", "number": "34", "team": "Arizona Coyotes", "games": 9, "points": 6, "goals": 2, "assists": 4, "pv": 2}
 {"name": "Michael Grabner", "p_id": 8473546, "pos": "F", "number": "40", "team": "Arizona Coyotes", "games": 9, "points": 2, "goals": 2, "assists": 0, "pv": 1}
 {"name": "Phil Kessel", "p_id": 8473548, "pos": "F", "number": "81", "team": "Arizona Coyotes", "games": 9, "points": 5, "goals": 2, "assists": 3, "pv": 1}
 {"name": "Derek Stepan", "p_id": 8474613, "pos": "F", "number": "21", "team": "Arizona Coyotes", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Vinnie Hinostroza", "p_id": 8476994, "pos": "F", "number": "13", "team": "Arizona Coyotes", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Nick Schmaltz", "p_id": 8477951, "pos": "F", "number": "8", "team": "Arizona Coyotes", "games": 9, "points": 9, "goals": 3, "assists": 6, "pv": 2}
-{"name": "Christian Dvorak", "p_id": 8477989, "pos": "F", "number": "18", "team": "Arizona Coyotes", "games": 9, "points": 5, "goals": 4, "assists": 1, "pv": 1}
+{"name": "Christian Dvorak", "p_id": 8477989, "pos": "F", "number": "18", "team": "Arizona Coyotes", "games": 9, "points": 5, "goals": 4, "assists": 1, "pv": 2}
 {"name": "Christian Fischer", "p_id": 8478432, "pos": "F", "number": "36", "team": "Arizona Coyotes", "games": 8, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Lawson Crouse", "p_id": 8478474, "pos": "F", "number": "67", "team": "Arizona Coyotes", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Conor Garland", "p_id": 8478856, "pos": "F", "number": "83", "team": "Arizona Coyotes", "games": 9, "points": 6, "goals": 5, "assists": 1, "pv": 2}
@@ -50,7 +50,7 @@
 {"name": "Kevan Miller", "p_id": 8476191, "pos": "D", "number": "86", "team": "Boston Bruins", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Zdeno Chara", "p_id": 8465009, "pos": "D", "number": "33", "team": "Boston Bruins", "games": 9, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Steven Kampfer", "p_id": 8474000, "pos": "D", "number": "44", "team": "Boston Bruins", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Torey Krug", "p_id": 8476792, "pos": "D", "number": "47", "team": "Boston Bruins", "games": 9, "points": 7, "goals": 1, "assists": 6, "pv": 1}
+{"name": "Torey Krug", "p_id": 8476792, "pos": "D", "number": "47", "team": "Boston Bruins", "games": 9, "points": 7, "goals": 1, "assists": 6, "pv": 2}
 {"name": "Matt Grzelcyk", "p_id": 8476891, "pos": "D", "number": "48", "team": "Boston Bruins", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Connor Clifton", "p_id": 8477365, "pos": "D", "number": "75", "team": "Boston Bruins", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Brandon Carlo", "p_id": 8478443, "pos": "D", "number": "25", "team": "Boston Bruins", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
@@ -58,7 +58,7 @@
 {"name": "David Krejci", "p_id": 8471276, "pos": "F", "number": "46", "team": "Boston Bruins", "games": 5, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Patrice Bergeron", "p_id": 8470638, "pos": "F", "number": "37", "team": "Boston Bruins", "games": 9, "points": 8, "goals": 2, "assists": 6, "pv": 2}
 {"name": "David Backes", "p_id": 8470655, "pos": "F", "number": "42", "team": "Boston Bruins", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Brad Marchand", "p_id": 8473419, "pos": "F", "number": "63", "team": "Boston Bruins", "games": 9, "points": 14, "goals": 5, "assists": 9, "pv": 3}
+{"name": "Brad Marchand", "p_id": 8473419, "pos": "F", "number": "63", "team": "Boston Bruins", "games": 9, "points": 14, "goals": 5, "assists": 9, "pv": 4}
 {"name": "Charlie Coyle", "p_id": 8475745, "pos": "F", "number": "13", "team": "Boston Bruins", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Chris Wagner", "p_id": 8475780, "pos": "F", "number": "14", "team": "Boston Bruins", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Joakim Nordstrom", "p_id": 8475807, "pos": "F", "number": "20", "team": "Boston Bruins", "games": 4, "points": 1, "goals": 1, "assists": 0, "pv": 1}
@@ -69,7 +69,7 @@
 {"name": "Jake DeBrusk", "p_id": 8478498, "pos": "F", "number": "74", "team": "Boston Bruins", "games": 9, "points": 3, "goals": 1, "assists": 2, "pv": 1}
 {"name": "Karson Kuhlman", "p_id": 8480901, "pos": "F", "number": "83", "team": "Boston Bruins", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Par Lindholm", "p_id": 8480944, "pos": "F", "number": "26", "team": "Boston Bruins", "games": 5, "points": 1, "goals": 1, "assists": 0, "pv": 1}
-{"name": "Jaroslav Halak", "p_id": 8470860, "pos": "G", "number": "41", "team": "Boston Bruins", "games": 4, "points": 5, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Jaroslav Halak", "p_id": 8470860, "pos": "G", "number": "41", "team": "Boston Bruins", "games": 4, "points": 5, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Tuukka Rask", "p_id": 8471695, "pos": "G", "number": "40", "team": "Boston Bruins", "games": 5, "points": 9, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Brandon Montour", "p_id": 8477986, "pos": "D", "number": "62", "team": "Buffalo Sabres", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Matt Hunwick", "p_id": 8471436, "pos": "D", "number": "48", "team": "Buffalo Sabres", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -80,7 +80,7 @@
 {"name": "John Gilmour", "p_id": 8477337, "pos": "D", "number": "58", "team": "Buffalo Sabres", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Rasmus Ristolainen", "p_id": 8477499, "pos": "D", "number": "55", "team": "Buffalo Sabres", "games": 11, "points": 5, "goals": 0, "assists": 5, "pv": 1}
 {"name": "Henri Jokiharju", "p_id": 8480035, "pos": "D", "number": "10", "team": "Buffalo Sabres", "games": 11, "points": 4, "goals": 0, "assists": 4, "pv": 1}
-{"name": "Rasmus Dahlin", "p_id": 8480839, "pos": "D", "number": "26", "team": "Buffalo Sabres", "games": 11, "points": 10, "goals": 1, "assists": 9, "pv": 1}
+{"name": "Rasmus Dahlin", "p_id": 8480839, "pos": "D", "number": "26", "team": "Buffalo Sabres", "games": 11, "points": 10, "goals": 1, "assists": 9, "pv": 2}
 {"name": "Vladimir Sobotka", "p_id": 8471743, "pos": "F", "number": "17", "team": "Buffalo Sabres", "games": 11, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Kyle Okposo", "p_id": 8473449, "pos": "F", "number": "21", "team": "Buffalo Sabres", "games": 11, "points": 5, "goals": 1, "assists": 4, "pv": 1}
 {"name": "Marcus Johansson", "p_id": 8475149, "pos": "F", "number": "90", "team": "Buffalo Sabres", "games": 11, "points": 8, "goals": 4, "assists": 4, "pv": 2}
@@ -88,16 +88,16 @@
 {"name": "Jeff Skinner", "p_id": 8475784, "pos": "F", "number": "53", "team": "Buffalo Sabres", "games": 11, "points": 8, "goals": 6, "assists": 2, "pv": 2}
 {"name": "Zemgus Girgensons", "p_id": 8476878, "pos": "F", "number": "28", "team": "Buffalo Sabres", "games": 11, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Jimmy Vesey", "p_id": 8476918, "pos": "F", "number": "13", "team": "Buffalo Sabres", "games": 11, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Conor Sheary", "p_id": 8477839, "pos": "F", "number": "43", "team": "Buffalo Sabres", "games": 7, "points": 4, "goals": 3, "assists": 1, "pv": 1}
+{"name": "Conor Sheary", "p_id": 8477839, "pos": "F", "number": "43", "team": "Buffalo Sabres", "games": 7, "points": 4, "goals": 3, "assists": 1, "pv": 2}
 {"name": "Sam Reinhart", "p_id": 8477933, "pos": "F", "number": "23", "team": "Buffalo Sabres", "games": 11, "points": 8, "goals": 4, "assists": 4, "pv": 2}
 {"name": "Victor Olofsson", "p_id": 8478109, "pos": "F", "number": "68", "team": "Buffalo Sabres", "games": 11, "points": 9, "goals": 6, "assists": 3, "pv": 2}
-{"name": "Jack Eichel", "p_id": 8478403, "pos": "F", "number": "9", "team": "Buffalo Sabres", "games": 11, "points": 14, "goals": 6, "assists": 8, "pv": 2}
+{"name": "Jack Eichel", "p_id": 8478403, "pos": "F", "number": "9", "team": "Buffalo Sabres", "games": 11, "points": 14, "goals": 6, "assists": 8, "pv": 3}
 {"name": "Evan Rodrigues", "p_id": 8478542, "pos": "F", "number": "71", "team": "Buffalo Sabres", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Casey Mittelstadt", "p_id": 8479999, "pos": "F", "number": "37", "team": "Buffalo Sabres", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 1}
-{"name": "Carter Hutton", "p_id": 8475622, "pos": "G", "number": "40", "team": "Buffalo Sabres", "games": 7, "points": 14, "goals": 0, "assists": 0, "pv": 2}
+{"name": "Casey Mittelstadt", "p_id": 8479999, "pos": "F", "number": "37", "team": "Buffalo Sabres", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 2}
+{"name": "Carter Hutton", "p_id": 8475622, "pos": "G", "number": "40", "team": "Buffalo Sabres", "games": 7, "points": 14, "goals": 0, "assists": 0, "pv": 3}
 {"name": "Linus Ullmark", "p_id": 8476999, "pos": "G", "number": "35", "team": "Buffalo Sabres", "games": 4, "points": 4, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Juuso Valimaki", "p_id": 8479976, "pos": "D", "number": "8", "team": "Calgary Flames", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Mark Giordano", "p_id": 8470966, "pos": "D", "number": "5", "team": "Calgary Flames", "games": 12, "points": 9, "goals": 3, "assists": 6, "pv": 1}
+{"name": "Mark Giordano", "p_id": 8470966, "pos": "D", "number": "5", "team": "Calgary Flames", "games": 12, "points": 9, "goals": 3, "assists": 6, "pv": 2}
 {"name": "Travis Hamonic", "p_id": 8474612, "pos": "D", "number": "24", "team": "Calgary Flames", "games": 12, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Michael Stone", "p_id": 8474628, "pos": "D", "number": "26", "team": "Calgary Flames", "games": 4, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "TJ Brodie", "p_id": 8474673, "pos": "D", "number": "7", "team": "Calgary Flames", "games": 12, "points": 6, "goals": 0, "assists": 6, "pv": 1}
@@ -107,7 +107,7 @@
 {"name": "Milan Lucic", "p_id": 8473473, "pos": "F", "number": "17", "team": "Calgary Flames", "games": 12, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Michael Frolik", "p_id": 8473564, "pos": "F", "number": "67", "team": "Calgary Flames", "games": 12, "points": 3, "goals": 1, "assists": 2, "pv": 1}
 {"name": "Mikael Backlund", "p_id": 8474150, "pos": "F", "number": "11", "team": "Calgary Flames", "games": 12, "points": 4, "goals": 2, "assists": 2, "pv": 1}
-{"name": "Johnny Gaudreau", "p_id": 8476346, "pos": "F", "number": "13", "team": "Calgary Flames", "games": 12, "points": 9, "goals": 3, "assists": 6, "pv": 1}
+{"name": "Johnny Gaudreau", "p_id": 8476346, "pos": "F", "number": "13", "team": "Calgary Flames", "games": 12, "points": 9, "goals": 3, "assists": 6, "pv": 2}
 {"name": "Tobias Rieder", "p_id": 8476356, "pos": "F", "number": "16", "team": "Calgary Flames", "games": 8, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Mark Jankowski", "p_id": 8476873, "pos": "F", "number": "77", "team": "Calgary Flames", "games": 11, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Elias Lindholm", "p_id": 8477496, "pos": "F", "number": "28", "team": "Calgary Flames", "games": 12, "points": 8, "goals": 6, "assists": 2, "pv": 2}
@@ -118,17 +118,17 @@
 {"name": "Derek Ryan", "p_id": 8478585, "pos": "F", "number": "10", "team": "Calgary Flames", "games": 12, "points": 5, "goals": 1, "assists": 4, "pv": 1}
 {"name": "Matthew Tkachuk", "p_id": 8479314, "pos": "F", "number": "19", "team": "Calgary Flames", "games": 12, "points": 10, "goals": 4, "assists": 6, "pv": 2}
 {"name": "Cam Talbot", "p_id": 8475660, "pos": "G", "number": "39", "team": "Calgary Flames", "games": 4, "points": 2, "goals": 0, "assists": 0, "pv": 1}
-{"name": "David Rittich", "p_id": 8479496, "pos": "G", "number": "33", "team": "Calgary Flames", "games": 9, "points": 11, "goals": 0, "assists": 0, "pv": 1}
+{"name": "David Rittich", "p_id": 8479496, "pos": "G", "number": "33", "team": "Calgary Flames", "games": 9, "points": 11, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Jake Gardiner", "p_id": 8474581, "pos": "D", "number": "51", "team": "Carolina Hurricanes", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Joel Edmundson", "p_id": 8476441, "pos": "D", "number": "6", "team": "Carolina Hurricanes", "games": 10, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Dougie Hamilton", "p_id": 8476462, "pos": "D", "number": "19", "team": "Carolina Hurricanes", "games": 10, "points": 11, "goals": 6, "assists": 5, "pv": 2}
+{"name": "Dougie Hamilton", "p_id": 8476462, "pos": "D", "number": "19", "team": "Carolina Hurricanes", "games": 10, "points": 11, "goals": 6, "assists": 5, "pv": 3}
 {"name": "Jaccob Slavin", "p_id": 8476958, "pos": "D", "number": "74", "team": "Carolina Hurricanes", "games": 10, "points": 6, "goals": 2, "assists": 4, "pv": 1}
 {"name": "Brett Pesce", "p_id": 8477488, "pos": "D", "number": "22", "team": "Carolina Hurricanes", "games": 10, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Trevor van Riemsdyk", "p_id": 8477845, "pos": "D", "number": "57", "team": "Carolina Hurricanes", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Haydn Fleury", "p_id": 8477938, "pos": "D", "number": "4", "team": "Carolina Hurricanes", "games": 10, "points": 3, "goals": 1, "assists": 2, "pv": 1}
 {"name": "Jordan Martinook", "p_id": 8476921, "pos": "F", "number": "48", "team": "Carolina Hurricanes", "games": 4, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Jordan Staal", "p_id": 8473533, "pos": "F", "number": "11", "team": "Carolina Hurricanes", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
-{"name": "Erik Haula", "p_id": 8475287, "pos": "F", "number": "56", "team": "Carolina Hurricanes", "games": 10, "points": 8, "goals": 7, "assists": 1, "pv": 2}
+{"name": "Erik Haula", "p_id": 8475287, "pos": "F", "number": "56", "team": "Carolina Hurricanes", "games": 10, "points": 8, "goals": 7, "assists": 1, "pv": 3}
 {"name": "Nino Niederreiter", "p_id": 8475799, "pos": "F", "number": "21", "team": "Carolina Hurricanes", "games": 10, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Ryan Dzingel", "p_id": 8476288, "pos": "F", "number": "18", "team": "Carolina Hurricanes", "games": 10, "points": 8, "goals": 3, "assists": 5, "pv": 2}
 {"name": "Teuvo Teravainen", "p_id": 8476882, "pos": "F", "number": "86", "team": "Carolina Hurricanes", "games": 10, "points": 9, "goals": 2, "assists": 7, "pv": 2}
@@ -137,7 +137,7 @@
 {"name": "Lucas Wallmark", "p_id": 8478027, "pos": "F", "number": "71", "team": "Carolina Hurricanes", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Sebastian Aho", "p_id": 8478427, "pos": "F", "number": "20", "team": "Carolina Hurricanes", "games": 10, "points": 4, "goals": 3, "assists": 1, "pv": 1}
 {"name": "Martin Necas", "p_id": 8480039, "pos": "F", "number": "88", "team": "Carolina Hurricanes", "games": 10, "points": 6, "goals": 2, "assists": 4, "pv": 1}
-{"name": "Andrei Svechnikov", "p_id": 8480830, "pos": "F", "number": "37", "team": "Carolina Hurricanes", "games": 10, "points": 8, "goals": 1, "assists": 7, "pv": 1}
+{"name": "Andrei Svechnikov", "p_id": 8480830, "pos": "F", "number": "37", "team": "Carolina Hurricanes", "games": 10, "points": 8, "goals": 1, "assists": 7, "pv": 2}
 {"name": "James Reimer", "p_id": 8473503, "pos": "G", "number": "47", "team": "Carolina Hurricanes", "games": 5, "points": 4, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Petr Mrazek", "p_id": 8475852, "pos": "G", "number": "34", "team": "Carolina Hurricanes", "games": 6, "points": 9, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Connor Murphy", "p_id": 8476473, "pos": "D", "number": "5", "team": "Chicago Blackhawks", "games": 6, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -152,7 +152,7 @@
 {"name": "Patrick Kane", "p_id": 8474141, "pos": "F", "number": "88", "team": "Chicago Blackhawks", "games": 8, "points": 8, "goals": 3, "assists": 5, "pv": 2}
 {"name": "Zack Smith", "p_id": 8474250, "pos": "F", "number": "15", "team": "Chicago Blackhawks", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Andrew Shaw", "p_id": 8476381, "pos": "F", "number": "65", "team": "Chicago Blackhawks", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
-{"name": "Brandon Saad", "p_id": 8476438, "pos": "F", "number": "20", "team": "Chicago Blackhawks", "games": 8, "points": 5, "goals": 3, "assists": 2, "pv": 1}
+{"name": "Brandon Saad", "p_id": 8476438, "pos": "F", "number": "20", "team": "Chicago Blackhawks", "games": 8, "points": 5, "goals": 3, "assists": 2, "pv": 2}
 {"name": "Dominik Kubalik", "p_id": 8477330, "pos": "F", "number": "8", "team": "Chicago Blackhawks", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Ryan Carpenter", "p_id": 8477846, "pos": "F", "number": "22", "team": "Chicago Blackhawks", "games": 8, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Brendan Perlini", "p_id": 8477943, "pos": "F", "number": "11", "team": "Chicago Blackhawks", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -170,12 +170,12 @@
 {"name": "Ryan Graves", "p_id": 8477435, "pos": "D", "number": "27", "team": "Colorado Avalanche", "games": 9, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Nikita Zadorov", "p_id": 8477507, "pos": "D", "number": "16", "team": "Colorado Avalanche", "games": 8, "points": 3, "goals": 1, "assists": 2, "pv": 1}
 {"name": "Samuel Girard", "p_id": 8479398, "pos": "D", "number": "49", "team": "Colorado Avalanche", "games": 9, "points": 4, "goals": 0, "assists": 4, "pv": 1}
-{"name": "Cale Makar", "p_id": 8480069, "pos": "D", "number": "8", "team": "Colorado Avalanche", "games": 9, "points": 8, "goals": 0, "assists": 8, "pv": 1}
+{"name": "Cale Makar", "p_id": 8480069, "pos": "D", "number": "8", "team": "Colorado Avalanche", "games": 9, "points": 8, "goals": 0, "assists": 8, "pv": 2}
 {"name": "Mikko Rantanen", "p_id": 8478420, "pos": "F", "number": "96", "team": "Colorado Avalanche", "games": 9, "points": 12, "goals": 5, "assists": 7, "pv": 3}
 {"name": "Colin Wilson", "p_id": 8474569, "pos": "F", "number": "22", "team": "Colorado Avalanche", "games": 7, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Matt Calvert", "p_id": 8474685, "pos": "F", "number": "11", "team": "Colorado Avalanche", "games": 9, "points": 5, "goals": 1, "assists": 4, "pv": 1}
-{"name": "Nazem Kadri", "p_id": 8475172, "pos": "F", "number": "91", "team": "Colorado Avalanche", "games": 9, "points": 5, "goals": 3, "assists": 2, "pv": 1}
-{"name": "Joonas Donskoi", "p_id": 8475820, "pos": "F", "number": "72", "team": "Colorado Avalanche", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 1}
+{"name": "Nazem Kadri", "p_id": 8475172, "pos": "F", "number": "91", "team": "Colorado Avalanche", "games": 9, "points": 5, "goals": 3, "assists": 2, "pv": 2}
+{"name": "Joonas Donskoi", "p_id": 8475820, "pos": "F", "number": "72", "team": "Colorado Avalanche", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 2}
 {"name": "Matt Nieto", "p_id": 8476442, "pos": "F", "number": "83", "team": "Colorado Avalanche", "games": 9, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Gabriel Landeskog", "p_id": 8476455, "pos": "F", "number": "92", "team": "Colorado Avalanche", "games": 9, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Andre Burakovsky", "p_id": 8477444, "pos": "F", "number": "95", "team": "Colorado Avalanche", "games": 9, "points": 8, "goals": 4, "assists": 4, "pv": 2}
@@ -184,9 +184,9 @@
 {"name": "Valeri Nichushkin", "p_id": 8477501, "pos": "F", "number": "13", "team": "Colorado Avalanche", "games": 5, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Pierre-Edouard Bellemare", "p_id": 8477930, "pos": "F", "number": "41", "team": "Colorado Avalanche", "games": 9, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Vladislav Kamenev", "p_id": 8477973, "pos": "F", "number": "81", "team": "Colorado Avalanche", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Tyson Jost", "p_id": 8479370, "pos": "F", "number": "17", "team": "Colorado Avalanche", "games": 9, "points": 5, "goals": 4, "assists": 1, "pv": 1}
+{"name": "Tyson Jost", "p_id": 8479370, "pos": "F", "number": "17", "team": "Colorado Avalanche", "games": 9, "points": 5, "goals": 4, "assists": 1, "pv": 2}
 {"name": "Philipp Grubauer", "p_id": 8475831, "pos": "G", "number": "31", "team": "Colorado Avalanche", "games": 7, "points": 10, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Pavel Francouz", "p_id": 8480925, "pos": "G", "number": "39", "team": "Colorado Avalanche", "games": 2, "points": 4, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Pavel Francouz", "p_id": 8480925, "pos": "G", "number": "39", "team": "Colorado Avalanche", "games": 2, "points": 4, "goals": 0, "assists": 0, "pv": 2}
 {"name": "David Savard", "p_id": 8475233, "pos": "D", "number": "58", "team": "Columbus Blue Jackets", "games": 10, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Scott Harrington", "p_id": 8476449, "pos": "D", "number": "4", "team": "Columbus Blue Jackets", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Ryan Murray", "p_id": 8476850, "pos": "D", "number": "27", "team": "Columbus Blue Jackets", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
@@ -205,7 +205,7 @@
 {"name": "Oliver Bjorkstrand", "p_id": 8477416, "pos": "F", "number": "28", "team": "Columbus Blue Jackets", "games": 10, "points": 2, "goals": 2, "assists": 0, "pv": 1}
 {"name": "Alexander Wennberg", "p_id": 8477505, "pos": "F", "number": "10", "team": "Columbus Blue Jackets", "games": 10, "points": 5, "goals": 2, "assists": 3, "pv": 1}
 {"name": "Sonny Milano", "p_id": 8477947, "pos": "F", "number": "22", "team": "Columbus Blue Jackets", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
-{"name": "Pierre-Luc Dubois", "p_id": 8479400, "pos": "F", "number": "18", "team": "Columbus Blue Jackets", "games": 10, "points": 6, "goals": 4, "assists": 2, "pv": 1}
+{"name": "Pierre-Luc Dubois", "p_id": 8479400, "pos": "F", "number": "18", "team": "Columbus Blue Jackets", "games": 10, "points": 6, "goals": 4, "assists": 2, "pv": 2}
 {"name": "Alexandre Texier", "p_id": 8480074, "pos": "F", "number": "42", "team": "Columbus Blue Jackets", "games": 10, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Emil Bemstrom", "p_id": 8480205, "pos": "F", "number": "52", "team": "Columbus Blue Jackets", "games": 10, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Jakob Lilja", "p_id": 8481650, "pos": "F", "number": "15", "team": "Columbus Blue Jackets", "games": 8, "points": 2, "goals": 0, "assists": 2, "pv": 1}
@@ -233,7 +233,7 @@
 {"name": "Jason Dickinson", "p_id": 8477450, "pos": "F", "number": "18", "team": "Dallas Stars", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Roope Hintz", "p_id": 8478449, "pos": "F", "number": "24", "team": "Dallas Stars", "games": 12, "points": 7, "goals": 6, "assists": 1, "pv": 2}
 {"name": "Denis Gurianov", "p_id": 8478495, "pos": "F", "number": "34", "team": "Dallas Stars", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
-{"name": "Anton Khudobin", "p_id": 8471418, "pos": "G", "number": "35", "team": "Dallas Stars", "games": 4, "points": 2, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Anton Khudobin", "p_id": 8471418, "pos": "G", "number": "35", "team": "Dallas Stars", "games": 4, "points": 2, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Ben Bishop", "p_id": 8471750, "pos": "G", "number": "30", "team": "Dallas Stars", "games": 8, "points": 6, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Danny DeKeyser", "p_id": 8477215, "pos": "D", "number": "65", "team": "Detroit Red Wings", "games": 8, "points": 4, "goals": 0, "assists": 4, "pv": 1}
 {"name": "Trevor Daley", "p_id": 8470110, "pos": "D", "number": "83", "team": "Detroit Red Wings", "games": 6, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -253,8 +253,8 @@
 {"name": "Andreas Athanasiou", "p_id": 8476960, "pos": "F", "number": "72", "team": "Detroit Red Wings", "games": 8, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Jacob de la Rose", "p_id": 8477455, "pos": "F", "number": "61", "team": "Detroit Red Wings", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Tyler Bertuzzi", "p_id": 8477479, "pos": "F", "number": "59", "team": "Detroit Red Wings", "games": 10, "points": 10, "goals": 4, "assists": 6, "pv": 2}
-{"name": "Anthony Mantha", "p_id": 8477511, "pos": "F", "number": "39", "team": "Detroit Red Wings", "games": 10, "points": 11, "goals": 7, "assists": 4, "pv": 2}
-{"name": "Dylan Larkin", "p_id": 8477946, "pos": "F", "number": "71", "team": "Detroit Red Wings", "games": 10, "points": 7, "goals": 2, "assists": 5, "pv": 1}
+{"name": "Anthony Mantha", "p_id": 8477511, "pos": "F", "number": "39", "team": "Detroit Red Wings", "games": 10, "points": 11, "goals": 7, "assists": 4, "pv": 3}
+{"name": "Dylan Larkin", "p_id": 8477946, "pos": "F", "number": "71", "team": "Detroit Red Wings", "games": 10, "points": 7, "goals": 2, "assists": 5, "pv": 2}
 {"name": "Christoffer Ehn", "p_id": 8478036, "pos": "F", "number": "70", "team": "Detroit Red Wings", "games": 6, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Evgeny Svechnikov", "p_id": 8478431, "pos": "F", "number": "37", "team": "Detroit Red Wings", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Taro Hirose", "p_id": 8481433, "pos": "F", "number": "67", "team": "Detroit Red Wings", "games": 10, "points": 3, "goals": 0, "assists": 3, "pv": 1}
@@ -263,33 +263,33 @@
 {"name": "Adam Larsson", "p_id": 8476457, "pos": "D", "number": "6", "team": "Edmonton Oilers", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Kris Russell", "p_id": 8471729, "pos": "D", "number": "4", "team": "Edmonton Oilers", "games": 11, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Brandon Manning", "p_id": 8475430, "pos": "D", "number": "26", "team": "Edmonton Oilers", "games": 5, "points": 1, "goals": 1, "assists": 0, "pv": 1}
-{"name": "Oscar Klefbom", "p_id": 8476472, "pos": "D", "number": "77", "team": "Edmonton Oilers", "games": 11, "points": 9, "goals": 1, "assists": 8, "pv": 1}
+{"name": "Oscar Klefbom", "p_id": 8476472, "pos": "D", "number": "77", "team": "Edmonton Oilers", "games": 11, "points": 9, "goals": 1, "assists": 8, "pv": 2}
 {"name": "Matt Benning", "p_id": 8476988, "pos": "D", "number": "83", "team": "Edmonton Oilers", "games": 11, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Darnell Nurse", "p_id": 8477498, "pos": "D", "number": "25", "team": "Edmonton Oilers", "games": 11, "points": 8, "goals": 2, "assists": 6, "pv": 1}
+{"name": "Darnell Nurse", "p_id": 8477498, "pos": "D", "number": "25", "team": "Edmonton Oilers", "games": 11, "points": 8, "goals": 2, "assists": 6, "pv": 2}
 {"name": "William Lagesson", "p_id": 8478021, "pos": "D", "number": "84", "team": "Edmonton Oilers", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Ethan Bear", "p_id": 8478451, "pos": "D", "number": "74", "team": "Edmonton Oilers", "games": 11, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Joel Persson", "p_id": 8480940, "pos": "D", "number": "36", "team": "Edmonton Oilers", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Joakim Nygard", "p_id": 8481638, "pos": "F", "number": "10", "team": "Edmonton Oilers", "games": 6, "points": 1, "goals": 1, "assists": 0, "pv": 1}
-{"name": "James Neal", "p_id": 8471707, "pos": "F", "number": "18", "team": "Edmonton Oilers", "games": 11, "points": 11, "goals": 9, "assists": 2, "pv": 2}
+{"name": "James Neal", "p_id": 8471707, "pos": "F", "number": "18", "team": "Edmonton Oilers", "games": 11, "points": 11, "goals": 9, "assists": 2, "pv": 3}
 {"name": "Sam Gagner", "p_id": 8474040, "pos": "F", "number": "89", "team": "Edmonton Oilers", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Alex Chiasson", "p_id": 8475163, "pos": "F", "number": "39", "team": "Edmonton Oilers", "games": 8, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Zack Kassian", "p_id": 8475178, "pos": "F", "number": "44", "team": "Edmonton Oilers", "games": 11, "points": 8, "goals": 3, "assists": 5, "pv": 1}
+{"name": "Zack Kassian", "p_id": 8475178, "pos": "F", "number": "44", "team": "Edmonton Oilers", "games": 11, "points": 8, "goals": 3, "assists": 5, "pv": 2}
 {"name": "Riley Sheahan", "p_id": 8475772, "pos": "F", "number": "23", "team": "Edmonton Oilers", "games": 9, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Josh Archibald", "p_id": 8476326, "pos": "F", "number": "15", "team": "Edmonton Oilers", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Tomas Jurco", "p_id": 8476430, "pos": "F", "number": "92", "team": "Edmonton Oilers", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Markus Granlund", "p_id": 8476440, "pos": "F", "number": "60", "team": "Edmonton Oilers", "games": 10, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Ryan Nugent-Hopkins", "p_id": 8476454, "pos": "F", "number": "93", "team": "Edmonton Oilers", "games": 11, "points": 6, "goals": 1, "assists": 5, "pv": 1}
 {"name": "Jujhar Khaira", "p_id": 8476915, "pos": "F", "number": "16", "team": "Edmonton Oilers", "games": 11, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Leon Draisaitl", "p_id": 8477934, "pos": "F", "number": "29", "team": "Edmonton Oilers", "games": 11, "points": 19, "goals": 8, "assists": 11, "pv": 3}
-{"name": "Connor McDavid", "p_id": 8478402, "pos": "F", "number": "97", "team": "Edmonton Oilers", "games": 11, "points": 20, "goals": 6, "assists": 14, "pv": 3}
+{"name": "Leon Draisaitl", "p_id": 8477934, "pos": "F", "number": "29", "team": "Edmonton Oilers", "games": 11, "points": 19, "goals": 8, "assists": 11, "pv": 4}
+{"name": "Connor McDavid", "p_id": 8478402, "pos": "F", "number": "97", "team": "Edmonton Oilers", "games": 11, "points": 20, "goals": 6, "assists": 14, "pv": 4}
 {"name": "Patrick Russell", "p_id": 8479466, "pos": "F", "number": "52", "team": "Edmonton Oilers", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Mike Smith", "p_id": 8469608, "pos": "G", "number": "41", "team": "Edmonton Oilers", "games": 6, "points": 7, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Mike Smith", "p_id": 8469608, "pos": "G", "number": "41", "team": "Edmonton Oilers", "games": 6, "points": 7, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Mikko Koskinen", "p_id": 8475156, "pos": "G", "number": "19", "team": "Edmonton Oilers", "games": 5, "points": 10, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Keith Yandle", "p_id": 8471735, "pos": "D", "number": "3", "team": "Florida Panthers", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Anton Stralman", "p_id": 8471873, "pos": "D", "number": "6", "team": "Florida Panthers", "games": 10, "points": 4, "goals": 0, "assists": 4, "pv": 1}
 {"name": "Mark Pysyk", "p_id": 8475796, "pos": "D", "number": "13", "team": "Florida Panthers", "games": 5, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Mike Matheson", "p_id": 8476875, "pos": "D", "number": "19", "team": "Florida Panthers", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
-{"name": "MacKenzie Weegar", "p_id": 8477346, "pos": "D", "number": "52", "team": "Florida Panthers", "games": 10, "points": 6, "goals": 3, "assists": 3, "pv": 1}
+{"name": "MacKenzie Weegar", "p_id": 8477346, "pos": "D", "number": "52", "team": "Florida Panthers", "games": 10, "points": 6, "goals": 3, "assists": 3, "pv": 2}
 {"name": "Josh Brown", "p_id": 8477384, "pos": "D", "number": "2", "team": "Florida Panthers", "games": 9, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Aaron Ekblad", "p_id": 8477932, "pos": "D", "number": "5", "team": "Florida Panthers", "games": 9, "points": 5, "goals": 0, "assists": 5, "pv": 1}
 {"name": "Riley Stillman", "p_id": 8479388, "pos": "D", "number": "61", "team": "Florida Panthers", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -299,7 +299,7 @@
 {"name": "Mike Hoffman", "p_id": 8474884, "pos": "F", "number": "68", "team": "Florida Panthers", "games": 10, "points": 8, "goals": 5, "assists": 3, "pv": 2}
 {"name": "Brett Connolly", "p_id": 8475792, "pos": "F", "number": "10", "team": "Florida Panthers", "games": 10, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Vincent Trocheck", "p_id": 8476389, "pos": "F", "number": "21", "team": "Florida Panthers", "games": 8, "points": 6, "goals": 1, "assists": 5, "pv": 1}
-{"name": "Jonathan Huberdeau", "p_id": 8476456, "pos": "F", "number": "11", "team": "Florida Panthers", "games": 10, "points": 12, "goals": 5, "assists": 7, "pv": 2}
+{"name": "Jonathan Huberdeau", "p_id": 8476456, "pos": "F", "number": "11", "team": "Florida Panthers", "games": 10, "points": 12, "goals": 5, "assists": 7, "pv": 3}
 {"name": "Aleksander Barkov", "p_id": 8477493, "pos": "F", "number": "16", "team": "Florida Panthers", "games": 10, "points": 12, "goals": 0, "assists": 12, "pv": 2}
 {"name": "Jayce Hawryluk", "p_id": 8477963, "pos": "F", "number": "8", "team": "Florida Panthers", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Dryden Hunt", "p_id": 8478211, "pos": "F", "number": "73", "team": "Florida Panthers", "games": 10, "points": 3, "goals": 0, "assists": 3, "pv": 1}
@@ -309,16 +309,16 @@
 {"name": "Sergei Bobrovsky", "p_id": 8475683, "pos": "G", "number": "72", "team": "Florida Panthers", "games": 8, "points": 6, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Sam Montembeault", "p_id": 8478470, "pos": "G", "number": "33", "team": "Florida Panthers", "games": 3, "points": 2, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Alec Martinez", "p_id": 8474166, "pos": "D", "number": "27", "team": "Los Angeles Kings", "games": 10, "points": 4, "goals": 0, "assists": 4, "pv": 1}
-{"name": "Drew Doughty", "p_id": 8474563, "pos": "D", "number": "8", "team": "Los Angeles Kings", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Drew Doughty", "p_id": 8474563, "pos": "D", "number": "8", "team": "Los Angeles Kings", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Ben Hutton", "p_id": 8477018, "pos": "D", "number": "15", "team": "Los Angeles Kings", "games": 10, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Joakim Ryan", "p_id": 8477046, "pos": "D", "number": "6", "team": "Los Angeles Kings", "games": 4, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Kurtis MacDermid", "p_id": 8477073, "pos": "D", "number": "56", "team": "Los Angeles Kings", "games": 4, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Matt Roy", "p_id": 8478911, "pos": "D", "number": "3", "team": "Los Angeles Kings", "games": 10, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Sean Walker", "p_id": 8480336, "pos": "D", "number": "26", "team": "Los Angeles Kings", "games": 10, "points": 5, "goals": 2, "assists": 3, "pv": 1}
-{"name": "Ilya Kovalchuk", "p_id": 8469454, "pos": "F", "number": "17", "team": "Los Angeles Kings", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Ilya Kovalchuk", "p_id": 8469454, "pos": "F", "number": "17", "team": "Los Angeles Kings", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Jeff Carter", "p_id": 8470604, "pos": "F", "number": "77", "team": "Los Angeles Kings", "games": 10, "points": 4, "goals": 2, "assists": 2, "pv": 1}
-{"name": "Dustin Brown", "p_id": 8470606, "pos": "F", "number": "23", "team": "Los Angeles Kings", "games": 10, "points": 6, "goals": 3, "assists": 3, "pv": 1}
-{"name": "Anze Kopitar", "p_id": 8471685, "pos": "F", "number": "11", "team": "Los Angeles Kings", "games": 10, "points": 11, "goals": 4, "assists": 7, "pv": 2}
+{"name": "Dustin Brown", "p_id": 8470606, "pos": "F", "number": "23", "team": "Los Angeles Kings", "games": 10, "points": 6, "goals": 3, "assists": 3, "pv": 2}
+{"name": "Anze Kopitar", "p_id": 8471685, "pos": "F", "number": "11", "team": "Los Angeles Kings", "games": 10, "points": 11, "goals": 4, "assists": 7, "pv": 3}
 {"name": "Trevor Lewis", "p_id": 8473453, "pos": "F", "number": "22", "team": "Los Angeles Kings", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Kyle Clifford", "p_id": 8475160, "pos": "F", "number": "13", "team": "Los Angeles Kings", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Tyler Toffoli", "p_id": 8475726, "pos": "F", "number": "73", "team": "Los Angeles Kings", "games": 10, "points": 5, "goals": 3, "assists": 2, "pv": 1}
@@ -328,14 +328,14 @@
 {"name": "Austin Wagner", "p_id": 8478455, "pos": "F", "number": "51", "team": "Los Angeles Kings", "games": 8, "points": 2, "goals": 2, "assists": 0, "pv": 1}
 {"name": "Alex Iafallo", "p_id": 8480113, "pos": "F", "number": "19", "team": "Los Angeles Kings", "games": 10, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Blake Lizotte", "p_id": 8481481, "pos": "F", "number": "46", "team": "Los Angeles Kings", "games": 10, "points": 3, "goals": 0, "assists": 3, "pv": 1}
-{"name": "Jonathan Quick", "p_id": 8471734, "pos": "G", "number": "32", "team": "Los Angeles Kings", "games": 6, "points": 4, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Jonathan Quick", "p_id": 8471734, "pos": "G", "number": "32", "team": "Los Angeles Kings", "games": 6, "points": 4, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Jack Campbell", "p_id": 8475789, "pos": "G", "number": "36", "team": "Los Angeles Kings", "games": 4, "points": 4, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Greg Pateryn", "p_id": 8474688, "pos": "D", "number": "29", "team": "Minnesota Wild", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Ryan Suter", "p_id": 8470600, "pos": "D", "number": "20", "team": "Minnesota Wild", "games": 10, "points": 5, "goals": 1, "assists": 4, "pv": 1}
 {"name": "Jared Spurgeon", "p_id": 8474716, "pos": "D", "number": "46", "team": "Minnesota Wild", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Nick Seeler", "p_id": 8476372, "pos": "D", "number": "55", "team": "Minnesota Wild", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Jonas Brodin", "p_id": 8476463, "pos": "D", "number": "25", "team": "Minnesota Wild", "games": 10, "points": 1, "goals": 0, "assists": 1, "pv": 1}
-{"name": "Brad Hunt", "p_id": 8476779, "pos": "D", "number": "77", "team": "Minnesota Wild", "games": 10, "points": 6, "goals": 4, "assists": 2, "pv": 1}
+{"name": "Brad Hunt", "p_id": 8476779, "pos": "D", "number": "77", "team": "Minnesota Wild", "games": 10, "points": 6, "goals": 4, "assists": 2, "pv": 2}
 {"name": "Matt Dumba", "p_id": 8476856, "pos": "D", "number": "24", "team": "Minnesota Wild", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Carson Soucy", "p_id": 8477369, "pos": "D", "number": "21", "team": "Minnesota Wild", "games": 8, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Kevin Fiala", "p_id": 8477942, "pos": "F", "number": "22", "team": "Minnesota Wild", "games": 7, "points": 1, "goals": 0, "assists": 1, "pv": 1}
@@ -366,10 +366,10 @@
 {"name": "Cale Fleury", "p_id": 8479985, "pos": "D", "number": "20", "team": "Montréal Canadiens", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Nate Thompson", "p_id": 8470775, "pos": "F", "number": "44", "team": "Montréal Canadiens", "games": 10, "points": 4, "goals": 0, "assists": 4, "pv": 1}
 {"name": "Paul Byron", "p_id": 8474038, "pos": "F", "number": "41", "team": "Montréal Canadiens", "games": 10, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Tomas Tatar", "p_id": 8475193, "pos": "F", "number": "90", "team": "Montréal Canadiens", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Tomas Tatar", "p_id": 8475193, "pos": "F", "number": "90", "team": "Montréal Canadiens", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Jordan Weal", "p_id": 8475738, "pos": "F", "number": "43", "team": "Montréal Canadiens", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Brendan Gallagher", "p_id": 8475848, "pos": "F", "number": "11", "team": "Montréal Canadiens", "games": 10, "points": 9, "goals": 4, "assists": 5, "pv": 2}
-{"name": "Nick Cousins", "p_id": 8476393, "pos": "F", "number": "21", "team": "Montréal Canadiens", "games": 4, "points": 3, "goals": 1, "assists": 2, "pv": 1}
+{"name": "Nick Cousins", "p_id": 8476393, "pos": "F", "number": "21", "team": "Montréal Canadiens", "games": 4, "points": 3, "goals": 1, "assists": 2, "pv": 2}
 {"name": "Joel Armia", "p_id": 8476469, "pos": "F", "number": "40", "team": "Montréal Canadiens", "games": 8, "points": 6, "goals": 5, "assists": 1, "pv": 2}
 {"name": "Phillip Danault", "p_id": 8476479, "pos": "F", "number": "24", "team": "Montréal Canadiens", "games": 10, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Artturi Lehkonen", "p_id": 8477476, "pos": "F", "number": "62", "team": "Montréal Canadiens", "games": 10, "points": 4, "goals": 1, "assists": 3, "pv": 1}
@@ -377,29 +377,29 @@
 {"name": "Max Domi", "p_id": 8477503, "pos": "F", "number": "13", "team": "Montréal Canadiens", "games": 10, "points": 10, "goals": 3, "assists": 7, "pv": 2}
 {"name": "Nick Suzuki", "p_id": 8480018, "pos": "F", "number": "14", "team": "Montréal Canadiens", "games": 10, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Jesperi Kotkaniemi", "p_id": 8480829, "pos": "F", "number": "15", "team": "Montréal Canadiens", "games": 10, "points": 3, "goals": 2, "assists": 1, "pv": 1}
-{"name": "Carey Price", "p_id": 8471679, "pos": "G", "number": "31", "team": "Montréal Canadiens", "games": 8, "points": 9, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Carey Price", "p_id": 8471679, "pos": "G", "number": "31", "team": "Montréal Canadiens", "games": 8, "points": 9, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Keith Kinkaid", "p_id": 8476234, "pos": "G", "number": "37", "team": "Montréal Canadiens", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Dan Hamhuis", "p_id": 8469465, "pos": "D", "number": "5", "team": "Nashville Predators", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Yannick Weber", "p_id": 8474134, "pos": "D", "number": "7", "team": "Nashville Predators", "games": 9, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Roman Josi", "p_id": 8474600, "pos": "D", "number": "59", "team": "Nashville Predators", "games": 10, "points": 10, "goals": 4, "assists": 6, "pv": 2}
 {"name": "Ryan Ellis", "p_id": 8475176, "pos": "D", "number": "4", "team": "Nashville Predators", "games": 10, "points": 12, "goals": 1, "assists": 11, "pv": 2}
-{"name": "Mattias Ekholm", "p_id": 8475218, "pos": "D", "number": "14", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Mattias Ekholm", "p_id": 8475218, "pos": "D", "number": "14", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Matt Irwin", "p_id": 8475625, "pos": "D", "number": "52", "team": "Nashville Predators", "games": 3, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Dante Fabbro", "p_id": 8479371, "pos": "D", "number": "57", "team": "Nashville Predators", "games": 10, "points": 2, "goals": 2, "assists": 0, "pv": 1}
-{"name": "Nick Bonino", "p_id": 8474009, "pos": "F", "number": "13", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 1}
-{"name": "Kyle Turris", "p_id": 8474068, "pos": "F", "number": "8", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Nick Bonino", "p_id": 8474009, "pos": "F", "number": "13", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 2}
+{"name": "Kyle Turris", "p_id": 8474068, "pos": "F", "number": "8", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Matt Duchene", "p_id": 8475168, "pos": "F", "number": "95", "team": "Nashville Predators", "games": 10, "points": 11, "goals": 2, "assists": 9, "pv": 2}
 {"name": "Craig Smith", "p_id": 8475225, "pos": "F", "number": "15", "team": "Nashville Predators", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
-{"name": "Calle Jarnkrok", "p_id": 8475714, "pos": "F", "number": "19", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 2, "assists": 5, "pv": 1}
+{"name": "Calle Jarnkrok", "p_id": 8475714, "pos": "F", "number": "19", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 2, "assists": 5, "pv": 2}
 {"name": "Austin Watson", "p_id": 8475766, "pos": "F", "number": "51", "team": "Nashville Predators", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
-{"name": "Ryan Johansen", "p_id": 8475793, "pos": "F", "number": "92", "team": "Nashville Predators", "games": 10, "points": 8, "goals": 2, "assists": 6, "pv": 1}
+{"name": "Ryan Johansen", "p_id": 8475793, "pos": "F", "number": "92", "team": "Nashville Predators", "games": 10, "points": 8, "goals": 2, "assists": 6, "pv": 2}
 {"name": "Mikael Granlund", "p_id": 8475798, "pos": "F", "number": "64", "team": "Nashville Predators", "games": 10, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Rocco Grimaldi", "p_id": 8476428, "pos": "F", "number": "23", "team": "Nashville Predators", "games": 7, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Miikka Salomaki", "p_id": 8476447, "pos": "F", "number": "20", "team": "Nashville Predators", "games": 3, "points": 1, "goals": 1, "assists": 0, "pv": 1}
-{"name": "Filip Forsberg", "p_id": 8476887, "pos": "F", "number": "9", "team": "Nashville Predators", "games": 6, "points": 8, "goals": 5, "assists": 3, "pv": 3}
+{"name": "Filip Forsberg", "p_id": 8476887, "pos": "F", "number": "9", "team": "Nashville Predators", "games": 6, "points": 8, "goals": 5, "assists": 3, "pv": 4}
 {"name": "Colton Sissons", "p_id": 8476925, "pos": "F", "number": "10", "team": "Nashville Predators", "games": 10, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Viktor Arvidsson", "p_id": 8478042, "pos": "F", "number": "33", "team": "Nashville Predators", "games": 10, "points": 9, "goals": 5, "assists": 4, "pv": 2}
-{"name": "Pekka Rinne", "p_id": 8471469, "pos": "G", "number": "35", "team": "Nashville Predators", "games": 7, "points": 13, "goals": 0, "assists": 0, "pv": 2}
+{"name": "Pekka Rinne", "p_id": 8471469, "pos": "G", "number": "35", "team": "Nashville Predators", "games": 7, "points": 13, "goals": 0, "assists": 1, "pv": 2}
 {"name": "Juuse Saros", "p_id": 8477424, "pos": "G", "number": "74", "team": "Nashville Predators", "games": 3, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Will Butcher", "p_id": 8477355, "pos": "D", "number": "8", "team": "New Jersey Devils", "games": 7, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Andy Greene", "p_id": 8472382, "pos": "D", "number": "6", "team": "New Jersey Devils", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -424,13 +424,13 @@
 {"name": "Jesper Boqvist", "p_id": 8480003, "pos": "F", "number": "90", "team": "New Jersey Devils", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Jack Hughes", "p_id": 8481559, "pos": "F", "number": "86", "team": "New Jersey Devils", "games": 8, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Cory Schneider", "p_id": 8471239, "pos": "G", "number": "35", "team": "New Jersey Devils", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Mackenzie Blackwood", "p_id": 8478406, "pos": "G", "number": "29", "team": "New Jersey Devils", "games": 5, "points": 5, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Mackenzie Blackwood", "p_id": 8478406, "pos": "G", "number": "29", "team": "New Jersey Devils", "games": 5, "points": 5, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Johnny Boychuk", "p_id": 8470187, "pos": "D", "number": "55", "team": "New York Islanders", "games": 8, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Nick Leddy", "p_id": 8475181, "pos": "D", "number": "2", "team": "New York Islanders", "games": 8, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Scott Mayfield", "p_id": 8476429, "pos": "D", "number": "24", "team": "New York Islanders", "games": 9, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Adam Pelech", "p_id": 8476917, "pos": "D", "number": "3", "team": "New York Islanders", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Ryan Pulock", "p_id": 8477506, "pos": "D", "number": "6", "team": "New York Islanders", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Devon Toews", "p_id": 8478038, "pos": "D", "number": "25", "team": "New York Islanders", "games": 9, "points": 6, "goals": 2, "assists": 4, "pv": 1}
+{"name": "Devon Toews", "p_id": 8478038, "pos": "D", "number": "25", "team": "New York Islanders", "games": 9, "points": 6, "goals": 2, "assists": 4, "pv": 2}
 {"name": "Noah Dobson", "p_id": 8480865, "pos": "D", "number": "8", "team": "New York Islanders", "games": 2, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Leo Komarov", "p_id": 8473463, "pos": "F", "number": "47", "team": "New York Islanders", "games": 7, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Jordan Eberle", "p_id": 8474586, "pos": "F", "number": "7", "team": "New York Islanders", "games": 5, "points": 3, "goals": 0, "assists": 3, "pv": 1}
@@ -447,7 +447,7 @@
 {"name": "Michael Dal Colle", "p_id": 8477936, "pos": "F", "number": "28", "team": "New York Islanders", "games": 9, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Cole Bardreau", "p_id": 8478367, "pos": "F", "number": "34", "team": "New York Islanders", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Mathew Barzal", "p_id": 8478445, "pos": "F", "number": "13", "team": "New York Islanders", "games": 9, "points": 7, "goals": 4, "assists": 3, "pv": 2}
-{"name": "Anthony Beauvillier", "p_id": 8478463, "pos": "F", "number": "18", "team": "New York Islanders", "games": 9, "points": 6, "goals": 2, "assists": 4, "pv": 1}
+{"name": "Anthony Beauvillier", "p_id": 8478463, "pos": "F", "number": "18", "team": "New York Islanders", "games": 9, "points": 6, "goals": 2, "assists": 4, "pv": 2}
 {"name": "Oliver Wahlstrom", "p_id": 8480789, "pos": "F", "number": "26", "team": "New York Islanders", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Thomas Greiss", "p_id": 8471306, "pos": "G", "number": "1", "team": "New York Islanders", "games": 5, "points": 6, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Semyon Varlamov", "p_id": 8473575, "pos": "G", "number": "40", "team": "New York Islanders", "games": 5, "points": 6, "goals": 0, "assists": 0, "pv": 1}
@@ -462,11 +462,11 @@
 {"name": "Chris Kreider", "p_id": 8475184, "pos": "F", "number": "20", "team": "New York Rangers", "games": 8, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Greg McKegg", "p_id": 8475735, "pos": "F", "number": "14", "team": "New York Rangers", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Jesper Fast", "p_id": 8475855, "pos": "F", "number": "17", "team": "New York Rangers", "games": 8, "points": 5, "goals": 2, "assists": 3, "pv": 1}
-{"name": "Ryan Strome", "p_id": 8476458, "pos": "F", "number": "16", "team": "New York Rangers", "games": 8, "points": 6, "goals": 2, "assists": 4, "pv": 1}
-{"name": "Mika Zibanejad", "p_id": 8476459, "pos": "F", "number": "93", "team": "New York Rangers", "games": 8, "points": 11, "goals": 4, "assists": 7, "pv": 2}
+{"name": "Ryan Strome", "p_id": 8476458, "pos": "F", "number": "16", "team": "New York Rangers", "games": 8, "points": 6, "goals": 2, "assists": 4, "pv": 2}
+{"name": "Mika Zibanejad", "p_id": 8476459, "pos": "F", "number": "93", "team": "New York Rangers", "games": 8, "points": 11, "goals": 4, "assists": 7, "pv": 3}
 {"name": "Pavel Buchnevich", "p_id": 8477402, "pos": "F", "number": "89", "team": "New York Rangers", "games": 8, "points": 6, "goals": 1, "assists": 5, "pv": 1}
 {"name": "Brendan Lemieux", "p_id": 8477962, "pos": "F", "number": "48", "team": "New York Rangers", "games": 7, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Artemi Panarin", "p_id": 8478550, "pos": "F", "number": "10", "team": "New York Rangers", "games": 8, "points": 7, "goals": 5, "assists": 2, "pv": 2}
+{"name": "Artemi Panarin", "p_id": 8478550, "pos": "F", "number": "10", "team": "New York Rangers", "games": 8, "points": 7, "goals": 5, "assists": 2, "pv": 3}
 {"name": "Brett Howden", "p_id": 8479353, "pos": "F", "number": "21", "team": "New York Rangers", "games": 8, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Lias Andersson", "p_id": 8480072, "pos": "F", "number": "28", "team": "New York Rangers", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Kaapo Kakko", "p_id": 8481554, "pos": "F", "number": "24", "team": "New York Rangers", "games": 8, "points": 2, "goals": 1, "assists": 1, "pv": 1}
@@ -476,7 +476,7 @@
 {"name": "Cody Goloubef", "p_id": 8474597, "pos": "D", "number": "29", "team": "Ottawa Senators", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Mark Borowiecki", "p_id": 8474697, "pos": "D", "number": "74", "team": "Ottawa Senators", "games": 9, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Dylan DeMelo", "p_id": 8476331, "pos": "D", "number": "2", "team": "Ottawa Senators", "games": 9, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Thomas Chabot", "p_id": 8478469, "pos": "D", "number": "72", "team": "Ottawa Senators", "games": 9, "points": 7, "goals": 1, "assists": 6, "pv": 1}
+{"name": "Thomas Chabot", "p_id": 8478469, "pos": "D", "number": "72", "team": "Ottawa Senators", "games": 9, "points": 7, "goals": 1, "assists": 6, "pv": 2}
 {"name": "Nikita Zaitsev", "p_id": 8479458, "pos": "D", "number": "22", "team": "Ottawa Senators", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Erik Brannstrom", "p_id": 8480073, "pos": "D", "number": "26", "team": "Ottawa Senators", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Artem Anisimov", "p_id": 8473573, "pos": "F", "number": "51", "team": "Ottawa Senators", "games": 5, "points": 1, "goals": 1, "assists": 0, "pv": 1}
@@ -485,9 +485,9 @@
 {"name": "Bobby Ryan", "p_id": 8471676, "pos": "F", "number": "9", "team": "Ottawa Senators", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
 {"name": "Mikkel Boedker", "p_id": 8474571, "pos": "F", "number": "89", "team": "Ottawa Senators", "games": 3, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Tyler Ennis", "p_id": 8474589, "pos": "F", "number": "63", "team": "Ottawa Senators", "games": 9, "points": 1, "goals": 0, "assists": 1, "pv": 1}
-{"name": "Jean-Gabriel Pageau", "p_id": 8476419, "pos": "F", "number": "44", "team": "Ottawa Senators", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 1}
+{"name": "Jean-Gabriel Pageau", "p_id": 8476419, "pos": "F", "number": "44", "team": "Ottawa Senators", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 2}
 {"name": "Vladislav Namestnikov", "p_id": 8476480, "pos": "F", "number": "90", "team": "Ottawa Senators", "games": 9, "points": 7, "goals": 4, "assists": 3, "pv": 2}
-{"name": "Chris Tierney", "p_id": 8476919, "pos": "F", "number": "71", "team": "Ottawa Senators", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 1}
+{"name": "Chris Tierney", "p_id": 8476919, "pos": "F", "number": "71", "team": "Ottawa Senators", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 2}
 {"name": "Connor Brown", "p_id": 8477015, "pos": "F", "number": "28", "team": "Ottawa Senators", "games": 9, "points": 7, "goals": 0, "assists": 7, "pv": 1}
 {"name": "Scott Sabourin", "p_id": 8477149, "pos": "F", "number": "49", "team": "Ottawa Senators", "games": 8, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Anthony Duclair", "p_id": 8477407, "pos": "F", "number": "10", "team": "Ottawa Senators", "games": 9, "points": 3, "goals": 3, "assists": 0, "pv": 1}
@@ -495,7 +495,7 @@
 {"name": "J.C. Beaudin", "p_id": 8478833, "pos": "F", "number": "64", "team": "Ottawa Senators", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Logan Brown", "p_id": 8479366, "pos": "F", "number": "21", "team": "Ottawa Senators", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Brady Tkachuk", "p_id": 8480801, "pos": "F", "number": "7", "team": "Ottawa Senators", "games": 9, "points": 3, "goals": 2, "assists": 1, "pv": 1}
-{"name": "Craig Anderson", "p_id": 8467950, "pos": "G", "number": "41", "team": "Ottawa Senators", "games": 5, "points": 2, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Craig Anderson", "p_id": 8467950, "pos": "G", "number": "41", "team": "Ottawa Senators", "games": 5, "points": 2, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Anders Nilsson", "p_id": 8475195, "pos": "G", "number": "31", "team": "Ottawa Senators", "games": 4, "points": 2, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Matt Niskanen", "p_id": 8471702, "pos": "D", "number": "15", "team": "Philadelphia Flyers", "games": 8, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Justin Braun", "p_id": 8474027, "pos": "D", "number": "61", "team": "Philadelphia Flyers", "games": 8, "points": 2, "goals": 0, "assists": 2, "pv": 1}
@@ -513,17 +513,16 @@
 {"name": "Sean Couturier", "p_id": 8476461, "pos": "F", "number": "14", "team": "Philadelphia Flyers", "games": 8, "points": 5, "goals": 2, "assists": 3, "pv": 1}
 {"name": "Scott Laughton", "p_id": 8476872, "pos": "F", "number": "21", "team": "Philadelphia Flyers", "games": 8, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Michael Raffl", "p_id": 8477290, "pos": "F", "number": "12", "team": "Philadelphia Flyers", "games": 8, "points": 4, "goals": 2, "assists": 2, "pv": 1}
-{"name": "Oskar Lindblom", "p_id": 8478067, "pos": "F", "number": "23", "team": "Philadelphia Flyers", "games": 8, "points": 7, "goals": 5, "assists": 2, "pv": 2}
-{"name": "Travis Konecny", "p_id": 8478439, "pos": "F", "number": "11", "team": "Philadelphia Flyers", "games": 8, "points": 11, "goals": 4, "assists": 7, "pv": 2}
+{"name": "Oskar Lindblom", "p_id": 8478067, "pos": "F", "number": "23", "team": "Philadelphia Flyers", "games": 8, "points": 7, "goals": 5, "assists": 2, "pv": 3}
+{"name": "Travis Konecny", "p_id": 8478439, "pos": "F", "number": "11", "team": "Philadelphia Flyers", "games": 8, "points": 11, "goals": 4, "assists": 7, "pv": 3}
 {"name": "Mikhail Vorobyev", "p_id": 8478844, "pos": "F", "number": "24", "team": "Philadelphia Flyers", "games": 2, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Joel Farabee", "p_id": 8480797, "pos": "F", "number": "49", "team": "Philadelphia Flyers", "games": 2, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Brian Elliott", "p_id": 8470880, "pos": "G", "number": "37", "team": "Philadelphia Flyers", "games": 4, "points": 4, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Carter Hart", "p_id": 8479394, "pos": "G", "number": "79", "team": "Philadelphia Flyers", "games": 5, "points": 5, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Carter Hart", "p_id": 8479394, "pos": "G", "number": "79", "team": "Philadelphia Flyers", "games": 5, "points": 5, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Brian Dumoulin", "p_id": 8475208, "pos": "D", "number": "8", "team": "Pittsburgh Penguins", "games": 8, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Jack Johnson", "p_id": 8471677, "pos": "D", "number": "3", "team": "Pittsburgh Penguins", "games": 10, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Kris Letang", "p_id": 8471724, "pos": "D", "number": "58", "team": "Pittsburgh Penguins", "games": 11, "points": 10, "goals": 4, "assists": 6, "pv": 2}
 {"name": "Justin Schultz", "p_id": 8474602, "pos": "D", "number": "4", "team": "Pittsburgh Penguins", "games": 11, "points": 5, "goals": 0, "assists": 5, "pv": 1}
-{"name": "Erik Gudbranson", "p_id": 8475790, "pos": "D", "number": "44", "team": "Pittsburgh Penguins", "games": 7, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Chad Ruhwedel", "p_id": 8477244, "pos": "D", "number": "2", "team": "Pittsburgh Penguins", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Marcus Pettersson", "p_id": 8477969, "pos": "D", "number": "28", "team": "Pittsburgh Penguins", "games": 11, "points": 5, "goals": 1, "assists": 4, "pv": 1}
 {"name": "John Marino", "p_id": 8478507, "pos": "D", "number": "6", "team": "Pittsburgh Penguins", "games": 9, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -532,33 +531,33 @@
 {"name": "Nick Bjugstad", "p_id": 8475760, "pos": "F", "number": "27", "team": "Pittsburgh Penguins", "games": 2, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Bryan Rust", "p_id": 8475810, "pos": "F", "number": "17", "team": "Pittsburgh Penguins", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Alex Galchenyuk", "p_id": 8476851, "pos": "F", "number": "18", "team": "Pittsburgh Penguins", "games": 3, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Sidney Crosby", "p_id": 8471675, "pos": "F", "number": "87", "team": "Pittsburgh Penguins", "games": 11, "points": 14, "goals": 4, "assists": 10, "pv": 2}
+{"name": "Sidney Crosby", "p_id": 8471675, "pos": "F", "number": "87", "team": "Pittsburgh Penguins", "games": 11, "points": 14, "goals": 4, "assists": 10, "pv": 3}
 {"name": "Patric Hornqvist", "p_id": 8471887, "pos": "F", "number": "72", "team": "Pittsburgh Penguins", "games": 11, "points": 8, "goals": 5, "assists": 3, "pv": 2}
 {"name": "Teddy Blueger", "p_id": 8476927, "pos": "F", "number": "53", "team": "Pittsburgh Penguins", "games": 11, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Joseph Blandisi", "p_id": 8477010, "pos": "F", "number": "36", "team": "Pittsburgh Penguins", "games": 7, "points": 2, "goals": 1, "assists": 1, "pv": 1}
-{"name": "Jake Guentzel", "p_id": 8477404, "pos": "F", "number": "59", "team": "Pittsburgh Penguins", "games": 11, "points": 11, "goals": 6, "assists": 5, "pv": 2}
+{"name": "Jake Guentzel", "p_id": 8477404, "pos": "F", "number": "59", "team": "Pittsburgh Penguins", "games": 11, "points": 11, "goals": 6, "assists": 5, "pv": 3}
 {"name": "Jared McCann", "p_id": 8477955, "pos": "F", "number": "19", "team": "Pittsburgh Penguins", "games": 9, "points": 4, "goals": 3, "assists": 1, "pv": 1}
-{"name": "Sam Lafferty", "p_id": 8478043, "pos": "F", "number": "37", "team": "Pittsburgh Penguins", "games": 9, "points": 5, "goals": 3, "assists": 2, "pv": 1}
+{"name": "Sam Lafferty", "p_id": 8478043, "pos": "F", "number": "37", "team": "Pittsburgh Penguins", "games": 9, "points": 5, "goals": 3, "assists": 2, "pv": 2}
 {"name": "Dominik Simon", "p_id": 8478866, "pos": "F", "number": "12", "team": "Pittsburgh Penguins", "games": 11, "points": 6, "goals": 1, "assists": 5, "pv": 1}
 {"name": "Brandon Tanev", "p_id": 8479293, "pos": "F", "number": "13", "team": "Pittsburgh Penguins", "games": 11, "points": 5, "goals": 2, "assists": 3, "pv": 1}
 {"name": "Zach Aston-Reese", "p_id": 8479944, "pos": "F", "number": "46", "team": "Pittsburgh Penguins", "games": 11, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Adam Johnson", "p_id": 8480341, "pos": "F", "number": "47", "team": "Pittsburgh Penguins", "games": 7, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Dominik Kahun", "p_id": 8480946, "pos": "F", "number": "24", "team": "Pittsburgh Penguins", "games": 11, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Matt Murray", "p_id": 8476899, "pos": "G", "number": "30", "team": "Pittsburgh Penguins", "games": 8, "points": 10, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Matt Murray", "p_id": 8476899, "pos": "G", "number": "30", "team": "Pittsburgh Penguins", "games": 8, "points": 10, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Tristan Jarry", "p_id": 8477465, "pos": "G", "number": "35", "team": "Pittsburgh Penguins", "games": 3, "points": 2, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Dalton Prout", "p_id": 8474774, "pos": "D", "number": "5", "team": "San Jose Sharks", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Jacob Middleton", "p_id": 8478136, "pos": "D", "number": "67", "team": "San Jose Sharks", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Brent Burns", "p_id": 8470613, "pos": "D", "number": "88", "team": "San Jose Sharks", "games": 10, "points": 9, "goals": 2, "assists": 7, "pv": 2}
 {"name": "Marc-Edouard Vlasic", "p_id": 8471709, "pos": "D", "number": "44", "team": "San Jose Sharks", "games": 10, "points": 1, "goals": 1, "assists": 0, "pv": 1}
-{"name": "Erik Karlsson", "p_id": 8474578, "pos": "D", "number": "65", "team": "San Jose Sharks", "games": 9, "points": 8, "goals": 1, "assists": 7, "pv": 1}
+{"name": "Erik Karlsson", "p_id": 8474578, "pos": "D", "number": "65", "team": "San Jose Sharks", "games": 9, "points": 8, "goals": 1, "assists": 7, "pv": 2}
 {"name": "Brenden Dillon", "p_id": 8475455, "pos": "D", "number": "4", "team": "San Jose Sharks", "games": 10, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Tim Heed", "p_id": 8475841, "pos": "D", "number": "72", "team": "San Jose Sharks", "games": 6, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Trevor Carrick", "p_id": 8476953, "pos": "D", "number": "47", "team": "San Jose Sharks", "games": 3, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Mario Ferraro", "p_id": 8479983, "pos": "D", "number": "38", "team": "San Jose Sharks", "games": 10, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Joe Thornton", "p_id": 8466138, "pos": "F", "number": "19", "team": "San Jose Sharks", "games": 10, "points": 4, "goals": 0, "assists": 4, "pv": 1}
 {"name": "Patrick Marleau", "p_id": 8466139, "pos": "F", "number": "12", "team": "San Jose Sharks", "games": 6, "points": 6, "goals": 2, "assists": 4, "pv": 2}
-{"name": "Logan Couture", "p_id": 8474053, "pos": "F", "number": "39", "team": "San Jose Sharks", "games": 10, "points": 9, "goals": 1, "assists": 8, "pv": 1}
-{"name": "Evander Kane", "p_id": 8475169, "pos": "F", "number": "9", "team": "San Jose Sharks", "games": 7, "points": 9, "goals": 6, "assists": 3, "pv": 3}
+{"name": "Logan Couture", "p_id": 8474053, "pos": "F", "number": "39", "team": "San Jose Sharks", "games": 10, "points": 9, "goals": 1, "assists": 8, "pv": 2}
+{"name": "Evander Kane", "p_id": 8475169, "pos": "F", "number": "9", "team": "San Jose Sharks", "games": 7, "points": 9, "goals": 6, "assists": 3, "pv": 4}
 {"name": "Marcus Sorensen", "p_id": 8475834, "pos": "F", "number": "20", "team": "San Jose Sharks", "games": 7, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Barclay Goodrow", "p_id": 8476624, "pos": "F", "number": "23", "team": "San Jose Sharks", "games": 10, "points": 3, "goals": 3, "assists": 0, "pv": 1}
 {"name": "Tomas Hertl", "p_id": 8476881, "pos": "F", "number": "48", "team": "San Jose Sharks", "games": 10, "points": 9, "goals": 3, "assists": 6, "pv": 2}
@@ -574,27 +573,26 @@
 {"name": "Jay Bouwmeester", "p_id": 8470151, "pos": "D", "number": "19", "team": "St. Louis Blues", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Carl Gunnarsson", "p_id": 8474125, "pos": "D", "number": "4", "team": "St. Louis Blues", "games": 5, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Robert Bortuzzo", "p_id": 8474145, "pos": "D", "number": "41", "team": "St. Louis Blues", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Alex Pietrangelo", "p_id": 8474565, "pos": "D", "number": "27", "team": "St. Louis Blues", "games": 10, "points": 6, "goals": 4, "assists": 2, "pv": 1}
+{"name": "Alex Pietrangelo", "p_id": 8474565, "pos": "D", "number": "27", "team": "St. Louis Blues", "games": 10, "points": 6, "goals": 4, "assists": 2, "pv": 2}
 {"name": "Justin Faulk", "p_id": 8475753, "pos": "D", "number": "72", "team": "St. Louis Blues", "games": 10, "points": 4, "goals": 0, "assists": 4, "pv": 1}
 {"name": "Colton Parayko", "p_id": 8476892, "pos": "D", "number": "55", "team": "St. Louis Blues", "games": 10, "points": 6, "goals": 0, "assists": 6, "pv": 1}
 {"name": "Vince Dunn", "p_id": 8478407, "pos": "D", "number": "29", "team": "St. Louis Blues", "games": 10, "points": 4, "goals": 2, "assists": 2, "pv": 1}
-{"name": "Jordan Kyrou", "p_id": 8479385, "pos": "F", "number": "33", "team": "St. Louis Blues", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Alexander Steen", "p_id": 8470257, "pos": "F", "number": "20", "team": "St. Louis Blues", "games": 10, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "David Perron", "p_id": 8474102, "pos": "F", "number": "57", "team": "St. Louis Blues", "games": 10, "points": 8, "goals": 5, "assists": 3, "pv": 2}
 {"name": "Tyler Bozak", "p_id": 8475098, "pos": "F", "number": "21", "team": "St. Louis Blues", "games": 10, "points": 4, "goals": 0, "assists": 4, "pv": 1}
-{"name": "Ryan O'Reilly", "p_id": 8475158, "pos": "F", "number": "90", "team": "St. Louis Blues", "games": 10, "points": 8, "goals": 1, "assists": 7, "pv": 1}
+{"name": "Ryan O'Reilly", "p_id": 8475158, "pos": "F", "number": "90", "team": "St. Louis Blues", "games": 10, "points": 8, "goals": 1, "assists": 7, "pv": 2}
 {"name": "Brayden Schenn", "p_id": 8475170, "pos": "F", "number": "10", "team": "St. Louis Blues", "games": 10, "points": 11, "goals": 8, "assists": 3, "pv": 3}
 {"name": "Vladimir Tarasenko", "p_id": 8475765, "pos": "F", "number": "91", "team": "St. Louis Blues", "games": 10, "points": 10, "goals": 3, "assists": 7, "pv": 2}
-{"name": "Jaden Schwartz", "p_id": 8475768, "pos": "F", "number": "17", "team": "St. Louis Blues", "games": 10, "points": 9, "goals": 1, "assists": 8, "pv": 1}
+{"name": "Jaden Schwartz", "p_id": 8475768, "pos": "F", "number": "17", "team": "St. Louis Blues", "games": 10, "points": 9, "goals": 1, "assists": 8, "pv": 2}
 {"name": "Oskar Sundqvist", "p_id": 8476897, "pos": "F", "number": "70", "team": "St. Louis Blues", "games": 10, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Mackenzie MacEachern", "p_id": 8476907, "pos": "F", "number": "28", "team": "St. Louis Blues", "games": 3, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Zach Sanford", "p_id": 8477482, "pos": "F", "number": "12", "team": "St. Louis Blues", "games": 5, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Robby Fabbri", "p_id": 8477952, "pos": "F", "number": "15", "team": "St. Louis Blues", "games": 8, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Ivan Barbashev", "p_id": 8477964, "pos": "F", "number": "49", "team": "St. Louis Blues", "games": 10, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Sammy Blais", "p_id": 8478104, "pos": "F", "number": "9", "team": "St. Louis Blues", "games": 9, "points": 5, "goals": 3, "assists": 2, "pv": 1}
+{"name": "Sammy Blais", "p_id": 8478104, "pos": "F", "number": "9", "team": "St. Louis Blues", "games": 9, "points": 5, "goals": 3, "assists": 2, "pv": 2}
 {"name": "Robert Thomas", "p_id": 8480023, "pos": "F", "number": "18", "team": "St. Louis Blues", "games": 5, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Jake Allen", "p_id": 8474596, "pos": "G", "number": "34", "team": "St. Louis Blues", "games": 2, "points": 2, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Jordan Binnington", "p_id": 8476412, "pos": "G", "number": "50", "team": "St. Louis Blues", "games": 8, "points": 8, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Jordan Binnington", "p_id": 8476412, "pos": "G", "number": "50", "team": "St. Louis Blues", "games": 8, "points": 8, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Braydon Coburn", "p_id": 8470601, "pos": "D", "number": "55", "team": "Tampa Bay Lightning", "games": 9, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Kevin Shattenkirk", "p_id": 8474031, "pos": "D", "number": "22", "team": "Tampa Bay Lightning", "games": 9, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Ryan McDonagh", "p_id": 8474151, "pos": "D", "number": "27", "team": "Tampa Bay Lightning", "games": 9, "points": 3, "goals": 0, "assists": 3, "pv": 1}
@@ -604,7 +602,7 @@
 {"name": "Jan Rutta", "p_id": 8480172, "pos": "D", "number": "44", "team": "Tampa Bay Lightning", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Alex Killorn", "p_id": 8473986, "pos": "F", "number": "17", "team": "Tampa Bay Lightning", "games": 9, "points": 5, "goals": 1, "assists": 4, "pv": 1}
 {"name": "Pat Maroon", "p_id": 8474034, "pos": "F", "number": "14", "team": "Tampa Bay Lightning", "games": 9, "points": 3, "goals": 1, "assists": 2, "pv": 1}
-{"name": "Steven Stamkos", "p_id": 8474564, "pos": "F", "number": "91", "team": "Tampa Bay Lightning", "games": 9, "points": 10, "goals": 4, "assists": 6, "pv": 2}
+{"name": "Steven Stamkos", "p_id": 8474564, "pos": "F", "number": "91", "team": "Tampa Bay Lightning", "games": 9, "points": 10, "goals": 4, "assists": 6, "pv": 3}
 {"name": "Luke Witkowski", "p_id": 8474722, "pos": "F", "number": "28", "team": "Tampa Bay Lightning", "games": 9, "points": 3, "goals": 1, "assists": 2, "pv": 1}
 {"name": "Tyler Johnson", "p_id": 8474870, "pos": "F", "number": "9", "team": "Tampa Bay Lightning", "games": 9, "points": 5, "goals": 2, "assists": 3, "pv": 1}
 {"name": "Ondrej Palat", "p_id": 8476292, "pos": "F", "number": "18", "team": "Tampa Bay Lightning", "games": 9, "points": 4, "goals": 3, "assists": 1, "pv": 1}
@@ -628,22 +626,22 @@
 {"name": "Jason Spezza", "p_id": 8469455, "pos": "F", "number": "19", "team": "Toronto Maple Leafs", "games": 5, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "John Tavares", "p_id": 8475166, "pos": "F", "number": "91", "team": "Toronto Maple Leafs", "games": 8, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Nicholas Shore", "p_id": 8476406, "pos": "F", "number": "26", "team": "Toronto Maple Leafs", "games": 8, "points": 1, "goals": 1, "assists": 0, "pv": 1}
-{"name": "Alexander Kerfoot", "p_id": 8477021, "pos": "F", "number": "15", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 4, "assists": 3, "pv": 1}
+{"name": "Alexander Kerfoot", "p_id": 8477021, "pos": "F", "number": "15", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Andreas Johnsson", "p_id": 8477341, "pos": "F", "number": "18", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 2, "assists": 5, "pv": 1}
 {"name": "Nic Petan", "p_id": 8477464, "pos": "F", "number": "61", "team": "Toronto Maple Leafs", "games": 4, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Frederik Gauthier", "p_id": 8477512, "pos": "F", "number": "33", "team": "Toronto Maple Leafs", "games": 11, "points": 3, "goals": 2, "assists": 1, "pv": 1}
-{"name": "William Nylander", "p_id": 8477939, "pos": "F", "number": "88", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 1}
-{"name": "Kasperi Kapanen", "p_id": 8477953, "pos": "F", "number": "24", "team": "Toronto Maple Leafs", "games": 11, "points": 8, "goals": 3, "assists": 5, "pv": 1}
+{"name": "William Nylander", "p_id": 8477939, "pos": "F", "number": "88", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 2}
+{"name": "Kasperi Kapanen", "p_id": 8477953, "pos": "F", "number": "24", "team": "Toronto Maple Leafs", "games": 11, "points": 8, "goals": 3, "assists": 5, "pv": 2}
 {"name": "Mitchell Marner", "p_id": 8478483, "pos": "F", "number": "16", "team": "Toronto Maple Leafs", "games": 11, "points": 12, "goals": 3, "assists": 9, "pv": 2}
 {"name": "Dmytro Timashov", "p_id": 8478857, "pos": "F", "number": "41", "team": "Toronto Maple Leafs", "games": 8, "points": 4, "goals": 1, "assists": 3, "pv": 1}
-{"name": "Auston Matthews", "p_id": 8479318, "pos": "F", "number": "34", "team": "Toronto Maple Leafs", "games": 11, "points": 11, "goals": 8, "assists": 3, "pv": 2}
+{"name": "Auston Matthews", "p_id": 8479318, "pos": "F", "number": "34", "team": "Toronto Maple Leafs", "games": 11, "points": 11, "goals": 8, "assists": 3, "pv": 3}
 {"name": "Trevor Moore", "p_id": 8479675, "pos": "F", "number": "42", "team": "Toronto Maple Leafs", "games": 11, "points": 5, "goals": 3, "assists": 2, "pv": 1}
-{"name": "Ilya Mikheyev", "p_id": 8481624, "pos": "F", "number": "65", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 1}
+{"name": "Ilya Mikheyev", "p_id": 8481624, "pos": "F", "number": "65", "team": "Toronto Maple Leafs", "games": 11, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Michael Hutchinson", "p_id": 8474636, "pos": "G", "number": "30", "team": "Toronto Maple Leafs", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Frederik Andersen", "p_id": 8475883, "pos": "G", "number": "31", "team": "Toronto Maple Leafs", "games": 8, "points": 10, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Oscar Fantenberg", "p_id": 8480147, "pos": "D", "number": "5", "team": "Vancouver Canucks", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Ashton Sautner", "p_id": 8477085, "pos": "D", "number": "29", "team": "Vancouver Canucks", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Alexander Edler", "p_id": 8471303, "pos": "D", "number": "23", "team": "Vancouver Canucks", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 1}
+{"name": "Alexander Edler", "p_id": 8471303, "pos": "D", "number": "23", "team": "Vancouver Canucks", "games": 9, "points": 6, "goals": 3, "assists": 3, "pv": 2}
 {"name": "Tyler Myers", "p_id": 8474574, "pos": "D", "number": "57", "team": "Vancouver Canucks", "games": 9, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Jordie Benn", "p_id": 8474818, "pos": "D", "number": "4", "team": "Vancouver Canucks", "games": 9, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Christopher Tanev", "p_id": 8475690, "pos": "D", "number": "8", "team": "Vancouver Canucks", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
@@ -655,13 +653,13 @@
 {"name": "Jay Beagle", "p_id": 8474291, "pos": "F", "number": "83", "team": "Vancouver Canucks", "games": 9, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Micheal Ferland", "p_id": 8475907, "pos": "F", "number": "79", "team": "Vancouver Canucks", "games": 9, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Josh Leivo", "p_id": 8476410, "pos": "F", "number": "17", "team": "Vancouver Canucks", "games": 9, "points": 4, "goals": 1, "assists": 3, "pv": 1}
-{"name": "J.T. Miller", "p_id": 8476468, "pos": "F", "number": "9", "team": "Vancouver Canucks", "games": 9, "points": 10, "goals": 4, "assists": 6, "pv": 2}
+{"name": "J.T. Miller", "p_id": 8476468, "pos": "F", "number": "9", "team": "Vancouver Canucks", "games": 9, "points": 10, "goals": 4, "assists": 6, "pv": 3}
 {"name": "Tanner Pearson", "p_id": 8476871, "pos": "F", "number": "70", "team": "Vancouver Canucks", "games": 9, "points": 4, "goals": 2, "assists": 2, "pv": 1}
 {"name": "Tim Schaller", "p_id": 8477213, "pos": "F", "number": "59", "team": "Vancouver Canucks", "games": 9, "points": 1, "goals": 1, "assists": 0, "pv": 1}
 {"name": "Tyler Motte", "p_id": 8477353, "pos": "F", "number": "64", "team": "Vancouver Canucks", "games": 5, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Bo Horvat", "p_id": 8477500, "pos": "F", "number": "53", "team": "Vancouver Canucks", "games": 9, "points": 6, "goals": 5, "assists": 1, "pv": 2}
 {"name": "Jake Virtanen", "p_id": 8477937, "pos": "F", "number": "18", "team": "Vancouver Canucks", "games": 9, "points": 3, "goals": 1, "assists": 2, "pv": 1}
-{"name": "Brock Boeser", "p_id": 8478444, "pos": "F", "number": "6", "team": "Vancouver Canucks", "games": 9, "points": 7, "goals": 2, "assists": 5, "pv": 1}
+{"name": "Brock Boeser", "p_id": 8478444, "pos": "F", "number": "6", "team": "Vancouver Canucks", "games": 9, "points": 7, "goals": 2, "assists": 5, "pv": 2}
 {"name": "Elias Pettersson", "p_id": 8480012, "pos": "F", "number": "40", "team": "Vancouver Canucks", "games": 9, "points": 10, "goals": 2, "assists": 8, "pv": 2}
 {"name": "Zane McIntyre", "p_id": 8475876, "pos": "G", "number": "31", "team": "Vancouver Canucks", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Jacob Markstrom", "p_id": 8474593, "pos": "G", "number": "25", "team": "Vancouver Canucks", "games": 6, "points": 8, "goals": 0, "assists": 0, "pv": 1}
@@ -681,37 +679,37 @@
 {"name": "Reilly Smith", "p_id": 8475191, "pos": "F", "number": "19", "team": "Vegas Golden Knights", "games": 11, "points": 8, "goals": 7, "assists": 1, "pv": 2}
 {"name": "Brandon Pirri", "p_id": 8475204, "pos": "F", "number": "73", "team": "Vegas Golden Knights", "games": 8, "points": 1, "goals": 0, "assists": 1, "pv": 1}
 {"name": "Cody Eakin", "p_id": 8475236, "pos": "F", "number": "21", "team": "Vegas Golden Knights", "games": 7, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Mark Stone", "p_id": 8475913, "pos": "F", "number": "61", "team": "Vegas Golden Knights", "games": 11, "points": 14, "goals": 6, "assists": 8, "pv": 2}
-{"name": "William Karlsson", "p_id": 8476448, "pos": "F", "number": "71", "team": "Vegas Golden Knights", "games": 11, "points": 9, "goals": 1, "assists": 8, "pv": 1}
+{"name": "Mark Stone", "p_id": 8475913, "pos": "F", "number": "61", "team": "Vegas Golden Knights", "games": 11, "points": 14, "goals": 6, "assists": 8, "pv": 3}
+{"name": "William Karlsson", "p_id": 8476448, "pos": "F", "number": "71", "team": "Vegas Golden Knights", "games": 11, "points": 9, "goals": 1, "assists": 8, "pv": 2}
 {"name": "Jonathan Marchessault", "p_id": 8476539, "pos": "F", "number": "81", "team": "Vegas Golden Knights", "games": 11, "points": 6, "goals": 2, "assists": 4, "pv": 1}
 {"name": "William Carrier", "p_id": 8477478, "pos": "F", "number": "28", "team": "Vegas Golden Knights", "games": 11, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Tomas Nosek", "p_id": 8477931, "pos": "F", "number": "92", "team": "Vegas Golden Knights", "games": 11, "points": 4, "goals": 3, "assists": 1, "pv": 1}
 {"name": "Nicolas Roy", "p_id": 8478462, "pos": "F", "number": "10", "team": "Vegas Golden Knights", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Cody Glass", "p_id": 8479996, "pos": "F", "number": "9", "team": "Vegas Golden Knights", "games": 11, "points": 6, "goals": 2, "assists": 4, "pv": 1}
-{"name": "Marc-Andre Fleury", "p_id": 8470594, "pos": "G", "number": "29", "team": "Vegas Golden Knights", "games": 10, "points": 15, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Marc-Andre Fleury", "p_id": 8470594, "pos": "G", "number": "29", "team": "Vegas Golden Knights", "games": 10, "points": 15, "goals": 0, "assists": 0, "pv": 2}
 {"name": "Garret Sparks", "p_id": 8476343, "pos": "G", "number": "40", "team": "Vegas Golden Knights", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Malcolm Subban", "p_id": 8476876, "pos": "G", "number": "30", "team": "Vegas Golden Knights", "games": 1, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "John Carlson", "p_id": 8474590, "pos": "D", "number": "74", "team": "Washington Capitals", "games": 12, "points": 21, "goals": 5, "assists": 16, "pv": 3}
+{"name": "John Carlson", "p_id": 8474590, "pos": "D", "number": "74", "team": "Washington Capitals", "games": 12, "points": 21, "goals": 5, "assists": 16, "pv": 4}
 {"name": "Dmitry Orlov", "p_id": 8475200, "pos": "D", "number": "9", "team": "Washington Capitals", "games": 12, "points": 5, "goals": 1, "assists": 4, "pv": 1}
 {"name": "Nick Jensen", "p_id": 8475324, "pos": "D", "number": "3", "team": "Washington Capitals", "games": 12, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Radko Gudas", "p_id": 8475462, "pos": "D", "number": "33", "team": "Washington Capitals", "games": 12, "points": 3, "goals": 0, "assists": 3, "pv": 1}
 {"name": "Tyler Lewington", "p_id": 8477343, "pos": "D", "number": "78", "team": "Washington Capitals", "games": 5, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Jonas Siegenthaler", "p_id": 8478399, "pos": "D", "number": "34", "team": "Washington Capitals", "games": 12, "points": 2, "goals": 0, "assists": 2, "pv": 1}
-{"name": "Michal Kempny", "p_id": 8479482, "pos": "D", "number": "6", "team": "Washington Capitals", "games": 4, "points": 3, "goals": 1, "assists": 2, "pv": 1}
+{"name": "Michal Kempny", "p_id": 8479482, "pos": "D", "number": "6", "team": "Washington Capitals", "games": 4, "points": 3, "goals": 1, "assists": 2, "pv": 2}
 {"name": "Richard Panik", "p_id": 8475209, "pos": "F", "number": "14", "team": "Washington Capitals", "games": 8, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Alex Ovechkin", "p_id": 8471214, "pos": "F", "number": "8", "team": "Washington Capitals", "games": 12, "points": 14, "goals": 9, "assists": 5, "pv": 3}
 {"name": "T.J. Oshie", "p_id": 8471698, "pos": "F", "number": "77", "team": "Washington Capitals", "games": 12, "points": 10, "goals": 7, "assists": 3, "pv": 2}
-{"name": "Nicklas Backstrom", "p_id": 8473563, "pos": "F", "number": "19", "team": "Washington Capitals", "games": 12, "points": 9, "goals": 2, "assists": 7, "pv": 1}
+{"name": "Nicklas Backstrom", "p_id": 8473563, "pos": "F", "number": "19", "team": "Washington Capitals", "games": 12, "points": 9, "goals": 2, "assists": 7, "pv": 2}
 {"name": "Carl Hagelin", "p_id": 8474176, "pos": "F", "number": "62", "team": "Washington Capitals", "games": 12, "points": 4, "goals": 0, "assists": 4, "pv": 1}
-{"name": "Lars Eller", "p_id": 8474189, "pos": "F", "number": "20", "team": "Washington Capitals", "games": 12, "points": 8, "goals": 3, "assists": 5, "pv": 1}
+{"name": "Lars Eller", "p_id": 8474189, "pos": "F", "number": "20", "team": "Washington Capitals", "games": 12, "points": 8, "goals": 3, "assists": 5, "pv": 2}
 {"name": "Nic Dowd", "p_id": 8475343, "pos": "F", "number": "26", "team": "Washington Capitals", "games": 9, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Evgeny Kuznetsov", "p_id": 8475744, "pos": "F", "number": "92", "team": "Washington Capitals", "games": 9, "points": 7, "goals": 3, "assists": 4, "pv": 2}
 {"name": "Travis Boyd", "p_id": 8476329, "pos": "F", "number": "72", "team": "Washington Capitals", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Tom Wilson", "p_id": 8476880, "pos": "F", "number": "43", "team": "Washington Capitals", "games": 12, "points": 7, "goals": 4, "assists": 3, "pv": 1}
+{"name": "Tom Wilson", "p_id": 8476880, "pos": "F", "number": "43", "team": "Washington Capitals", "games": 12, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Brendan Leipsic", "p_id": 8476894, "pos": "F", "number": "28", "team": "Washington Capitals", "games": 12, "points": 2, "goals": 0, "assists": 2, "pv": 1}
 {"name": "Chandler Stephenson", "p_id": 8476905, "pos": "F", "number": "18", "team": "Washington Capitals", "games": 10, "points": 2, "goals": 1, "assists": 1, "pv": 1}
 {"name": "Garnet Hathaway", "p_id": 8477903, "pos": "F", "number": "21", "team": "Washington Capitals", "games": 12, "points": 5, "goals": 2, "assists": 3, "pv": 1}
-{"name": "Jakub Vrana", "p_id": 8477944, "pos": "F", "number": "13", "team": "Washington Capitals", "games": 12, "points": 7, "goals": 4, "assists": 3, "pv": 1}
+{"name": "Jakub Vrana", "p_id": 8477944, "pos": "F", "number": "13", "team": "Washington Capitals", "games": 12, "points": 7, "goals": 4, "assists": 3, "pv": 2}
 {"name": "Braden Holtby", "p_id": 8474651, "pos": "G", "number": "70", "team": "Washington Capitals", "games": 9, "points": 8, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Ilya Samsonov", "p_id": 8478492, "pos": "G", "number": "30", "team": "Washington Capitals", "games": 4, "points": 6, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Nathan Beaulieu", "p_id": 8476470, "pos": "D", "number": "88", "team": "Winnipeg Jets", "games": 0, "points": 0, "goals": 0, "assists": 0, "pv": 1}
@@ -730,7 +728,7 @@
 {"name": "Mathieu Perreault", "p_id": 8473618, "pos": "F", "number": "85", "team": "Winnipeg Jets", "games": 11, "points": 3, "goals": 2, "assists": 1, "pv": 1}
 {"name": "Gabriel Bourque", "p_id": 8475268, "pos": "F", "number": "57", "team": "Winnipeg Jets", "games": 11, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Adam Lowry", "p_id": 8476392, "pos": "F", "number": "17", "team": "Winnipeg Jets", "games": 11, "points": 0, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Mark Scheifele", "p_id": 8476460, "pos": "F", "number": "55", "team": "Winnipeg Jets", "games": 11, "points": 12, "goals": 4, "assists": 8, "pv": 2}
+{"name": "Mark Scheifele", "p_id": 8476460, "pos": "F", "number": "55", "team": "Winnipeg Jets", "games": 11, "points": 12, "goals": 4, "assists": 8, "pv": 3}
 {"name": "Andrew Copp", "p_id": 8477429, "pos": "F", "number": "9", "team": "Winnipeg Jets", "games": 11, "points": 3, "goals": 1, "assists": 2, "pv": 1}
 {"name": "Nikolaj Ehlers", "p_id": 8477940, "pos": "F", "number": "27", "team": "Winnipeg Jets", "games": 11, "points": 10, "goals": 4, "assists": 6, "pv": 2}
 {"name": "Kyle Connor", "p_id": 8478398, "pos": "F", "number": "81", "team": "Winnipeg Jets", "games": 11, "points": 5, "goals": 4, "assists": 1, "pv": 1}
@@ -739,4 +737,4 @@
 {"name": "Patrik Laine", "p_id": 8479339, "pos": "F", "number": "29", "team": "Winnipeg Jets", "games": 11, "points": 12, "goals": 3, "assists": 9, "pv": 2}
 {"name": "David Gustafsson", "p_id": 8481019, "pos": "F", "number": "19", "team": "Winnipeg Jets", "games": 4, "points": 0, "goals": 0, "assists": 0, "pv": 1}
 {"name": "Laurent Brossoit", "p_id": 8476316, "pos": "G", "number": "30", "team": "Winnipeg Jets", "games": 3, "points": 2, "goals": 0, "assists": 0, "pv": 1}
-{"name": "Connor Hellebuyck", "p_id": 8476945, "pos": "G", "number": "37", "team": "Winnipeg Jets", "games": 8, "points": 9, "goals": 0, "assists": 0, "pv": 1}
+{"name": "Connor Hellebuyck", "p_id": 8476945, "pos": "G", "number": "37", "team": "Winnipeg Jets", "games": 8, "points": 9, "goals": 0, "assists": 0, "pv": 2}

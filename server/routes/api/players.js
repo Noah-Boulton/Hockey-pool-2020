@@ -14,13 +14,12 @@ cron.schedule('0 * * * *', () => {
 });
 
 cron.schedule('45 * * * *', () => {
-    console.log("Updating players");
-    updateGoaliePoints();
+    console.log("Updating goalies");
+    updatePlayers();
 });
 
 // Get Players
 router.get('/', async (req, res) => {
-
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
     const players = client.db('players').collection('players');
     res.send(await players.find({}).toArray());
@@ -128,6 +127,12 @@ async function updateGoaliePoints(){
                 //Use each games scoring plays to check for goalie points 
                 const gameURL = `https://statsapi.web.nhl.com${game.link}`;
                 const gameres = await axios.get(gameURL).catch((err) => console.error(err));
+                if(res.err){
+                    return;
+                }
+                if(!gameres || !gameres.data){
+                    return;
+                }
                 const gameData = gameres.data;
                 const scoringPlays = gameData.liveData.plays.scoringPlays;
                 scoringPlays.forEach(play => {
