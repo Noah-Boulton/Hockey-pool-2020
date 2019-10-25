@@ -20,12 +20,14 @@ npm run serve
 ## TODO
 - [ ] Add eliminated tag to each player on a team so the player image can be updated with "Hosed" stamp
 - [ ] Style soundcloud page
-- [ ] Fix player and team update errors to reduce database calls
-- [ ] Add rink display for each team either in a horizontal gallery and/or on the team submission
+- [ ] Add new display for each team 
 - [ ] Most importantly add Easter eggs all over the site
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Figure out how to track goalie goals and assists
-- [ ] Add signature to automated team submission email
+- [ ] Figure out how to send email from the user submitted email
+- [ ] Make hockey card layout
+- [ ] Make the text larger on standings page and move it beside the image
+- [x] Fix player and team update errors to reduce database calls
 - [x] Add team dropdown on click for each team on the standings page
 - [x] Toggle `data-sort` between `asc` and `desc` (or remove) on `<th>` w/ class `sortable`
 - [x] Style error p element on team submission page
