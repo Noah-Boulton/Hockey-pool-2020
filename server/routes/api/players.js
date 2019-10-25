@@ -76,7 +76,7 @@ async function updatePlayers() {
                     goals = player.goals;
                     assists = player.assists;
                     points = points + goals + assists;
-                    pv = Math.round(((2*data.shutouts + data.wins)/(data.games+1))*2);
+                    pv = Math.round(((2*data.shutouts + data.wins)/(data.games+1))*2.3);
                 } else {
                     // Skater
                     goals = data.goals;
@@ -143,8 +143,18 @@ async function updateGoaliePoints(){
                     })
                 });
             });
-            if(goals != player.goals || assists != player.assists){
+            if(goals > player.goals && assists > player.assists){
                 var newValues = { $set: {goals: goals, assists: assists} };
+                await playersdb.updateOne(query, newValues, (err, res) => {
+                    if (err) throw err;
+                });
+            } else if(goals > player.goals){
+                var newValues = { $set: {goals: goals} };
+                await playersdb.updateOne(query, newValues, (err, res) => {
+                    if (err) throw err;
+                });
+            } else if (assists > player.assists){
+                var newValues = { $set: {assists: assists} };
                 await playersdb.updateOne(query, newValues, (err, res) => {
                     if (err) throw err;
                 });

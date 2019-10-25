@@ -44,17 +44,17 @@ for p_id in player_ids:
             goals = stats['goals']
             assists = stats['assists']
             points = goals + assists
-            pv = round(((2*stats['goals'] + stats['assists'])/(stats['games']+1))*1.5)
+            pv = round(((2*stats['goals'] + stats['assists'])/(stats['games']+1))*1.9)
         elif(pos == "D"):
             goals = stats['goals']
             assists = stats['assists']
             points = goals + assists
-            pv = round(((2*stats['goals'] + stats['assists'])/(stats['games']+1))*1.5)
+            pv = round(((2*stats['goals'] + stats['assists'])/(stats['games']+1))*1.9)
         elif(pos == "G"):
             points = stats['shutouts'] + 2*stats['wins']
             goals = 0
             assists = 0
-            pv = round(((2*stats['shutouts'] + stats['wins'])/(stats['games']+1))*1.8)
+            pv = round(((2*stats['shutouts'] + stats['wins'])/(stats['games']+1))*2.3)
     if(pv > 4):
         pv = 4
     if(pv < 1):
