@@ -33,16 +33,24 @@ for p_id in player_ids:
     stats = requests.get('https://statsapi.web.nhl.com/api/v1/people/' + str(p_id) + '/stats?stats=statsSingleSeason&season=20192020')
     stats = stats.json()
     points = 0
+    goals = 0
+    assists = 0
     if(stats['stats'][0]['splits']):
         stats = stats['stats'][0]['splits'][0]['stat']
         if(pos == "F"):
-            points = stats['goals'] + stats['assists']
+            goals = stats['goals']
+            assists = stats['assists']
+            points = goals + assists
             pv = round(((2*stats['goals'] + stats['assists'])/(stats['games']+1))*1.5)
         elif(pos == "D"):
-            points = stats['goals'] + stats['assists']
+            goals = stats['goals']
+            assists = stats['assists']
+            points = goals + assists
             pv = round(((2*stats['goals'] + stats['assists'])/(stats['games']+1))*1.5)
         elif(pos == "G"):
             points = stats['shutouts'] + 2*stats['wins']
+            goals = 0
+            assists = 0
             pv = round(((2*stats['shutouts'] + stats['wins'])/(stats['games']+1))*1.8)
     if(pv > 4):
         pv = 4
@@ -53,6 +61,8 @@ for p_id in player_ids:
                     "pos":pos,
                     "team":str(player['people'][0]['currentTeam']['name']),
                     "points":points,
+                    "goals":goals,
+                    "assists":assists,
                     "pv":pv})
 
 from operator import itemgetter
