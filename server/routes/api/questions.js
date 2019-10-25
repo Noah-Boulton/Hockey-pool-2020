@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
     let mailOptions = {
         from: req.body.email,
         to: process.env.EMAIL,
-        subject: `Message from ${req.body.name}`,
+        subject: `Message from ${req.body.name}: ${req.body.email}`,
         text: req.body.message
     };
       
