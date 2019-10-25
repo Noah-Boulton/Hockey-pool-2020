@@ -11,6 +11,8 @@
                     <th @click="sort('pos')" class="sortable" v-bind:data-sort="posSort">Position</th>
                     <th @click="sort('team')" class="sortable" v-bind:data-sort="teamSort">Team</th>
                     <th @click="sort('pv')" class="sortable" v-bind:data-sort="pvSort">Player Value</th>
+                    <th @click="sort('goals')" class="sortable" v-bind:data-sort="goalsSort">Goals</th>
+                    <th @click="sort('assists')" class="sortable" v-bind:data-sort="assistsSort">Assists</th>
                     <th @click="sort('points')" class="sortable" v-bind:data-sort="pointsSort">Points</th>
                 </tr>
                 </thead>
@@ -24,6 +26,8 @@
                     <td>{{player.pos}}</td>
                     <td>{{player.team}}</td>
                     <td>{{player.pv}}</td>
+                    <td>{{player.goals}}</td>
+                    <td>{{player.assists}}</td>
                     <td>{{player.points}}</td>
                 </tr>
                 </tbody>
@@ -48,6 +52,8 @@ export default {
       posSort: '',
       teamSort: '',
       pvSort: '',
+      goalsSort: '',
+      assistsSort: '',
       pointsSort: ''
     }
   },
@@ -69,31 +75,59 @@ export default {
       this.posSort = '';
       this.teamSort = '';
       this.pvSort = '';
+      this.goalsSort='';
+      this.assistsSort='';
       this.pointsSort = '';
     } else if(s == 'pos'){
       this.nameSort = '';
       this.posSort = this.currentSortDir;
       this.teamSort = '';
       this.pvSort = '';
+      this.goalsSort='';
+      this.assistsSort='';
       this.pointsSort = '';
     }else if(s == 'team'){
       this.nameSort = '';
       this.posSort = '';
       this.teamSort = this.currentSortDir;
       this.pvSort = '';
+      this.goalsSort='';
+      this.assistsSort='';
       this.pointsSort = '';
     }else if(s == 'pv'){
       this.nameSort = '';
       this.posSort = '';
       this.teamSort = '';
       this.pvSort = this.currentSortDir;
+      this.goalsSort='';
+      this.assistsSort='';
       this.pointsSort = '';
     }else if(s == 'points'){
       this.nameSort = '';
       this.posSort = '';
       this.teamSort = '';
       this.pvSort = '';
+      this.goalsSort='';
+      this.assistsSort='';
       this.pointsSort = this.currentSortDir;
+    }
+    else if(s == 'goals'){
+      this.nameSort = '';
+      this.posSort = '';
+      this.teamSort = '';
+      this.pvSort = '';
+      this.goalsSort=this.currentSortDir;
+      this.assistsSort='';
+      this.pointsSort = '';
+    }
+    else if(s == 'assists'){
+      this.nameSort = '';
+      this.posSort = '';
+      this.teamSort = '';
+      this.pvSort = '';
+      this.goalsSort='';
+      this.assistsSort=this.currentSortDir;
+      this.pointsSort = '';
     }
     this.currentSort = s;
     }

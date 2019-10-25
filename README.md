@@ -23,10 +23,9 @@ npm run serve
 - [ ] Add new display for each team 
 - [ ] Most importantly add Easter eggs all over the site
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
-- [ ] Figure out how to track goalie goals and assists
-- [ ] Figure out how to send email from the user submitted email
 - [ ] Make hockey card layout
 - [ ] Make the text larger on standings page and move it beside the image
+- [x] Figure out how to track goalie goals and assists
 - [x] Fix player and team update errors to reduce database calls
 - [x] Add team dropdown on click for each team on the standings page
 - [x] Toggle `data-sort` between `asc` and `desc` (or remove) on `<th>` w/ class `sortable`
