@@ -64,6 +64,7 @@ async function updatePlayers() {
                 var goals = 0;
                 var assists = 0;
                 var pv = 1;
+                var games = data.games;
                 if(data.wins){
                     // Goalie
                     points = 2*data.wins;
@@ -93,7 +94,7 @@ async function updatePlayers() {
                     pv = 4;
                 }
                 if(points != player.points || pv != player.pv){
-                    var newValues = { $set: {points: points, goals: goals, assists: assists, pv: pv} };
+                    var newValues = { $set: {points: points, goals: goals, assists: assists, pv: pv, games: games} };
                     await playersdb.updateOne(query, newValues, (err, res) => {
                         if (err) throw err;
                     });

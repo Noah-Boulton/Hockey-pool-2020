@@ -25,6 +25,7 @@ for p_id in player_ids:
     player = player.json()
     pos = "F"
     pv = 1
+    number = player['people'][0]['primaryNumber']
     if(player['people'][0]['primaryPosition']['type'] == 'Defenseman'):
         pos = "D"
     if(player['people'][0]['primaryPosition']['type'] == 'Goalie'):
@@ -35,8 +36,10 @@ for p_id in player_ids:
     points = 0
     goals = 0
     assists = 0
+    games = 0
     if(stats['stats'][0]['splits']):
         stats = stats['stats'][0]['splits'][0]['stat']
+        games = stats['games']
         if(pos == "F"):
             goals = stats['goals']
             assists = stats['assists']
@@ -59,7 +62,9 @@ for p_id in player_ids:
     players.append({"name":str(player['people'][0]['fullName']),
                     "p_id":p_id,
                     "pos":pos,
+                    "number":number,
                     "team":str(player['people'][0]['currentTeam']['name']),
+                    "games":games,
                     "points":points,
                     "goals":goals,
                     "assists":assists,
