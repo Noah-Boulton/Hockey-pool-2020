@@ -64,7 +64,7 @@ async function updatePlayers() {
                 var assists = 0;
                 var pv = 1;
                 var games = data.games;
-                if(data.wins){
+                if(player.pos == "G"){
                     // Goalie
                     points = 2*data.wins;
                     if(data.shutouts){
