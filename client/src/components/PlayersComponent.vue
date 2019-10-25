@@ -10,7 +10,7 @@
                     <th @click="sort('name')" class="sortable" v-bind:data-sort="nameSort">Player</th>
                     <th @click="sort('pos')" class="sortable" v-bind:data-sort="posSort">Position</th>
                     <th @click="sort('team')" class="sortable" v-bind:data-sort="teamSort">Team</th>
-                    <th @click="sort('pv')" class="sortable" v-bind:data-sort="pvSort">Point Value</th>
+                    <th @click="sort('pv')" class="sortable" v-bind:data-sort="pvSort">Player Value</th>
                     <th @click="sort('points')" class="sortable" v-bind:data-sort="pointsSort">Points</th>
                 </tr>
                 </thead>
