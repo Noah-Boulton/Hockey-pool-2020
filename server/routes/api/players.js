@@ -15,7 +15,7 @@ cron.schedule('0 * * * *', () => {
 
 cron.schedule('45 * * * *', () => {
     console.log("Updating goalies");
-    updatePlayers();
+    updateGoaliePoints();
 });
 
 // Get Players
