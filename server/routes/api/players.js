@@ -13,7 +13,7 @@ cron.schedule('0 * * * *', () => {
     updatePlayers();
 });
 
-cron.schedule('45 * * * *', () => {
+cron.schedule('0 8 * * *', () => {
     console.log("Updating goalies");
     updateGoaliePoints();
 });
@@ -110,60 +110,77 @@ async function updateGoaliePoints(){
     try {
         const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
         const playersdb = client.db('players').collection('players');
-        const players = await playersdb.find({}).toArray();
-        players.forEach(async (player) => {
-            if(player.pos != "G"){
-                return;
-            }
-            const query = {p_id : player.p_id};
+        var players = await playersdb.find({}).toArray();
+        players = players.filter(player => player.pos == "G");
 
-            const url = 'https://statsapi.web.nhl.com/api/v1/schedule';
-            const res = await axios.get(url).catch((err) => console.error(err));
-            const games = res.data.dates[0].games;
-            //Get all the game links for the current day
-            var goals = player.goals;
-            var assists = player.assists;
-            games.forEach(async game => {
-                //Use each games scoring plays to check for goalie points 
-                const gameURL = `https://statsapi.web.nhl.com${game.link}`;
-                const gameres = await axios.get(gameURL).catch((err) => console.error(err));
-                if(res.err){
-                    return;
-                }
-                if(!gameres || !gameres.data){
-                    return;
-                }
-                const gameData = gameres.data;
-                const scoringPlays = gameData.liveData.plays.scoringPlays;
-                scoringPlays.forEach(play => {
-                    const data = gameData.liveData.plays.allPlays[play];
-                    data.players.forEach(skater => {
-                        if(skater.player.id == player.p_id){
-                            if(skater.playerType == "Scorer"){
-                                goals++;
-                            } else if(skater.playerType == "Assist") {
-                                assists++;
-                            }
-                        }
-                    })
+        var d = new Date();
+        d.setDate(d.getDate() - 1); //Yesterday
+        const url = `https://statsapi.web.nhl.com/api/v1/schedule?date=${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+        const res = await axios.get(url).catch((error) => {
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                console.log(error.response.data);
+                console.log(error.response.status);
+                console.log(error.response.headers);
+              } else if (error.request) {
+                // The request was made but no response was received
+                // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+                // http.ClientRequest in node.js
+                console.log(error.request);
+              } else {
+                // Something happened in setting up the request that triggered an Error
+                console.log('Error', error.message);
+              }
+            return;
+        });
+        const games = res.data.dates[0].games;
+        //Get all the game links for the current day
+        games.forEach(async game => {
+            //Use each games scoring plays to check for goalie points 
+            const gameURL = `https://statsapi.web.nhl.com${game.link}`;
+            const gameres = await axios.get(gameURL).catch((error) => {
+                if (error.response) {
+                    // The request was made and the server responded with a status code
+                    // that falls out of the range of 2xx
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                    console.log(error.response.headers);
+                  } else if (error.request) {
+                    // The request was made but no response was received
+                    // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+                    // http.ClientRequest in node.js
+                    console.log(error.request);
+                  } else {
+                    // Something happened in setting up the request that triggered an Error
+                    console.log('Error', error.message);
+                  }
+                return;
+            });
+            const gameData = gameres.data;
+            const scoringPlays = gameData.liveData.plays.scoringPlays;
+            scoringPlays.forEach(play => {
+                const data = gameData.liveData.plays.allPlays[play];
+                data.players.forEach( async skater => {
+                    //Look at all the skaters for each scoring play
+                    const index = players.findIndex(player => player.p_id == skater.player.id);
+                    if(index == -1){
+                        return;
+                    }
+                    const query = {p_id : skater.player.id};
+                    if(skater.playerType == "Scorer"){
+                        var newValues = { $set: {goals: players[index].goals+1, points: players[index].points+1} };
+                        await playersdb.updateOne(query, newValues, (err, res) => {
+                            if (err) throw err;
+                        });
+                    } else if(skater.playerType == "Assist") {
+                        var newValues = { $set: {assists: players[index].assists+1, points: players[index].points+1} };
+                        await playersdb.updateOne(query, newValues, (err, res) => {
+                            if (err) throw err;
+                        });
+                    }
                 });
             });
-            if(goals > player.goals && assists > player.assists){
-                var newValues = { $set: {goals: goals, assists: assists} };
-                await playersdb.updateOne(query, newValues, (err, res) => {
-                    if (err) throw err;
-                });
-            } else if(goals > player.goals){
-                var newValues = { $set: {goals: goals} };
-                await playersdb.updateOne(query, newValues, (err, res) => {
-                    if (err) throw err;
-                });
-            } else if (assists > player.assists){
-                var newValues = { $set: {assists: assists} };
-                await playersdb.updateOne(query, newValues, (err, res) => {
-                    if (err) throw err;
-                });
-            }
         });
         client.close();
     }catch(e){
