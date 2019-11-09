@@ -75,7 +75,7 @@ async function updatePlayers() {
                     goals = player.goals;
                     assists = player.assists;
                     points = points + goals + assists;
-                    pv = Math.round(((2*data.shutouts + data.wins)/(data.games+1))*2.3);
+                    pv = Math.round(((2*data.shutouts + data.wins)/(data.games+1))*2.75);
                 } else {
                     // Skater
                     goals = data.goals;
