@@ -1,0 +1,741 @@
+_id,name,p_id,pos,number,team,games,points,goals,assists,pv
+ObjectId("5db5c95e3f0b6f443efe20e2"),Morgan Miles,1,F,99,Victoria Cougars,69,0,0,0,5
+ObjectId("5db5c95e3f0b6f443efe20e3"),Korbinian Holzer,8473560,D,5,Anaheim Ducks,13,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe20e4"),Michael Del Zotto,8474584,D,44,Anaheim Ducks,16,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe20e5"),Cam Fowler,8475764,D,4,Anaheim Ducks,25,13,5,8,1
+ObjectId("5db5c95e3f0b6f443efe20e6"),Josh Manson,8476312,D,42,Anaheim Ducks,11,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe20e7"),Hampus Lindholm,8476854,D,47,Anaheim Ducks,12,9,0,9,1
+ObjectId("5db5c95e3f0b6f443efe20e8"),Brendan Guhle,8478425,D,2,Anaheim Ducks,6,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe20e9"),Jacob Larsson,8478491,D,32,Anaheim Ducks,21,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe20ea"),Ryan Getzlaf,8470612,F,15,Anaheim Ducks,25,19,9,10,2
+ObjectId("5db5c95e3f0b6f443efe20eb"),Adam Henrique,8474641,F,14,Anaheim Ducks,20,14,8,6,2
+ObjectId("5db5c95e3f0b6f443efe20ec"),Derek Grant,8474683,F,38,Anaheim Ducks,24,9,6,3,1
+ObjectId("5db5c95e3f0b6f443efe20ed"),Jakob Silfverberg,8475164,F,33,Anaheim Ducks,23,18,9,9,2
+ObjectId("5db5c95e3f0b6f443efe20ee"),Nicolas Deslauriers,8475235,F,20,Anaheim Ducks,11,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe20ef"),Rickard Rakell,8476483,F,67,Anaheim Ducks,24,17,8,9,2
+ObjectId("5db5c95e3f0b6f443efe20f0"),Devin Shore,8476913,F,29,Anaheim Ducks,12,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe20f1"),Carter Rowney,8477240,F,24,Anaheim Ducks,20,6,4,2,1
+ObjectId("5db5c95e3f0b6f443efe20f2"),Nick Ritchie,8477941,F,37,Anaheim Ducks,21,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe20f3"),Ondrej Kase,8478131,F,25,Anaheim Ducks,19,10,3,7,1
+ObjectId("5db5c95e3f0b6f443efe20f4"),Troy Terry,8478873,F,61,Anaheim Ducks,24,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe20f5"),Sam Steel,8479351,F,34,Anaheim Ducks,18,9,1,8,1
+ObjectId("5db5c95e3f0b6f443efe20f6"),Max Jones,8479368,F,49,Anaheim Ducks,19,5,3,2,1
+ObjectId("5db5c95e3f0b6f443efe20f7"),Max Comtois,8480031,F,53,Anaheim Ducks,9,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe20f8"),Ryan Miller,8468011,G,30,Anaheim Ducks,4,7,0,1,1
+ObjectId("5db5c95e3f0b6f443efe20f9"),John Gibson,8476434,G,36,Anaheim Ducks,19,17,0,0,1
+ObjectId("5db5c95e3f0b6f443efe20fa"),Niklas Hjalmarsson,8471769,D,4,Arizona Coyotes,4,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe20fb"),Jordan Oesterle,8477851,D,82,Arizona Coyotes,15,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe20fc"),Alex Goligoski,8471274,D,33,Arizona Coyotes,25,14,1,13,1
+ObjectId("5db5c95e3f0b6f443efe20fd"),Jason Demers,8474218,D,55,Arizona Coyotes,10,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe20fe"),Aaron Ness,8474604,D,42,Arizona Coyotes,7,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe20ff"),Oliver Ekman-Larsson,8475171,D,23,Arizona Coyotes,20,9,2,7,1
+ObjectId("5db5c95e3f0b6f443efe2100"),Kyle Capobianco,8478476,D,75,Arizona Coyotes,5,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2101"),Jakob Chychrun,8479345,D,6,Arizona Coyotes,25,9,5,4,1
+ObjectId("5db5c95e3f0b6f443efe2102"),Brad Richardson,8470755,F,15,Arizona Coyotes,11,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2103"),Carl Soderberg,8471262,F,34,Arizona Coyotes,25,12,7,5,1
+ObjectId("5db5c95e3f0b6f443efe2104"),Michael Grabner,8473546,F,40,Arizona Coyotes,23,9,6,3,1
+ObjectId("5db5c95e3f0b6f443efe2105"),Phil Kessel,8473548,F,81,Arizona Coyotes,24,14,4,10,1
+ObjectId("5db5c95e3f0b6f443efe2106"),Derek Stepan,8474613,F,21,Arizona Coyotes,24,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2107"),Vinnie Hinostroza,8476994,F,13,Arizona Coyotes,25,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2108"),Nick Schmaltz,8477951,F,8,Arizona Coyotes,25,19,4,15,2
+ObjectId("5db5c95e3f0b6f443efe2109"),Christian Dvorak,8477989,F,18,Arizona Coyotes,23,12,6,6,1
+ObjectId("5db5c95e3f0b6f443efe210a"),Christian Fischer,8478432,F,36,Arizona Coyotes,24,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe210b"),Lawson Crouse,8478474,F,67,Arizona Coyotes,23,8,5,3,1
+ObjectId("5db5c95e3f0b6f443efe210c"),Conor Garland,8478856,F,83,Arizona Coyotes,22,14,10,4,2
+ObjectId("5db5c95e3f0b6f443efe210d"),Clayton Keller,8479343,F,9,Arizona Coyotes,24,14,4,10,1
+ObjectId("5db5c95e3f0b6f443efe210e"),Barrett Hayton,8480849,F,29,Arizona Coyotes,6,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe210f"),Darcy Kuemper,8475311,G,35,Arizona Coyotes,14,20,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2110"),Antti Raanta,8477293,G,32,Arizona Coyotes,9,11,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2111"),Eric Comrie,8477480,G,1,Arizona Coyotes,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2112"),John Moore,8475186,D,27,Boston Bruins,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2113"),Kevan Miller,8476191,D,86,Boston Bruins,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2114"),Zdeno Chara,8465009,D,33,Boston Bruins,23,10,4,6,1
+ObjectId("5db5c95e3f0b6f443efe2115"),Steven Kampfer,8474000,D,44,Boston Bruins,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2116"),Torey Krug,8476792,D,47,Boston Bruins,18,16,3,13,2
+ObjectId("5db5c95e3f0b6f443efe2117"),Matt Grzelcyk,8476891,D,48,Boston Bruins,22,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe2118"),Connor Clifton,8477365,D,75,Boston Bruins,19,2,2,0,1
+ObjectId("5db5c95e3f0b6f443efe2119"),Brandon Carlo,8478443,D,25,Boston Bruins,19,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe211a"),Charlie McAvoy,8479325,D,73,Boston Bruins,21,7,0,7,1
+ObjectId("5db5c95e3f0b6f443efe211b"),David Krejci,8471276,F,46,Boston Bruins,17,15,4,11,2
+ObjectId("5db5c95e3f0b6f443efe211c"),Patrice Bergeron,8470638,F,37,Boston Bruins,21,24,8,16,3
+ObjectId("5db5c95e3f0b6f443efe211d"),David Backes,8470655,F,42,Boston Bruins,7,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe211e"),Brad Marchand,8473419,F,63,Boston Bruins,23,39,16,23,4
+ObjectId("5db5c95e3f0b6f443efe211f"),Charlie Coyle,8475745,F,13,Boston Bruins,21,11,4,7,1
+ObjectId("5db5c95e3f0b6f443efe2120"),Chris Wagner,8475780,F,14,Boston Bruins,14,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe2121"),Joakim Nordstrom,8475807,F,20,Boston Bruins,7,2,2,0,1
+ObjectId("5db5c95e3f0b6f443efe2122"),Sean Kuraly,8476374,F,52,Boston Bruins,15,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2123"),Brett Ritchie,8476439,F,18,Boston Bruins,15,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe2124"),David Pastrnak,8477956,F,88,Boston Bruins,22,36,20,16,4
+ObjectId("5db5c95e3f0b6f443efe2125"),Danton Heinen,8478046,F,43,Boston Bruins,22,11,4,7,1
+ObjectId("5db5c95e3f0b6f443efe2126"),Jake DeBrusk,8478498,F,74,Boston Bruins,18,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe2127"),Karson Kuhlman,8480901,F,83,Boston Bruins,8,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2128"),Par Lindholm,8480944,F,26,Boston Bruins,5,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2129"),Jaroslav Halak,8470860,G,41,Boston Bruins,6,9,0,0,2
+ObjectId("5db5c95e3f0b6f443efe212a"),Tuukka Rask,8471695,G,40,Boston Bruins,15,24,0,0,3
+ObjectId("5db5c95e3f0b6f443efe212b"),Brandon Montour,8477986,D,62,Buffalo Sabres,9,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe212c"),Matt Hunwick,8471436,D,48,Buffalo Sabres,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe212d"),Zach Bogosian,8474567,D,4,Buffalo Sabres,1,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe212e"),Marco Scandella,8474618,D,6,Buffalo Sabres,11,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe212f"),Colin Miller,8476525,D,33,Buffalo Sabres,11,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe2130"),Jake McCabe,8476931,D,19,Buffalo Sabres,16,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe2131"),John Gilmour,8477337,D,58,Buffalo Sabres,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2132"),Rasmus Ristolainen,8477499,D,55,Buffalo Sabres,22,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe2133"),Henri Jokiharju,8480035,D,10,Buffalo Sabres,18,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe2134"),Rasmus Dahlin,8480839,D,26,Buffalo Sabres,23,16,1,15,1
+ObjectId("5db5c95e3f0b6f443efe2135"),Vladimir Sobotka,8471743,F,17,Buffalo Sabres,13,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe2136"),Kyle Okposo,8473449,F,21,Buffalo Sabres,11,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe2137"),Marcus Johansson,8475149,F,90,Buffalo Sabres,17,10,4,6,1
+ObjectId("5db5c95e3f0b6f443efe2138"),Johan Larsson,8475728,F,22,Buffalo Sabres,18,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe2139"),Jeff Skinner,8475784,F,53,Buffalo Sabres,23,14,9,5,2
+ObjectId("5db5c95e3f0b6f443efe213a"),Zemgus Girgensons,8476878,F,28,Buffalo Sabres,23,6,3,3,1
+ObjectId("5db5c95e3f0b6f443efe213b"),Jimmy Vesey,8476918,F,13,Buffalo Sabres,21,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe213c"),Conor Sheary,8477839,F,43,Buffalo Sabres,19,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe213d"),Sam Reinhart,8477933,F,23,Buffalo Sabres,24,19,9,10,2
+ObjectId("5db5c95e3f0b6f443efe213e"),Victor Olofsson,8478109,F,68,Buffalo Sabres,24,18,8,10,2
+ObjectId("5db5c95e3f0b6f443efe213f"),Jack Eichel,8478403,F,9,Buffalo Sabres,24,30,14,16,3
+ObjectId("5db5c95e3f0b6f443efe2140"),Evan Rodrigues,8478542,F,71,Buffalo Sabres,9,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2141"),Casey Mittelstadt,8479999,F,37,Buffalo Sabres,12,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe2142"),Carter Hutton,8475622,G,40,Buffalo Sabres,11,14,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2143"),Linus Ullmark,8476999,G,35,Buffalo Sabres,11,11,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2144"),Juuso Valimaki,8479976,D,8,Calgary Flames,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2145"),Mark Giordano,8470966,D,5,Calgary Flames,21,13,4,9,1
+ObjectId("5db5c95e3f0b6f443efe2146"),Travis Hamonic,8474612,D,24,Calgary Flames,20,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2147"),Michael Stone,8474628,D,26,Calgary Flames,5,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2148"),TJ Brodie,8474673,D,7,Calgary Flames,19,8,0,8,1
+ObjectId("5db5c95e3f0b6f443efe2149"),Noah Hanifin,8478396,D,55,Calgary Flames,19,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe214a"),Rasmus Andersson,8478397,D,4,Calgary Flames,27,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe214b"),Oliver Kylington,8478430,D,58,Calgary Flames,17,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe214c"),Milan Lucic,8473473,F,17,Calgary Flames,22,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe214d"),Michael Frolik,8473564,F,67,Calgary Flames,12,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe214e"),Mikael Backlund,8474150,F,11,Calgary Flames,26,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe214f"),Johnny Gaudreau,8476346,F,13,Calgary Flames,27,20,5,15,2
+ObjectId("5db5c95e3f0b6f443efe2150"),Tobias Rieder,8476356,F,16,Calgary Flames,8,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2151"),Mark Jankowski,8476873,F,77,Calgary Flames,11,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2152"),Elias Lindholm,8477496,F,28,Calgary Flames,26,18,11,7,2
+ObjectId("5db5c95e3f0b6f443efe2153"),Sean Monahan,8477497,F,23,Calgary Flames,27,19,6,13,2
+ObjectId("5db5c95e3f0b6f443efe2154"),Sam Bennett,8477935,F,93,Calgary Flames,17,5,3,2,1
+ObjectId("5db5c95e3f0b6f443efe2155"),Andrew Mangiapane,8478233,F,88,Calgary Flames,24,9,5,4,1
+ObjectId("5db5c95e3f0b6f443efe2156"),Austin Czarnik,8478512,F,27,Calgary Flames,8,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe2157"),Derek Ryan,8478585,F,10,Calgary Flames,27,11,4,7,1
+ObjectId("5db5c95e3f0b6f443efe2158"),Matthew Tkachuk,8479314,F,19,Calgary Flames,27,21,10,11,2
+ObjectId("5db5c95e3f0b6f443efe2159"),Cam Talbot,8475660,G,39,Calgary Flames,4,2,0,0,1
+ObjectId("5db5c95e3f0b6f443efe215a"),David Rittich,8479496,G,33,Calgary Flames,20,22,0,0,2
+ObjectId("5db5c95e3f0b6f443efe215b"),Jake Gardiner,8474581,D,51,Carolina Hurricanes,18,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe215c"),Joel Edmundson,8476441,D,6,Carolina Hurricanes,23,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe215d"),Dougie Hamilton,8476462,D,19,Carolina Hurricanes,23,25,10,15,3
+ObjectId("5db5c95e3f0b6f443efe215e"),Jaccob Slavin,8476958,D,74,Carolina Hurricanes,23,13,2,11,1
+ObjectId("5db5c95e3f0b6f443efe215f"),Brett Pesce,8477488,D,22,Carolina Hurricanes,23,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe2160"),Trevor van Riemsdyk,8477845,D,57,Carolina Hurricanes,7,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2161"),Haydn Fleury,8477938,D,4,Carolina Hurricanes,12,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe2162"),Jordan Martinook,8476921,F,48,Carolina Hurricanes,5,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2163"),Jordan Staal,8473533,F,11,Carolina Hurricanes,20,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe2164"),Erik Haula,8475287,F,56,Carolina Hurricanes,14,11,8,3,2
+ObjectId("5db5c95e3f0b6f443efe2165"),Nino Niederreiter,8475799,F,21,Carolina Hurricanes,21,10,3,7,1
+ObjectId("5db5c95e3f0b6f443efe2166"),Ryan Dzingel,8476288,F,18,Carolina Hurricanes,24,15,4,11,1
+ObjectId("5db5c95e3f0b6f443efe2167"),Teuvo Teravainen,8476882,F,86,Carolina Hurricanes,24,26,7,19,3
+ObjectId("5db5c95e3f0b6f443efe2168"),Brock McGinn,8476934,F,23,Carolina Hurricanes,22,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe2169"),Warren Foegele,8477998,F,13,Carolina Hurricanes,20,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe216a"),Lucas Wallmark,8478027,F,71,Carolina Hurricanes,22,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe216b"),Sebastian Aho,8478427,F,20,Carolina Hurricanes,24,20,12,8,2
+ObjectId("5db5c95e3f0b6f443efe216c"),Martin Necas,8480039,F,88,Carolina Hurricanes,23,16,6,10,2
+ObjectId("5db5c95e3f0b6f443efe216d"),Andrei Svechnikov,8480830,F,37,Carolina Hurricanes,24,27,11,16,3
+ObjectId("5db5c95e3f0b6f443efe216e"),James Reimer,8473503,G,47,Carolina Hurricanes,9,9,0,0,2
+ObjectId("5db5c95e3f0b6f443efe216f"),Petr Mrazek,8475852,G,34,Carolina Hurricanes,16,24,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2170"),Connor Murphy,8476473,D,5,Chicago Blackhawks,9,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2171"),Duncan Keith,8470281,D,2,Chicago Blackhawks,15,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe2172"),Brent Seabrook,8470607,D,7,Chicago Blackhawks,20,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe2173"),Calvin de Haan,8475177,D,44,Chicago Blackhawks,16,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2174"),Olli Maatta,8476874,D,6,Chicago Blackhawks,23,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe2175"),Slater Koekkoek,8476886,D,68,Chicago Blackhawks,8,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe2176"),Erik Gustafsson,8476979,D,56,Chicago Blackhawks,20,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe2177"),Dennis Gilbert,8478502,D,39,Chicago Blackhawks,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2178"),Jonathan Toews,8473604,F,19,Chicago Blackhawks,22,12,4,8,1
+ObjectId("5db5c95e3f0b6f443efe2179"),Patrick Kane,8474141,F,88,Chicago Blackhawks,23,30,11,19,3
+ObjectId("5db5c95e3f0b6f443efe217a"),Zack Smith,8474250,F,15,Chicago Blackhawks,13,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe217b"),Andrew Shaw,8476381,F,65,Chicago Blackhawks,22,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe217c"),Brandon Saad,8476438,F,20,Chicago Blackhawks,22,13,6,7,2
+ObjectId("5db5c95e3f0b6f443efe217d"),Dominik Kubalik,8477330,F,8,Chicago Blackhawks,19,9,5,4,1
+ObjectId("5db5c95e3f0b6f443efe217e"),Ryan Carpenter,8477846,F,22,Chicago Blackhawks,17,6,0,6,1
+ObjectId("5db5c95e3f0b6f443efe217f"),Brendan Perlini,8477943,F,11,Chicago Blackhawks,10,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2180"),Dylan Strome,8478440,F,17,Chicago Blackhawks,22,17,5,12,2
+ObjectId("5db5c95e3f0b6f443efe2181"),Alex DeBrincat,8479337,F,12,Chicago Blackhawks,23,18,5,13,2
+ObjectId("5db5c95e3f0b6f443efe2182"),Alex Nylander,8479423,F,92,Chicago Blackhawks,18,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2183"),Drake Caggiula,8479465,F,91,Chicago Blackhawks,15,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe2184"),David Kampf,8480144,F,64,Chicago Blackhawks,19,6,4,2,1
+ObjectId("5db5c95e3f0b6f443efe2185"),Kirby Dach,8481523,F,77,Chicago Blackhawks,15,10,5,5,2
+ObjectId("5db5c95e3f0b6f443efe2186"),Corey Crawford,8470645,G,50,Chicago Blackhawks,10,8,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2187"),Robin Lehner,8475215,G,40,Chicago Blackhawks,11,10,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2188"),Erik Johnson,8473446,D,6,Colorado Avalanche,23,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe2189"),Ian Cole,8474013,D,28,Colorado Avalanche,18,8,0,8,1
+ObjectId("5db5c95e3f0b6f443efe218a"),Mark Barberio,8474717,D,44,Colorado Avalanche,3,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe218b"),Ryan Graves,8477435,D,27,Colorado Avalanche,16,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe218c"),Nikita Zadorov,8477507,D,16,Colorado Avalanche,16,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe218d"),Samuel Girard,8479398,D,49,Colorado Avalanche,22,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe218e"),Cale Makar,8480069,D,8,Colorado Avalanche,22,25,7,18,3
+ObjectId("5db5c95e3f0b6f443efe218f"),Mikko Rantanen,8478420,F,96,Colorado Avalanche,9,12,5,7,3
+ObjectId("5db5c95e3f0b6f443efe2190"),Colin Wilson,8474569,F,22,Colorado Avalanche,9,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe2191"),Matt Calvert,8474685,F,11,Colorado Avalanche,20,12,4,8,1
+ObjectId("5db5c95e3f0b6f443efe2192"),Nazem Kadri,8475172,F,91,Colorado Avalanche,23,17,7,10,2
+ObjectId("5db5c95e3f0b6f443efe2193"),Joonas Donskoi,8475820,F,72,Colorado Avalanche,23,16,9,7,2
+ObjectId("5db5c95e3f0b6f443efe2194"),Matt Nieto,8476442,F,83,Colorado Avalanche,17,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2195"),Gabriel Landeskog,8476455,F,92,Colorado Avalanche,9,7,3,4,2
+ObjectId("5db5c95e3f0b6f443efe2196"),Andre Burakovsky,8477444,F,95,Colorado Avalanche,23,21,11,10,3
+ObjectId("5db5c95e3f0b6f443efe2197"),J.T. Compher,8477456,F,37,Colorado Avalanche,18,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe2198"),Nathan MacKinnon,8477492,F,29,Colorado Avalanche,23,33,14,19,4
+ObjectId("5db5c95e3f0b6f443efe2199"),Valeri Nichushkin,8477501,F,13,Colorado Avalanche,19,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe219a"),Pierre-Edouard Bellemare,8477930,F,41,Colorado Avalanche,19,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe219b"),Vladislav Kamenev,8477973,F,81,Colorado Avalanche,10,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe219c"),Tyson Jost,8479370,F,17,Colorado Avalanche,17,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe219d"),Philipp Grubauer,8475831,G,31,Colorado Avalanche,12,14,0,0,1
+ObjectId("5db5c95e3f0b6f443efe219e"),Pavel Francouz,8480925,G,39,Colorado Avalanche,7,8,0,0,1
+ObjectId("5db5c95e3f0b6f443efe219f"),David Savard,8475233,D,58,Columbus Blue Jackets,20,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe21a0"),Scott Harrington,8476449,D,4,Columbus Blue Jackets,3,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe21a1"),Ryan Murray,8476850,D,27,Columbus Blue Jackets,9,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe21a2"),Seth Jones,8477495,D,3,Columbus Blue Jackets,22,13,2,11,1
+ObjectId("5db5c95e3f0b6f443efe21a3"),Zach Werenski,8478460,D,8,Columbus Blue Jackets,23,15,6,9,2
+ObjectId("5db5c95e3f0b6f443efe21a4"),Dean Kukan,8478567,D,46,Columbus Blue Jackets,7,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe21a5"),Vladislav Gavrikov,8478882,D,44,Columbus Blue Jackets,20,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe21a6"),Markus Nutivaara,8478906,D,65,Columbus Blue Jackets,8,2,2,0,1
+ObjectId("5db5c95e3f0b6f443efe21a7"),Brandon Dubinsky,8471273,F,17,Columbus Blue Jackets,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21a8"),Nick Foligno,8473422,F,71,Columbus Blue Jackets,19,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe21a9"),Riley Nash,8474062,F,20,Columbus Blue Jackets,17,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe21aa"),Gustav Nyquist,8474679,F,14,Columbus Blue Jackets,22,14,4,10,1
+ObjectId("5db5c95e3f0b6f443efe21ab"),Cam Atkinson,8474715,F,13,Columbus Blue Jackets,22,14,4,10,1
+ObjectId("5db5c95e3f0b6f443efe21ac"),Boone Jenner,8476432,F,38,Columbus Blue Jackets,23,9,6,3,1
+ObjectId("5db5c95e3f0b6f443efe21ad"),Josh Anderson,8476981,F,77,Columbus Blue Jackets,5,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe21ae"),Oliver Bjorkstrand,8477416,F,28,Columbus Blue Jackets,23,13,6,7,2
+ObjectId("5db5c95e3f0b6f443efe21af"),Alexander Wennberg,8477505,F,10,Columbus Blue Jackets,21,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe21b0"),Sonny Milano,8477947,F,22,Columbus Blue Jackets,18,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe21b1"),Pierre-Luc Dubois,8479400,F,18,Columbus Blue Jackets,22,17,10,7,2
+ObjectId("5db5c95e3f0b6f443efe21b2"),Alexandre Texier,8480074,F,42,Columbus Blue Jackets,17,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe21b3"),Emil Bemstrom,8480205,F,52,Columbus Blue Jackets,20,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe21b4"),Jakob Lilja,8481650,F,15,Columbus Blue Jackets,8,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe21b5"),Joonas Korpisalo,8476914,G,70,Columbus Blue Jackets,18,21,0,0,2
+ObjectId("5db5c95e3f0b6f443efe21b6"),Elvis Merzlikins,8478007,G,90,Columbus Blue Jackets,2,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21b7"),Roman Polak,8471392,D,45,Dallas Stars,3,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe21b8"),Stephen Johns,8475730,D,28,Dallas Stars,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21b9"),Andrej Sekera,8471284,D,5,Dallas Stars,19,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe21ba"),John Klingberg,8475906,D,3,Dallas Stars,19,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe21bb"),Taylor Fedun,8476166,D,42,Dallas Stars,20,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe21bc"),Jamie Oleksiak,8476467,D,2,Dallas Stars,14,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe21bd"),Esa Lindell,8476902,D,23,Dallas Stars,25,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe21be"),Miro Heiskanen,8480036,D,4,Dallas Stars,23,17,6,11,2
+ObjectId("5db5c95e3f0b6f443efe21bf"),Blake Comeau,8471260,F,15,Dallas Stars,8,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe21c0"),Martin Hanzal,8471691,F,40,Dallas Stars,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21c1"),Corey Perry,8470621,F,10,Dallas Stars,16,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe21c2"),Joe Pavelski,8470794,F,16,Dallas Stars,21,12,5,7,1
+ObjectId("5db5c95e3f0b6f443efe21c3"),Alexander Radulov,8471228,F,47,Dallas Stars,25,15,8,7,2
+ObjectId("5db5c95e3f0b6f443efe21c4"),Andrew Cogliano,8471699,F,11,Dallas Stars,24,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe21c5"),Jamie Benn,8473994,F,14,Dallas Stars,23,13,5,8,1
+ObjectId("5db5c95e3f0b6f443efe21c6"),Justin Dowling,8475413,F,37,Dallas Stars,17,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe21c7"),Tyler Seguin,8475794,F,91,Dallas Stars,25,21,6,15,2
+ObjectId("5db5c95e3f0b6f443efe21c8"),Radek Faksa,8476889,F,12,Dallas Stars,23,12,6,6,1
+ObjectId("5db5c95e3f0b6f443efe21c9"),Mattias Janmark,8477406,F,13,Dallas Stars,21,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe21ca"),Jason Dickinson,8477450,F,18,Dallas Stars,21,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe21cb"),Roope Hintz,8478449,F,24,Dallas Stars,17,12,10,2,2
+ObjectId("5db5c95e3f0b6f443efe21cc"),Denis Gurianov,8478495,F,34,Dallas Stars,15,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe21cd"),Anton Khudobin,8471418,G,35,Dallas Stars,10,14,0,2,2
+ObjectId("5db5c95e3f0b6f443efe21ce"),Ben Bishop,8471750,G,30,Dallas Stars,17,18,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21cf"),Danny DeKeyser,8477215,D,65,Detroit Red Wings,8,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe21d0"),Trevor Daley,8470110,D,83,Detroit Red Wings,6,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21d1"),Mike Green,8471242,D,25,Detroit Red Wings,17,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe21d2"),Alex Biega,8473415,D,3,Detroit Red Wings,2,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21d3"),Patrik Nemeth,8475747,D,22,Detroit Red Wings,14,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe21d4"),Madison Bowey,8477474,D,74,Detroit Red Wings,20,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe21d5"),Dennis Cholowski,8479395,D,21,Detroit Red Wings,21,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe21d6"),Filip Hronek,8479425,D,17,Detroit Red Wings,22,13,5,8,1
+ObjectId("5db5c95e3f0b6f443efe21d7"),Luke Glendening,8476822,F,41,Detroit Red Wings,13,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe21d8"),Adam Erne,8477454,F,73,Detroit Red Wings,7,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21d9"),Givani Smith,8479379,F,48,Detroit Red Wings,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21da"),Valtteri Filppula,8470047,F,51,Detroit Red Wings,23,11,3,8,1
+ObjectId("5db5c95e3f0b6f443efe21db"),Frans Nielsen,8470144,F,81,Detroit Red Wings,20,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe21dc"),Justin Abdelkader,8471716,F,8,Detroit Red Wings,10,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe21dd"),Darren Helm,8471794,F,43,Detroit Red Wings,23,6,4,2,1
+ObjectId("5db5c95e3f0b6f443efe21de"),Andreas Athanasiou,8476960,F,72,Detroit Red Wings,24,14,5,9,1
+ObjectId("5db5c95e3f0b6f443efe21df"),Jacob de la Rose,8477455,F,61,Detroit Red Wings,10,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe21e0"),Tyler Bertuzzi,8477479,F,59,Detroit Red Wings,24,22,10,12,2
+ObjectId("5db5c95e3f0b6f443efe21e1"),Anthony Mantha,8477511,F,39,Detroit Red Wings,24,23,12,11,3
+ObjectId("5db5c95e3f0b6f443efe21e2"),Dylan Larkin,8477946,F,71,Detroit Red Wings,21,16,6,10,2
+ObjectId("5db5c95e3f0b6f443efe21e3"),Christoffer Ehn,8478036,F,70,Detroit Red Wings,6,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21e4"),Evgeny Svechnikov,8478431,F,37,Detroit Red Wings,2,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21e5"),Taro Hirose,8481433,F,67,Detroit Red Wings,20,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe21e6"),Jimmy Howard,8470657,G,35,Detroit Red Wings,7,4,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21e7"),Jonathan Bernier,8473541,G,45,Detroit Red Wings,12,11,0,1,1
+ObjectId("5db5c95e3f0b6f443efe21e8"),Adam Larsson,8476457,D,6,Edmonton Oilers,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21e9"),Kris Russell,8471729,D,4,Edmonton Oilers,23,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe21ea"),Brandon Manning,8475430,D,26,Edmonton Oilers,5,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe21eb"),Oscar Klefbom,8476472,D,77,Edmonton Oilers,26,18,1,17,1
+ObjectId("5db5c95e3f0b6f443efe21ec"),Matt Benning,8476988,D,83,Edmonton Oilers,18,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe21ed"),Darnell Nurse,8477498,D,25,Edmonton Oilers,23,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe21ee"),William Lagesson,8478021,D,84,Edmonton Oilers,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21ef"),Ethan Bear,8478451,D,74,Edmonton Oilers,25,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe21f0"),Joel Persson,8480940,D,36,Edmonton Oilers,9,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe21f1"),Joakim Nygard,8481638,F,10,Edmonton Oilers,7,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe21f2"),James Neal,8471707,F,18,Edmonton Oilers,26,17,14,3,2
+ObjectId("5db5c95e3f0b6f443efe21f3"),Sam Gagner,8474040,F,89,Edmonton Oilers,10,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe21f4"),Alex Chiasson,8475163,F,39,Edmonton Oilers,22,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe21f5"),Zack Kassian,8475178,F,44,Edmonton Oilers,25,18,8,10,2
+ObjectId("5db5c95e3f0b6f443efe21f6"),Riley Sheahan,8475772,F,23,Edmonton Oilers,18,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe21f7"),Josh Archibald,8476326,F,15,Edmonton Oilers,8,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe21f8"),Tomas Jurco,8476430,F,92,Edmonton Oilers,9,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe21f9"),Markus Granlund,8476440,F,60,Edmonton Oilers,21,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe21fa"),Ryan Nugent-Hopkins,8476454,F,93,Edmonton Oilers,25,16,5,11,2
+ObjectId("5db5c95e3f0b6f443efe21fb"),Jujhar Khaira,8476915,F,16,Edmonton Oilers,23,4,4,0,1
+ObjectId("5db5c95e3f0b6f443efe21fc"),Leon Draisaitl,8477934,F,29,Edmonton Oilers,26,48,16,32,4
+ObjectId("5db5c95e3f0b6f443efe21fd"),Connor McDavid,8478402,F,97,Edmonton Oilers,26,47,18,29,4
+ObjectId("5db5c95e3f0b6f443efe21fe"),Patrick Russell,8479466,F,52,Edmonton Oilers,21,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe21ff"),Mike Smith,8469608,G,41,Edmonton Oilers,14,15,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2200"),Mikko Koskinen,8475156,G,19,Edmonton Oilers,14,19,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2201"),Keith Yandle,8471735,D,3,Florida Panthers,20,18,2,16,2
+ObjectId("5db5c95e3f0b6f443efe2202"),Anton Stralman,8471873,D,6,Florida Panthers,23,8,0,8,1
+ObjectId("5db5c95e3f0b6f443efe2203"),Mark Pysyk,8475796,D,13,Florida Panthers,6,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2204"),Mike Matheson,8476875,D,19,Florida Panthers,16,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2205"),MacKenzie Weegar,8477346,D,52,Florida Panthers,17,10,3,7,1
+ObjectId("5db5c95e3f0b6f443efe2206"),Josh Brown,8477384,D,2,Florida Panthers,18,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe2207"),Aaron Ekblad,8477932,D,5,Florida Panthers,23,15,5,10,2
+ObjectId("5db5c95e3f0b6f443efe2208"),Riley Stillman,8479388,D,61,Florida Panthers,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2209"),Brian Boyle,8470619,F,9,Florida Panthers,15,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe220a"),Colton Sceviour,8474098,F,7,Florida Panthers,23,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe220b"),Evgenii Dadonov,8474149,F,63,Florida Panthers,22,20,10,10,2
+ObjectId("5db5c95e3f0b6f443efe220c"),Mike Hoffman,8474884,F,68,Florida Panthers,22,17,9,8,2
+ObjectId("5db5c95e3f0b6f443efe220d"),Brett Connolly,8475792,F,10,Florida Panthers,24,18,11,7,2
+ObjectId("5db5c95e3f0b6f443efe220e"),Vincent Trocheck,8476389,F,21,Florida Panthers,17,11,3,8,1
+ObjectId("5db5c95e3f0b6f443efe220f"),Jonathan Huberdeau,8476456,F,11,Florida Panthers,22,30,10,20,3
+ObjectId("5db5c95e3f0b6f443efe2210"),Aleksander Barkov,8477493,F,16,Florida Panthers,22,29,7,22,3
+ObjectId("5db5c95e3f0b6f443efe2211"),Jayce Hawryluk,8477963,F,8,Florida Panthers,7,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe2212"),Dryden Hunt,8478211,F,73,Florida Panthers,17,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe2213"),Frank Vatrano,8478366,F,77,Florida Panthers,22,10,6,4,1
+ObjectId("5db5c95e3f0b6f443efe2214"),Noel Acciari,8478569,F,55,Florida Panthers,21,6,5,1,1
+ObjectId("5db5c95e3f0b6f443efe2215"),Denis Malgin,8478843,F,62,Florida Panthers,15,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe2216"),Sergei Bobrovsky,8475683,G,72,Florida Panthers,20,19,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2217"),Sam Montembeault,8478470,G,33,Florida Panthers,6,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2218"),Alec Martinez,8474166,D,27,Los Angeles Kings,13,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe2219"),Drew Doughty,8474563,D,8,Los Angeles Kings,23,17,5,12,2
+ObjectId("5db5c95e3f0b6f443efe221a"),Ben Hutton,8477018,D,15,Los Angeles Kings,18,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe221b"),Joakim Ryan,8477046,D,6,Los Angeles Kings,4,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe221c"),Kurtis MacDermid,8477073,D,56,Los Angeles Kings,7,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe221d"),Matt Roy,8478911,D,3,Los Angeles Kings,23,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe221e"),Sean Walker,8480336,D,26,Los Angeles Kings,23,10,4,6,1
+ObjectId("5db5c95e3f0b6f443efe221f"),Ilya Kovalchuk,8469454,F,17,Los Angeles Kings,16,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe2220"),Jeff Carter,8470604,F,77,Los Angeles Kings,22,11,7,4,1
+ObjectId("5db5c95e3f0b6f443efe2221"),Dustin Brown,8470606,F,23,Los Angeles Kings,24,12,5,7,1
+ObjectId("5db5c95e3f0b6f443efe2222"),Anze Kopitar,8471685,F,11,Los Angeles Kings,24,26,10,16,3
+ObjectId("5db5c95e3f0b6f443efe2223"),Trevor Lewis,8473453,F,22,Los Angeles Kings,10,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2224"),Kyle Clifford,8475160,F,13,Los Angeles Kings,20,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe2225"),Tyler Toffoli,8475726,F,73,Los Angeles Kings,22,12,6,6,1
+ObjectId("5db5c95e3f0b6f443efe2226"),Nikolai Prokhorkin,8476947,F,74,Los Angeles Kings,8,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe2227"),Adrian Kempe,8477960,F,9,Los Angeles Kings,23,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe2228"),Michael Amadio,8478020,F,10,Los Angeles Kings,20,7,4,3,1
+ObjectId("5db5c95e3f0b6f443efe2229"),Austin Wagner,8478455,F,51,Los Angeles Kings,20,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe222a"),Alex Iafallo,8480113,F,19,Los Angeles Kings,24,12,4,8,1
+ObjectId("5db5c95e3f0b6f443efe222b"),Blake Lizotte,8481481,F,46,Los Angeles Kings,24,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe222c"),Jonathan Quick,8471734,G,32,Los Angeles Kings,14,13,0,1,1
+ObjectId("5db5c95e3f0b6f443efe222d"),Jack Campbell,8475789,G,36,Los Angeles Kings,6,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe222e"),Greg Pateryn,8474688,D,29,Minnesota Wild,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe222f"),Ryan Suter,8470600,D,20,Minnesota Wild,23,14,2,12,1
+ObjectId("5db5c95e3f0b6f443efe2230"),Jared Spurgeon,8474716,D,46,Minnesota Wild,24,12,2,10,1
+ObjectId("5db5c95e3f0b6f443efe2231"),Nick Seeler,8476372,D,55,Minnesota Wild,2,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2232"),Jonas Brodin,8476463,D,25,Minnesota Wild,21,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe2233"),Brad Hunt,8476779,D,77,Minnesota Wild,23,11,5,6,1
+ObjectId("5db5c95e3f0b6f443efe2234"),Matt Dumba,8476856,D,24,Minnesota Wild,20,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe2235"),Carson Soucy,8477369,D,21,Minnesota Wild,17,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2236"),Kevin Fiala,8477942,F,22,Minnesota Wild,19,10,5,5,1
+ObjectId("5db5c95e3f0b6f443efe2237"),Joel Eriksson Ek,8478493,F,14,Minnesota Wild,19,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe2238"),Mikko Koivu,8469459,F,9,Minnesota Wild,22,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe2239"),Eric Staal,8470595,F,12,Minnesota Wild,23,17,7,10,2
+ObjectId("5db5c95e3f0b6f443efe223a"),Zach Parise,8470610,F,11,Minnesota Wild,24,12,9,3,2
+ObjectId("5db5c95e3f0b6f443efe223b"),Marcus Foligno,8475220,F,17,Minnesota Wild,14,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe223c"),Gabriel Dumont,8475254,F,28,Minnesota Wild,3,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe223d"),Mats Zuccarello,8475692,F,36,Minnesota Wild,19,11,4,7,1
+ObjectId("5db5c95e3f0b6f443efe223e"),Jason Zucker,8475722,F,16,Minnesota Wild,23,16,8,8,2
+ObjectId("5db5c95e3f0b6f443efe223f"),Victor Rask,8476437,F,49,Minnesota Wild,14,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe2240"),Ryan Hartman,8477451,F,38,Minnesota Wild,24,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe2241"),Ryan Donato,8477987,F,6,Minnesota Wild,22,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe2242"),Jordan Greenway,8478413,F,18,Minnesota Wild,20,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe2243"),Luke Kunin,8479316,F,19,Minnesota Wild,21,8,4,4,1
+ObjectId("5db5c95e3f0b6f443efe2244"),Gerald Mayhew,8479933,F,26,Minnesota Wild,6,2,2,0,1
+ObjectId("5db5c95e3f0b6f443efe2245"),Devan Dubnyk,8471227,G,40,Minnesota Wild,13,8,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2246"),Alex Stalock,8471774,G,32,Minnesota Wild,12,11,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2247"),Kaapo Kahkonen,8478039,G,31,Minnesota Wild,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2248"),Shea Weber,8470642,D,6,Montréal Canadiens,23,18,7,11,2
+ObjectId("5db5c95e3f0b6f443efe2249"),Jeff Petry,8473507,D,26,Montréal Canadiens,21,12,2,10,1
+ObjectId("5db5c95e3f0b6f443efe224a"),Ben Chiarot,8475279,D,8,Montréal Canadiens,23,10,3,7,1
+ObjectId("5db5c95e3f0b6f443efe224b"),Mike Reilly,8476422,D,28,Montréal Canadiens,9,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe224c"),Brett Kulak,8476967,D,17,Montréal Canadiens,13,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe224d"),Christian Folin,8477850,D,32,Montréal Canadiens,5,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe224e"),Victor Mete,8479376,D,53,Montréal Canadiens,18,6,3,3,1
+ObjectId("5db5c95e3f0b6f443efe224f"),Cale Fleury,8479985,D,20,Montréal Canadiens,15,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2250"),Nate Thompson,8470775,F,44,Montréal Canadiens,19,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe2251"),Paul Byron,8474038,F,41,Montréal Canadiens,15,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2252"),Tomas Tatar,8475193,F,90,Montréal Canadiens,20,20,7,13,2
+ObjectId("5db5c95e3f0b6f443efe2253"),Jordan Weal,8475738,F,43,Montréal Canadiens,11,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe2254"),Brendan Gallagher,8475848,F,11,Montréal Canadiens,22,17,9,8,2
+ObjectId("5db5c95e3f0b6f443efe2255"),Nick Cousins,8476393,F,21,Montréal Canadiens,11,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe2256"),Joel Armia,8476469,F,40,Montréal Canadiens,21,12,7,5,2
+ObjectId("5db5c95e3f0b6f443efe2257"),Phillip Danault,8476479,F,24,Montréal Canadiens,22,17,6,11,2
+ObjectId("5db5c95e3f0b6f443efe2258"),Artturi Lehkonen,8477476,F,62,Montréal Canadiens,23,11,5,6,1
+ObjectId("5db5c95e3f0b6f443efe2259"),Jonathan Drouin,8477494,F,92,Montréal Canadiens,17,15,7,8,2
+ObjectId("5db5c95e3f0b6f443efe225a"),Max Domi,8477503,F,13,Montréal Canadiens,23,16,6,10,2
+ObjectId("5db5c95e3f0b6f443efe225b"),Nick Suzuki,8480018,F,14,Montréal Canadiens,23,12,6,6,1
+ObjectId("5db5c95e3f0b6f443efe225c"),Jesperi Kotkaniemi,8480829,F,15,Montréal Canadiens,10,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe225d"),Carey Price,8471679,G,31,Montréal Canadiens,16,21,0,0,2
+ObjectId("5db5c95e3f0b6f443efe225e"),Keith Kinkaid,8476234,G,37,Montréal Canadiens,3,2,0,0,1
+ObjectId("5db5c95e3f0b6f443efe225f"),Dan Hamhuis,8469465,D,5,Nashville Predators,18,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2260"),Yannick Weber,8474134,D,7,Nashville Predators,9,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2261"),Roman Josi,8474600,D,59,Nashville Predators,22,22,7,15,2
+ObjectId("5db5c95e3f0b6f443efe2262"),Ryan Ellis,8475176,D,4,Nashville Predators,22,18,3,15,2
+ObjectId("5db5c95e3f0b6f443efe2263"),Mattias Ekholm,8475218,D,14,Nashville Predators,22,11,4,7,1
+ObjectId("5db5c95e3f0b6f443efe2264"),Matt Irwin,8475625,D,52,Nashville Predators,6,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2265"),Dante Fabbro,8479371,D,57,Nashville Predators,23,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe2266"),Nick Bonino,8474009,F,13,Nashville Predators,23,15,10,5,2
+ObjectId("5db5c95e3f0b6f443efe2267"),Kyle Turris,8474068,F,8,Nashville Predators,19,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2268"),Matt Duchene,8475168,F,95,Nashville Predators,20,17,6,11,2
+ObjectId("5db5c95e3f0b6f443efe2269"),Craig Smith,8475225,F,15,Nashville Predators,21,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe226a"),Calle Jarnkrok,8475714,F,19,Nashville Predators,23,16,8,8,2
+ObjectId("5db5c95e3f0b6f443efe226b"),Austin Watson,8475766,F,51,Nashville Predators,22,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe226c"),Ryan Johansen,8475793,F,92,Nashville Predators,23,16,4,12,2
+ObjectId("5db5c95e3f0b6f443efe226d"),Mikael Granlund,8475798,F,64,Nashville Predators,22,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe226e"),Rocco Grimaldi,8476428,F,23,Nashville Predators,20,10,1,9,1
+ObjectId("5db5c95e3f0b6f443efe226f"),Miikka Salomaki,8476447,F,20,Nashville Predators,3,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2270"),Filip Forsberg,8476887,F,9,Nashville Predators,17,17,10,7,3
+ObjectId("5db5c95e3f0b6f443efe2271"),Colton Sissons,8476925,F,10,Nashville Predators,22,12,6,6,1
+ObjectId("5db5c95e3f0b6f443efe2272"),Viktor Arvidsson,8478042,F,33,Nashville Predators,22,15,6,9,2
+ObjectId("5db5c95e3f0b6f443efe2273"),Pekka Rinne,8471469,G,35,Nashville Predators,13,20,0,2,2
+ObjectId("5db5c95e3f0b6f443efe2274"),Juuse Saros,8477424,G,74,Nashville Predators,12,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2275"),Will Butcher,8477355,D,8,New Jersey Devils,20,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe2276"),Andy Greene,8472382,D,6,New Jersey Devils,8,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe2277"),P.K. Subban,8474056,D,76,New Jersey Devils,12,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe2278"),Sami Vatanen,8475222,D,45,New Jersey Devils,18,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2279"),Matt Tennyson,8476807,D,7,New Jersey Devils,4,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe227a"),Damon Severson,8476923,D,28,New Jersey Devils,16,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe227b"),Connor Carrick,8476941,D,5,New Jersey Devils,4,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe227c"),Mirco Mueller,8477509,D,25,New Jersey Devils,6,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe227d"),Travis Zajac,8471233,F,19,New Jersey Devils,19,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe227e"),Wayne Simmonds,8474190,F,17,New Jersey Devils,19,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe227f"),Kyle Palmieri,8475151,F,21,New Jersey Devils,22,14,8,6,2
+ObjectId("5db5c95e3f0b6f443efe2280"),Taylor Hall,8475791,F,9,New Jersey Devils,22,20,4,16,2
+ObjectId("5db5c95e3f0b6f443efe2281"),Blake Coleman,8476399,F,20,New Jersey Devils,22,10,7,3,1
+ObjectId("5db5c95e3f0b6f443efe2282"),Nikita Gusev,8477038,F,97,New Jersey Devils,17,8,5,3,1
+ObjectId("5db5c95e3f0b6f443efe2283"),John Hayden,8477401,F,15,New Jersey Devils,10,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2284"),Miles Wood,8477425,F,44,New Jersey Devils,22,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe2285"),Pavel Zacha,8478401,F,37,New Jersey Devils,18,9,2,7,1
+ObjectId("5db5c95e3f0b6f443efe2286"),Kevin Rooney,8479291,F,16,New Jersey Devils,9,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2287"),Jesper Bratt,8479407,F,63,New Jersey Devils,15,7,4,3,1
+ObjectId("5db5c95e3f0b6f443efe2288"),Nico Hischier,8480002,F,13,New Jersey Devils,20,12,3,9,1
+ObjectId("5db5c95e3f0b6f443efe2289"),Jesper Boqvist,8480003,F,90,New Jersey Devils,2,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe228a"),Jack Hughes,8481559,F,86,New Jersey Devils,19,10,4,6,1
+ObjectId("5db5c95e3f0b6f443efe228b"),Cory Schneider,8471239,G,35,New Jersey Devils,4,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe228c"),Mackenzie Blackwood,8478406,G,29,New Jersey Devils,16,15,0,0,1
+ObjectId("5db5c95e3f0b6f443efe228d"),Johnny Boychuk,8470187,D,55,New York Islanders,11,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe228e"),Nick Leddy,8475181,D,2,New York Islanders,15,9,2,7,1
+ObjectId("5db5c95e3f0b6f443efe228f"),Scott Mayfield,8476429,D,24,New York Islanders,20,5,3,2,1
+ObjectId("5db5c95e3f0b6f443efe2290"),Adam Pelech,8476917,D,3,New York Islanders,21,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe2291"),Ryan Pulock,8477506,D,6,New York Islanders,21,10,3,7,1
+ObjectId("5db5c95e3f0b6f443efe2292"),Devon Toews,8478038,D,25,New York Islanders,19,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe2293"),Noah Dobson,8480865,D,8,New York Islanders,5,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2294"),Leo Komarov,8473463,F,47,New York Islanders,7,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe2295"),Jordan Eberle,8474586,F,7,New York Islanders,9,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe2296"),Andrew Ladd,8471217,F,16,New York Islanders,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2297"),Cal Clutterbuck,8473504,F,15,New York Islanders,17,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe2298"),Derick Brassard,8473544,F,10,New York Islanders,20,16,6,10,2
+ObjectId("5db5c95e3f0b6f443efe2299"),Josh Bailey,8474573,F,12,New York Islanders,19,14,7,7,2
+ObjectId("5db5c95e3f0b6f443efe229a"),Matt Martin,8474709,F,17,New York Islanders,7,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe229b"),Casey Cizikas,8475231,F,53,New York Islanders,16,7,4,3,1
+ObjectId("5db5c95e3f0b6f443efe229c"),Anders Lee,8475314,F,27,New York Islanders,19,10,5,5,1
+ObjectId("5db5c95e3f0b6f443efe229d"),Brock Nelson,8475754,F,29,New York Islanders,20,19,8,11,2
+ObjectId("5db5c95e3f0b6f443efe229e"),Tom Kuhnhackl,8475832,F,14,New York Islanders,5,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe229f"),Ross Johnston,8477527,F,32,New York Islanders,4,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe22a0"),Michael Dal Colle,8477936,F,28,New York Islanders,14,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe22a1"),Cole Bardreau,8478367,F,34,New York Islanders,7,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe22a2"),Mathew Barzal,8478445,F,13,New York Islanders,22,20,9,11,2
+ObjectId("5db5c95e3f0b6f443efe22a3"),Anthony Beauvillier,8478463,F,18,New York Islanders,20,16,8,8,2
+ObjectId("5db5c95e3f0b6f443efe22a4"),Oliver Wahlstrom,8480789,F,26,New York Islanders,4,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22a5"),Thomas Greiss,8471306,G,1,New York Islanders,11,18,0,0,2
+ObjectId("5db5c95e3f0b6f443efe22a6"),Semyon Varlamov,8473575,G,40,New York Islanders,10,15,0,0,2
+ObjectId("5db5c95e3f0b6f443efe22a7"),Marc Staal,8471686,D,18,New York Rangers,10,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe22a8"),Brendan Smith,8474090,D,42,New York Rangers,9,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe22a9"),Brady Skjei,8476869,D,76,New York Rangers,21,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe22aa"),Jacob Trouba,8476885,D,8,New York Rangers,21,10,3,7,1
+ObjectId("5db5c95e3f0b6f443efe22ab"),Tony DeAngelo,8477950,D,77,New York Rangers,22,17,7,10,2
+ObjectId("5db5c95e3f0b6f443efe22ac"),Adam Fox,8479323,D,23,New York Rangers,22,11,3,8,1
+ObjectId("5db5c95e3f0b6f443efe22ad"),Libor Hajek,8479333,D,25,New York Rangers,18,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe22ae"),Micheal Haley,8474230,F,38,New York Rangers,4,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe22af"),Chris Kreider,8475184,F,20,New York Rangers,22,13,6,7,2
+ObjectId("5db5c95e3f0b6f443efe22b0"),Greg McKegg,8475735,F,14,New York Rangers,11,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe22b1"),Jesper Fast,8475855,F,17,New York Rangers,17,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe22b2"),Ryan Strome,8476458,F,16,New York Rangers,22,22,6,16,2
+ObjectId("5db5c95e3f0b6f443efe22b3"),Mika Zibanejad,8476459,F,93,New York Rangers,8,11,4,7,3
+ObjectId("5db5c95e3f0b6f443efe22b4"),Pavel Buchnevich,8477402,F,89,New York Rangers,21,18,4,14,2
+ObjectId("5db5c95e3f0b6f443efe22b5"),Brendan Lemieux,8477962,F,48,New York Rangers,20,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe22b6"),Artemi Panarin,8478550,F,10,New York Rangers,22,30,12,18,3
+ObjectId("5db5c95e3f0b6f443efe22b7"),Brett Howden,8479353,F,21,New York Rangers,21,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe22b8"),Lias Andersson,8480072,F,28,New York Rangers,9,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22b9"),Kaapo Kakko,8481554,F,24,New York Rangers,20,10,6,4,1
+ObjectId("5db5c95e3f0b6f443efe22ba"),Henrik Lundqvist,8468685,G,30,New York Rangers,14,12,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22bb"),Alexandar Georgiev,8480382,G,40,New York Rangers,10,10,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22bc"),Ron Hainsey,8468493,D,81,Ottawa Senators,20,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe22bd"),Cody Goloubef,8474597,D,29,Ottawa Senators,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22be"),Mark Borowiecki,8474697,D,74,Ottawa Senators,22,9,2,7,1
+ObjectId("5db5c95e3f0b6f443efe22bf"),Dylan DeMelo,8476331,D,2,Ottawa Senators,12,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe22c0"),Thomas Chabot,8478469,D,72,Ottawa Senators,23,14,2,12,1
+ObjectId("5db5c95e3f0b6f443efe22c1"),Nikita Zaitsev,8479458,D,22,Ottawa Senators,22,6,0,6,1
+ObjectId("5db5c95e3f0b6f443efe22c2"),Erik Brannstrom,8480073,D,26,Ottawa Senators,18,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe22c3"),Artem Anisimov,8473573,F,51,Ottawa Senators,7,2,2,0,1
+ObjectId("5db5c95e3f0b6f443efe22c4"),Colin White,8478400,F,36,Ottawa Senators,16,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe22c5"),Rudolfs Balcers,8478870,F,38,Ottawa Senators,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22c6"),Bobby Ryan,8471676,F,9,Ottawa Senators,9,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe22c7"),Mikkel Boedker,8474571,F,89,Ottawa Senators,4,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22c8"),Tyler Ennis,8474589,F,63,Ottawa Senators,23,11,6,5,1
+ObjectId("5db5c95e3f0b6f443efe22c9"),Jean-Gabriel Pageau,8476419,F,44,Ottawa Senators,24,19,13,6,2
+ObjectId("5db5c95e3f0b6f443efe22ca"),Vladislav Namestnikov,8476480,F,90,Ottawa Senators,22,12,6,6,1
+ObjectId("5db5c95e3f0b6f443efe22cb"),Chris Tierney,8476919,F,71,Ottawa Senators,23,11,3,8,1
+ObjectId("5db5c95e3f0b6f443efe22cc"),Connor Brown,8477015,F,28,Ottawa Senators,20,14,2,12,1
+ObjectId("5db5c95e3f0b6f443efe22cd"),Scott Sabourin,8477149,F,49,Ottawa Senators,8,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe22ce"),Anthony Duclair,8477407,F,10,Ottawa Senators,23,15,10,5,2
+ObjectId("5db5c95e3f0b6f443efe22cf"),Nick Paul,8477426,F,13,Ottawa Senators,13,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe22d0"),J.C. Beaudin,8478833,F,64,Ottawa Senators,8,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22d1"),Logan Brown,8479366,F,21,Ottawa Senators,9,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe22d2"),Brady Tkachuk,8480801,F,7,Ottawa Senators,23,14,8,6,2
+ObjectId("5db5c95e3f0b6f443efe22d3"),Craig Anderson,8467950,G,41,Ottawa Senators,13,9,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22d4"),Anders Nilsson,8475195,G,31,Ottawa Senators,12,14,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22d5"),Matt Niskanen,8471702,D,15,Philadelphia Flyers,20,9,2,7,1
+ObjectId("5db5c95e3f0b6f443efe22d6"),Justin Braun,8474027,D,61,Philadelphia Flyers,24,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe22d7"),Shayne Gostisbehere,8476906,D,53,Philadelphia Flyers,16,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe22d8"),Robert Hagg,8477462,D,8,Philadelphia Flyers,14,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe22d9"),Samuel Morin,8477502,D,55,Philadelphia Flyers,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22da"),Travis Sanheim,8477948,D,6,Philadelphia Flyers,23,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe22db"),Ivan Provorov,8478500,D,9,Philadelphia Flyers,24,14,5,9,1
+ObjectId("5db5c95e3f0b6f443efe22dc"),Chris Stewart,8473485,F,44,Philadelphia Flyers,4,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22dd"),Claude Giroux,8473512,F,28,Philadelphia Flyers,22,17,7,10,2
+ObjectId("5db5c95e3f0b6f443efe22de"),James van Riemsdyk,8474037,F,25,Philadelphia Flyers,16,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe22df"),Jakub Voracek,8474161,F,93,Philadelphia Flyers,24,16,6,10,2
+ObjectId("5db5c95e3f0b6f443efe22e0"),Tyler Pitlick,8475752,F,18,Philadelphia Flyers,15,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe22e1"),Kevin Hayes,8475763,F,13,Philadelphia Flyers,23,10,6,4,1
+ObjectId("5db5c95e3f0b6f443efe22e2"),Sean Couturier,8476461,F,14,Philadelphia Flyers,24,18,7,11,2
+ObjectId("5db5c95e3f0b6f443efe22e3"),Scott Laughton,8476872,F,21,Philadelphia Flyers,8,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe22e4"),Michael Raffl,8477290,F,12,Philadelphia Flyers,22,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe22e5"),Oskar Lindblom,8478067,F,23,Philadelphia Flyers,20,16,9,7,2
+ObjectId("5db5c95e3f0b6f443efe22e6"),Travis Konecny,8478439,F,11,Philadelphia Flyers,23,23,8,15,2
+ObjectId("5db5c95e3f0b6f443efe22e7"),Mikhail Vorobyev,8478844,F,24,Philadelphia Flyers,2,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22e8"),Joel Farabee,8480797,F,49,Philadelphia Flyers,17,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe22e9"),Brian Elliott,8470880,G,37,Philadelphia Flyers,12,10,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22ea"),Carter Hart,8479394,G,79,Philadelphia Flyers,16,15,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22eb"),Brian Dumoulin,8475208,D,8,Pittsburgh Penguins,18,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe22ec"),Jack Johnson,8471677,D,3,Pittsburgh Penguins,19,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe22ed"),Kris Letang,8471724,D,58,Pittsburgh Penguins,15,12,4,8,2
+ObjectId("5db5c95e3f0b6f443efe22ee"),Justin Schultz,8474602,D,4,Pittsburgh Penguins,18,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe22ef"),Chad Ruhwedel,8477244,D,2,Pittsburgh Penguins,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe22f0"),Marcus Pettersson,8477969,D,28,Pittsburgh Penguins,21,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe22f1"),John Marino,8478507,D,6,Pittsburgh Penguins,22,9,2,7,1
+ObjectId("5db5c95e3f0b6f443efe22f2"),Juuso Riikola,8480945,D,50,Pittsburgh Penguins,5,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe22f3"),Evgeni Malkin,8471215,F,71,Pittsburgh Penguins,13,14,4,10,2
+ObjectId("5db5c95e3f0b6f443efe22f4"),Nick Bjugstad,8475760,F,27,Pittsburgh Penguins,6,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe22f5"),Bryan Rust,8475810,F,17,Pittsburgh Penguins,12,13,8,5,3
+ObjectId("5db5c95e3f0b6f443efe22f6"),Alex Galchenyuk,8476851,F,18,Pittsburgh Penguins,15,9,1,8,1
+ObjectId("5db5c95e3f0b6f443efe22f7"),Sidney Crosby,8471675,F,87,Pittsburgh Penguins,16,17,5,12,2
+ObjectId("5db5c95e3f0b6f443efe22f8"),Patric Hornqvist,8471887,F,72,Pittsburgh Penguins,15,11,6,5,2
+ObjectId("5db5c95e3f0b6f443efe22f9"),Teddy Blueger,8476927,F,53,Pittsburgh Penguins,20,6,2,4,1
+ObjectId("5db5c95e3f0b6f443efe22fa"),Joseph Blandisi,8477010,F,36,Pittsburgh Penguins,7,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe22fb"),Jake Guentzel,8477404,F,59,Pittsburgh Penguins,24,21,12,9,3
+ObjectId("5db5c95e3f0b6f443efe22fc"),Jared McCann,8477955,F,19,Pittsburgh Penguins,22,16,9,7,2
+ObjectId("5db5c95e3f0b6f443efe22fd"),Sam Lafferty,8478043,F,37,Pittsburgh Penguins,16,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe22fe"),Dominik Simon,8478866,F,12,Pittsburgh Penguins,23,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe22ff"),Brandon Tanev,8479293,F,13,Pittsburgh Penguins,23,12,5,7,1
+ObjectId("5db5c95e3f0b6f443efe2300"),Zach Aston-Reese,8479944,F,46,Pittsburgh Penguins,23,6,3,3,1
+ObjectId("5db5c95e3f0b6f443efe2301"),Adam Johnson,8480341,F,47,Pittsburgh Penguins,7,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2302"),Dominik Kahun,8480946,F,24,Pittsburgh Penguins,23,14,6,8,2
+ObjectId("5db5c95e3f0b6f443efe2303"),Matt Murray,8476899,G,30,Pittsburgh Penguins,14,20,0,1,2
+ObjectId("5db5c95e3f0b6f443efe2304"),Tristan Jarry,8477465,G,35,Pittsburgh Penguins,7,8,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2305"),Dalton Prout,8474774,D,5,San Jose Sharks,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2306"),Jacob Middleton,8478136,D,67,San Jose Sharks,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2307"),Brent Burns,8470613,D,88,San Jose Sharks,24,21,5,16,2
+ObjectId("5db5c95e3f0b6f443efe2308"),Marc-Edouard Vlasic,8471709,D,44,San Jose Sharks,23,6,3,3,1
+ObjectId("5db5c95e3f0b6f443efe2309"),Erik Karlsson,8474578,D,65,San Jose Sharks,24,18,3,15,2
+ObjectId("5db5c95e3f0b6f443efe230a"),Brenden Dillon,8475455,D,4,San Jose Sharks,25,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe230b"),Tim Heed,8475841,D,72,San Jose Sharks,13,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe230c"),Trevor Carrick,8476953,D,47,San Jose Sharks,3,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe230d"),Mario Ferraro,8479983,D,38,San Jose Sharks,21,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe230e"),Joe Thornton,8466138,F,19,San Jose Sharks,24,7,0,7,1
+ObjectId("5db5c95e3f0b6f443efe230f"),Patrick Marleau,8466139,F,12,San Jose Sharks,21,10,5,5,1
+ObjectId("5db5c95e3f0b6f443efe2310"),Logan Couture,8474053,F,39,San Jose Sharks,25,25,5,20,2
+ObjectId("5db5c95e3f0b6f443efe2311"),Evander Kane,8475169,F,9,San Jose Sharks,22,21,12,9,3
+ObjectId("5db5c95e3f0b6f443efe2312"),Marcus Sorensen,8475834,F,20,San Jose Sharks,21,7,4,3,1
+ObjectId("5db5c95e3f0b6f443efe2313"),Barclay Goodrow,8476624,F,23,San Jose Sharks,22,11,6,5,1
+ObjectId("5db5c95e3f0b6f443efe2314"),Tomas Hertl,8476881,F,48,San Jose Sharks,20,21,10,11,3
+ObjectId("5db5c95e3f0b6f443efe2315"),Jonny Brodzinski,8477380,F,22,San Jose Sharks,3,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2316"),Melker Karlsson,8477922,F,68,San Jose Sharks,10,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2317"),Kevin Labanc,8478099,F,62,San Jose Sharks,25,15,7,8,2
+ObjectId("5db5c95e3f0b6f443efe2318"),Timo Meier,8478414,F,28,San Jose Sharks,25,16,8,8,2
+ObjectId("5db5c95e3f0b6f443efe2319"),Noah Gregor,8479393,F,73,San Jose Sharks,3,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe231a"),Dylan Gambrell,8479580,F,7,San Jose Sharks,19,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe231b"),Lukas Radil,8480780,F,52,San Jose Sharks,6,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe231c"),Martin Jones,8474889,G,31,San Jose Sharks,20,20,0,0,1
+ObjectId("5db5c95e3f0b6f443efe231d"),Aaron Dell,8477180,G,30,San Jose Sharks,7,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe231e"),Jay Bouwmeester,8470151,D,19,St. Louis Blues,12,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe231f"),Carl Gunnarsson,8474125,D,4,St. Louis Blues,10,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2320"),Robert Bortuzzo,8474145,D,41,St. Louis Blues,8,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2321"),Alex Pietrangelo,8474565,D,27,St. Louis Blues,24,19,7,12,2
+ObjectId("5db5c95e3f0b6f443efe2322"),Justin Faulk,8475753,D,72,St. Louis Blues,17,6,0,6,1
+ObjectId("5db5c95e3f0b6f443efe2323"),Colton Parayko,8476892,D,55,St. Louis Blues,25,11,1,10,1
+ObjectId("5db5c95e3f0b6f443efe2324"),Vince Dunn,8478407,D,29,St. Louis Blues,23,7,4,3,1
+ObjectId("5db5c95e3f0b6f443efe2325"),Alexander Steen,8470257,F,20,St. Louis Blues,16,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe2326"),David Perron,8474102,F,57,St. Louis Blues,25,23,11,12,2
+ObjectId("5db5c95e3f0b6f443efe2327"),Tyler Bozak,8475098,F,21,St. Louis Blues,17,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe2328"),Ryan O'Reilly,8475158,F,90,St. Louis Blues,25,21,5,16,2
+ObjectId("5db5c95e3f0b6f443efe2329"),Brayden Schenn,8475170,F,10,St. Louis Blues,25,22,12,10,2
+ObjectId("5db5c95e3f0b6f443efe232a"),Vladimir Tarasenko,8475765,F,91,St. Louis Blues,10,10,3,7,2
+ObjectId("5db5c95e3f0b6f443efe232b"),Jaden Schwartz,8475768,F,17,St. Louis Blues,24,18,6,12,2
+ObjectId("5db5c95e3f0b6f443efe232c"),Oskar Sundqvist,8476897,F,70,St. Louis Blues,23,10,6,4,1
+ObjectId("5db5c95e3f0b6f443efe232d"),Mackenzie MacEachern,8476907,F,28,St. Louis Blues,13,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe232e"),Zach Sanford,8477482,F,12,St. Louis Blues,18,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe232f"),Robby Fabbri,8477952,F,15,St. Louis Blues,16,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2330"),Ivan Barbashev,8477964,F,49,St. Louis Blues,19,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe2331"),Sammy Blais,8478104,F,9,St. Louis Blues,16,8,5,3,1
+ObjectId("5db5c95e3f0b6f443efe2332"),Robert Thomas,8480023,F,18,St. Louis Blues,20,9,3,6,1
+ObjectId("5db5c95e3f0b6f443efe2333"),Jake Allen,8474596,G,34,St. Louis Blues,5,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2334"),Jordan Binnington,8476412,G,50,St. Louis Blues,18,24,0,1,2
+ObjectId("5db5c95e3f0b6f443efe2335"),Braydon Coburn,8470601,D,55,Tampa Bay Lightning,9,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe2336"),Kevin Shattenkirk,8474031,D,22,Tampa Bay Lightning,21,17,5,12,2
+ObjectId("5db5c95e3f0b6f443efe2337"),Ryan McDonagh,8474151,D,27,Tampa Bay Lightning,21,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe2338"),Victor Hedman,8475167,D,77,Tampa Bay Lightning,18,20,4,16,2
+ObjectId("5db5c95e3f0b6f443efe2339"),Erik Cernak,8478416,D,81,Tampa Bay Lightning,9,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe233a"),Mikhail Sergachev,8479410,D,98,Tampa Bay Lightning,21,12,2,10,1
+ObjectId("5db5c95e3f0b6f443efe233b"),Jan Rutta,8480172,D,44,Tampa Bay Lightning,5,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe233c"),Alex Killorn,8473986,F,17,Tampa Bay Lightning,20,16,5,11,2
+ObjectId("5db5c95e3f0b6f443efe233d"),Pat Maroon,8474034,F,14,Tampa Bay Lightning,19,10,5,5,1
+ObjectId("5db5c95e3f0b6f443efe233e"),Steven Stamkos,8474564,F,91,Tampa Bay Lightning,17,20,7,13,3
+ObjectId("5db5c95e3f0b6f443efe233f"),Luke Witkowski,8474722,F,28,Tampa Bay Lightning,9,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe2340"),Tyler Johnson,8474870,F,9,Tampa Bay Lightning,17,10,4,6,1
+ObjectId("5db5c95e3f0b6f443efe2341"),Ondrej Palat,8476292,F,18,Tampa Bay Lightning,21,15,8,7,2
+ObjectId("5db5c95e3f0b6f443efe2342"),Nikita Kucherov,8476453,F,86,Tampa Bay Lightning,20,21,8,13,3
+ObjectId("5db5c95e3f0b6f443efe2343"),Yanni Gourde,8476826,F,37,Tampa Bay Lightning,21,14,6,8,2
+ObjectId("5db5c95e3f0b6f443efe2344"),Cedric Paquette,8476975,F,13,Tampa Bay Lightning,13,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe2345"),Carter Verhaeghe,8477409,F,23,Tampa Bay Lightning,8,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2346"),Brayden Point,8478010,F,21,Tampa Bay Lightning,17,15,7,8,2
+ObjectId("5db5c95e3f0b6f443efe2347"),Mathieu Joseph,8478472,F,7,Tampa Bay Lightning,21,7,4,3,1
+ObjectId("5db5c95e3f0b6f443efe2348"),Anthony Cirelli,8478519,F,71,Tampa Bay Lightning,20,15,5,10,2
+ObjectId("5db5c95e3f0b6f443efe2349"),Curtis McElhinney,8470147,G,35,Tampa Bay Lightning,6,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe234a"),Andrei Vasilevskiy,8476883,G,88,Tampa Bay Lightning,15,19,0,1,2
+ObjectId("5db5c95e3f0b6f443efe234b"),Rasmus Sandin,8480873,D,38,Toronto Maple Leafs,6,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe234c"),Jake Muzzin,8474162,D,8,Toronto Maple Leafs,24,13,3,10,1
+ObjectId("5db5c95e3f0b6f443efe234d"),Tyson Barrie,8475197,D,94,Toronto Maple Leafs,25,10,2,8,1
+ObjectId("5db5c95e3f0b6f443efe234e"),Martin Marincin,8475716,D,52,Toronto Maple Leafs,6,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe234f"),Justin Holl,8475718,D,3,Toronto Maple Leafs,23,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe2350"),Kevin Gravel,8475857,D,25,Toronto Maple Leafs,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2351"),Morgan Rielly,8476853,D,44,Toronto Maple Leafs,25,17,3,14,1
+ObjectId("5db5c95e3f0b6f443efe2352"),Cody Ceci,8476879,D,83,Toronto Maple Leafs,11,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2353"),Jason Spezza,8469455,F,19,Toronto Maple Leafs,15,8,3,5,1
+ObjectId("5db5c95e3f0b6f443efe2354"),John Tavares,8475166,F,91,Toronto Maple Leafs,15,14,6,8,2
+ObjectId("5db5c95e3f0b6f443efe2355"),Nicholas Shore,8476406,F,26,Toronto Maple Leafs,21,3,2,1,1
+ObjectId("5db5c95e3f0b6f443efe2356"),Alexander Kerfoot,8477021,F,15,Toronto Maple Leafs,16,8,5,3,1
+ObjectId("5db5c95e3f0b6f443efe2357"),Andreas Johnsson,8477341,F,18,Toronto Maple Leafs,21,12,5,7,1
+ObjectId("5db5c95e3f0b6f443efe2358"),Nic Petan,8477464,F,61,Toronto Maple Leafs,8,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2359"),Frederik Gauthier,8477512,F,33,Toronto Maple Leafs,20,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe235a"),William Nylander,8477939,F,88,Toronto Maple Leafs,25,19,8,11,2
+ObjectId("5db5c95e3f0b6f443efe235b"),Kasperi Kapanen,8477953,F,24,Toronto Maple Leafs,25,13,7,6,1
+ObjectId("5db5c95e3f0b6f443efe235c"),Mitchell Marner,8478483,F,16,Toronto Maple Leafs,17,18,4,14,2
+ObjectId("5db5c95e3f0b6f443efe235d"),Dmytro Timashov,8478857,F,41,Toronto Maple Leafs,8,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe235e"),Auston Matthews,8479318,F,34,Toronto Maple Leafs,25,30,16,14,3
+ObjectId("5db5c95e3f0b6f443efe235f"),Trevor Moore,8479675,F,42,Toronto Maple Leafs,11,5,3,2,1
+ObjectId("5db5c95e3f0b6f443efe2360"),Ilya Mikheyev,8481624,F,65,Toronto Maple Leafs,24,14,4,10,1
+ObjectId("5db5c95e3f0b6f443efe2361"),Michael Hutchinson,8474636,G,30,Toronto Maple Leafs,4,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2362"),Frederik Andersen,8475883,G,31,Toronto Maple Leafs,19,22,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2363"),Oscar Fantenberg,8480147,D,5,Vancouver Canucks,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2364"),Ashton Sautner,8477085,D,29,Vancouver Canucks,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2365"),Alexander Edler,8471303,D,23,Vancouver Canucks,24,15,4,11,1
+ObjectId("5db5c95e3f0b6f443efe2366"),Tyler Myers,8474574,D,57,Vancouver Canucks,14,4,0,4,1
+ObjectId("5db5c95e3f0b6f443efe2367"),Jordie Benn,8474818,D,4,Vancouver Canucks,20,3,0,3,1
+ObjectId("5db5c95e3f0b6f443efe2368"),Christopher Tanev,8475690,D,8,Vancouver Canucks,9,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe2369"),Troy Stecher,8479442,D,51,Vancouver Canucks,20,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe236a"),Quinn Hughes,8480800,D,43,Vancouver Canucks,23,18,2,16,2
+ObjectId("5db5c95e3f0b6f443efe236b"),Antoine Roussel,8474849,F,26,Vancouver Canucks,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe236c"),Loui Eriksson,8470626,F,21,Vancouver Canucks,2,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe236d"),Brandon Sutter,8474091,F,20,Vancouver Canucks,16,8,5,3,1
+ObjectId("5db5c95e3f0b6f443efe236e"),Jay Beagle,8474291,F,83,Vancouver Canucks,11,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe236f"),Micheal Ferland,8475907,F,79,Vancouver Canucks,11,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe2370"),Josh Leivo,8476410,F,17,Vancouver Canucks,23,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe2371"),J.T. Miller,8476468,F,9,Vancouver Canucks,25,24,10,14,2
+ObjectId("5db5c95e3f0b6f443efe2372"),Tanner Pearson,8476871,F,70,Vancouver Canucks,23,12,5,7,1
+ObjectId("5db5c95e3f0b6f443efe2373"),Tim Schaller,8477213,F,59,Vancouver Canucks,11,4,4,0,1
+ObjectId("5db5c95e3f0b6f443efe2374"),Tyler Motte,8477353,F,64,Vancouver Canucks,5,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe2375"),Bo Horvat,8477500,F,53,Vancouver Canucks,25,19,8,11,2
+ObjectId("5db5c95e3f0b6f443efe2376"),Jake Virtanen,8477937,F,18,Vancouver Canucks,20,9,6,3,1
+ObjectId("5db5c95e3f0b6f443efe2377"),Brock Boeser,8478444,F,6,Vancouver Canucks,25,23,10,13,2
+ObjectId("5db5c95e3f0b6f443efe2378"),Elias Pettersson,8480012,F,40,Vancouver Canucks,24,29,10,19,3
+ObjectId("5db5c95e3f0b6f443efe2379"),Zane McIntyre,8475876,G,31,Vancouver Canucks,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe237a"),Jacob Markstrom,8474593,G,25,Vancouver Canucks,16,14,0,0,1
+ObjectId("5db5c95e3f0b6f443efe237b"),Thatcher Demko,8477967,G,35,Vancouver Canucks,9,10,0,0,1
+ObjectId("5db5c95e3f0b6f443efe237c"),Nate Schmidt,8477220,D,88,Vegas Golden Knights,12,8,2,6,1
+ObjectId("5db5c95e3f0b6f443efe237d"),Jimmy Schuldt,8481486,D,4,Vegas Golden Knights,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe237e"),Deryk Engelland,8468674,D,5,Vegas Golden Knights,11,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe237f"),Nick Holden,8474207,D,22,Vegas Golden Knights,22,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe2380"),Brayden McNabb,8475188,D,3,Vegas Golden Knights,24,5,2,3,1
+ObjectId("5db5c95e3f0b6f443efe2381"),Jon Merrill,8475750,D,15,Vegas Golden Knights,11,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2382"),Jake Bischoff,8476987,D,45,Vegas Golden Knights,3,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2383"),Shea Theodore,8477447,D,27,Vegas Golden Knights,26,12,3,9,1
+ObjectId("5db5c95e3f0b6f443efe2384"),Alex Tuch,8477949,F,89,Vegas Golden Knights,3,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe2385"),Paul Stastny,8471669,F,26,Vegas Golden Knights,26,11,7,4,1
+ObjectId("5db5c95e3f0b6f443efe2386"),Ryan Reaves,8471817,F,75,Vegas Golden Knights,26,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe2387"),Max Pacioretty,8474157,F,67,Vegas Golden Knights,26,23,8,15,2
+ObjectId("5db5c95e3f0b6f443efe2388"),Reilly Smith,8475191,F,19,Vegas Golden Knights,22,17,10,7,2
+ObjectId("5db5c95e3f0b6f443efe2389"),Brandon Pirri,8475204,F,73,Vegas Golden Knights,8,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe238a"),Cody Eakin,8475236,F,21,Vegas Golden Knights,21,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe238b"),Mark Stone,8475913,F,61,Vegas Golden Knights,26,21,10,11,2
+ObjectId("5db5c95e3f0b6f443efe238c"),William Karlsson,8476448,F,71,Vegas Golden Knights,23,23,8,15,2
+ObjectId("5db5c95e3f0b6f443efe238d"),Jonathan Marchessault,8476539,F,81,Vegas Golden Knights,26,16,5,11,1
+ObjectId("5db5c95e3f0b6f443efe238e"),William Carrier,8477478,F,28,Vegas Golden Knights,26,7,3,4,1
+ObjectId("5db5c95e3f0b6f443efe238f"),Tomas Nosek,8477931,F,92,Vegas Golden Knights,20,5,4,1,1
+ObjectId("5db5c95e3f0b6f443efe2390"),Nicolas Roy,8478462,F,10,Vegas Golden Knights,6,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe2391"),Cody Glass,8479996,F,9,Vegas Golden Knights,23,9,4,5,1
+ObjectId("5db5c95e3f0b6f443efe2392"),Marc-Andre Fleury,8470594,G,29,Vegas Golden Knights,18,24,0,0,2
+ObjectId("5db5c95e3f0b6f443efe2393"),Garret Sparks,8476343,G,40,Vegas Golden Knights,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2394"),Malcolm Subban,8476876,G,30,Vegas Golden Knights,1,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe2395"),John Carlson,8474590,D,74,Washington Capitals,24,36,8,28,3
+ObjectId("5db5c95e3f0b6f443efe2396"),Dmitry Orlov,8475200,D,9,Washington Capitals,18,8,1,7,1
+ObjectId("5db5c95e3f0b6f443efe2397"),Nick Jensen,8475324,D,3,Washington Capitals,12,2,0,2,1
+ObjectId("5db5c95e3f0b6f443efe2398"),Radko Gudas,8475462,D,33,Washington Capitals,15,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe2399"),Tyler Lewington,8477343,D,78,Washington Capitals,5,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe239a"),Jonas Siegenthaler,8478399,D,34,Washington Capitals,18,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe239b"),Michal Kempny,8479482,D,6,Washington Capitals,17,11,3,8,1
+ObjectId("5db5c95e3f0b6f443efe239c"),Richard Panik,8475209,F,14,Washington Capitals,13,1,1,0,1
+ObjectId("5db5c95e3f0b6f443efe239d"),Alex Ovechkin,8471214,F,8,Washington Capitals,23,25,15,10,3
+ObjectId("5db5c95e3f0b6f443efe239e"),T.J. Oshie,8471698,F,77,Washington Capitals,22,15,10,5,2
+ObjectId("5db5c95e3f0b6f443efe239f"),Nicklas Backstrom,8473563,F,19,Washington Capitals,23,18,4,14,2
+ObjectId("5db5c95e3f0b6f443efe23a0"),Carl Hagelin,8474176,F,62,Washington Capitals,13,5,0,5,1
+ObjectId("5db5c95e3f0b6f443efe23a1"),Lars Eller,8474189,F,20,Washington Capitals,25,13,5,8,1
+ObjectId("5db5c95e3f0b6f443efe23a2"),Nic Dowd,8475343,F,26,Washington Capitals,14,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe23a3"),Evgeny Kuznetsov,8475744,F,92,Washington Capitals,21,22,10,12,3
+ObjectId("5db5c95e3f0b6f443efe23a4"),Travis Boyd,8476329,F,72,Washington Capitals,8,6,1,5,1
+ObjectId("5db5c95e3f0b6f443efe23a5"),Tom Wilson,8476880,F,43,Washington Capitals,23,18,9,9,2
+ObjectId("5db5c95e3f0b6f443efe23a6"),Brendan Leipsic,8476894,F,28,Washington Capitals,22,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe23a7"),Chandler Stephenson,8476905,F,18,Washington Capitals,19,4,3,1,1
+ObjectId("5db5c95e3f0b6f443efe23a8"),Garnet Hathaway,8477903,F,21,Washington Capitals,23,7,2,5,1
+ObjectId("5db5c95e3f0b6f443efe23a9"),Jakub Vrana,8477944,F,13,Washington Capitals,25,19,11,8,2
+ObjectId("5db5c95e3f0b6f443efe23aa"),Braden Holtby,8474651,G,70,Washington Capitals,16,22,0,0,2
+ObjectId("5db5c95e3f0b6f443efe23ab"),Ilya Samsonov,8478492,G,30,Washington Capitals,6,10,0,0,2
+ObjectId("5db5c95e3f0b6f443efe23ac"),Nathan Beaulieu,8476470,D,88,Winnipeg Jets,8,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe23ad"),Dustin Byfuglien,8470834,D,33,Winnipeg Jets,0,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe23ae"),Luca Sbisa,8474579,D,5,Winnipeg Jets,11,2,1,1,1
+ObjectId("5db5c95e3f0b6f443efe23af"),Dmitry Kulikov,8475179,D,7,Winnipeg Jets,23,4,1,3,1
+ObjectId("5db5c95e3f0b6f443efe23b0"),Anthony Bitetto,8475868,D,2,Winnipeg Jets,9,1,0,1,1
+ObjectId("5db5c95e3f0b6f443efe23b1"),Tucker Poolman,8477359,D,3,Winnipeg Jets,21,7,1,6,1
+ObjectId("5db5c95e3f0b6f443efe23b2"),Carl Dahlstrom,8477472,D,23,Winnipeg Jets,8,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe23b3"),Josh Morrissey,8477504,D,44,Winnipeg Jets,20,14,2,12,1
+ObjectId("5db5c95e3f0b6f443efe23b4"),Neal Pionk,8480145,D,4,Winnipeg Jets,18,11,2,9,1
+ObjectId("5db5c95e3f0b6f443efe23b5"),Ville Heinola,8481572,D,14,Winnipeg Jets,8,5,1,4,1
+ObjectId("5db5c95e3f0b6f443efe23b6"),Mark Letestu,8473914,F,22,Winnipeg Jets,7,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe23b7"),Blake Wheeler,8471218,F,26,Winnipeg Jets,24,14,6,8,2
+ObjectId("5db5c95e3f0b6f443efe23b8"),Bryan Little,8473412,F,18,Winnipeg Jets,5,5,2,3,2
+ObjectId("5db5c95e3f0b6f443efe23b9"),Mathieu Perreault,8473618,F,85,Winnipeg Jets,24,9,6,3,1
+ObjectId("5db5c95e3f0b6f443efe23ba"),Gabriel Bourque,8475268,F,57,Winnipeg Jets,16,3,1,2,1
+ObjectId("5db5c95e3f0b6f443efe23bb"),Adam Lowry,8476392,F,17,Winnipeg Jets,22,4,2,2,1
+ObjectId("5db5c95e3f0b6f443efe23bc"),Mark Scheifele,8476460,F,55,Winnipeg Jets,23,22,8,14,2
+ObjectId("5db5c95e3f0b6f443efe23bd"),Andrew Copp,8477429,F,9,Winnipeg Jets,24,11,4,7,1
+ObjectId("5db5c95e3f0b6f443efe23be"),Nikolaj Ehlers,8477940,F,27,Winnipeg Jets,24,18,11,7,2
+ObjectId("5db5c95e3f0b6f443efe23bf"),Kyle Connor,8478398,F,81,Winnipeg Jets,23,18,8,10,2
+ObjectId("5db5c95e3f0b6f443efe23c0"),Jack Roslovic,8478458,F,28,Winnipeg Jets,24,10,4,6,1
+ObjectId("5db5c95e3f0b6f443efe23c1"),Mason Appleton,8478891,F,82,Winnipeg Jets,9,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe23c2"),Patrik Laine,8479339,F,29,Winnipeg Jets,21,20,6,14,2
+ObjectId("5db5c95e3f0b6f443efe23c3"),David Gustafsson,8481019,F,19,Winnipeg Jets,4,0,0,0,1
+ObjectId("5db5c95e3f0b6f443efe23c4"),Laurent Brossoit,8476316,G,30,Winnipeg Jets,6,6,0,0,1
+ObjectId("5db5c95e3f0b6f443efe23c5"),Connor Hellebuyck,8476945,G,37,Winnipeg Jets,19,23,0,0,2

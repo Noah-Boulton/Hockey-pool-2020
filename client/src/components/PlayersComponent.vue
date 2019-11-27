@@ -13,6 +13,7 @@
                     <th @click="sort('pv')" class="sortable" v-bind:data-sort="pvSort">Player Value</th>
                     <th @click="sort('goals')" class="sortable" v-bind:data-sort="goalsSort">Goals</th>
                     <th @click="sort('assists')" class="sortable" v-bind:data-sort="assistsSort">Assists</th>
+                    <th @click="sort('fights')" class="sortable" v-bind:data-sort="fightsSort">Fights</th>
                     <th @click="sort('points')" class="sortable" v-bind:data-sort="pointsSort">Points</th>
                 </tr>
                 </thead>
@@ -28,6 +29,7 @@
                     <td>{{player.pv}}</td>
                     <td>{{player.goals}}</td>
                     <td>{{player.assists}}</td>
+                    <td>{{player.fights}}</td>
                     <td>{{player.points}}</td>
                 </tr>
                 </tbody>
@@ -54,6 +56,7 @@ export default {
       pvSort: '',
       goalsSort: '',
       assistsSort: '',
+      fightsSort: '',
       pointsSort: ''
     }
   },
@@ -66,7 +69,6 @@ export default {
   },
   methods:{
     sort:function(s) {
-    //if s == current sort, reverse
     if(s === this.currentSort) {
       this.currentSortDir = this.currentSortDir==='asc'?'desc':'asc';
     }
@@ -77,6 +79,7 @@ export default {
       this.pvSort = '';
       this.goalsSort='';
       this.assistsSort='';
+      this.fightsSort='';
       this.pointsSort = '';
     } else if(s == 'pos'){
       this.nameSort = '';
@@ -85,6 +88,7 @@ export default {
       this.pvSort = '';
       this.goalsSort='';
       this.assistsSort='';
+      this.fightsSort='';
       this.pointsSort = '';
     }else if(s == 'team'){
       this.nameSort = '';
@@ -93,6 +97,7 @@ export default {
       this.pvSort = '';
       this.goalsSort='';
       this.assistsSort='';
+      this.fightsSort='';
       this.pointsSort = '';
     }else if(s == 'pv'){
       this.nameSort = '';
@@ -101,6 +106,7 @@ export default {
       this.pvSort = this.currentSortDir;
       this.goalsSort='';
       this.assistsSort='';
+      this.fightsSort='';
       this.pointsSort = '';
     }else if(s == 'points'){
       this.nameSort = '';
@@ -109,6 +115,7 @@ export default {
       this.pvSort = '';
       this.goalsSort='';
       this.assistsSort='';
+      this.fightsSort='';
       this.pointsSort = this.currentSortDir;
     }
     else if(s == 'goals'){
@@ -118,6 +125,7 @@ export default {
       this.pvSort = '';
       this.goalsSort=this.currentSortDir;
       this.assistsSort='';
+      this.fightsSort='';
       this.pointsSort = '';
     }
     else if(s == 'assists'){
@@ -127,6 +135,17 @@ export default {
       this.pvSort = '';
       this.goalsSort='';
       this.assistsSort=this.currentSortDir;
+      this.fightsSort='';
+      this.pointsSort = '';
+    }
+    else if(s == 'fights'){
+      this.nameSort = '';
+      this.posSort = '';
+      this.teamSort = '';
+      this.pvSort = '';
+      this.goalsSort='';
+      this.assistsSort='';
+      this.fightsSort=this.currentSortDir;
       this.pointsSort = '';
     }
     this.currentSort = s;

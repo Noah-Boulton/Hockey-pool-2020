@@ -181,6 +181,23 @@ async function updateGoaliePoints(){
                     }
                 });
             });
+            const penaltyPlays = gameData.liveData.plays.penaltyPlays;
+            penaltyPlays.forEach(play => {
+                const data = gameData.liveData.plays.allPlays[play];
+                if(data.result.secondaryType != 'Fighting') { return; }
+                data.players.forEach( async skater => {
+                    //Look at all the skaters for each fighting penalty
+                    const index = players.findIndex(player => player.p_id == skater.player.id);
+                    if(index == -1){
+                        return;
+                    }
+                    const query = {p_id : skater.player.id};
+                    var newValues = { $set: {fights: players[index].fights+1} };
+                    await playersdb.updateOne(query, newValues, (err, res) => {
+                        if (err) throw err;
+                    });
+                });
+            });
         });
         client.close();
     }catch(e){
