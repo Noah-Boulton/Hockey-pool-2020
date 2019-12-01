@@ -13,7 +13,7 @@ cron.schedule('0 * * * *', () => {
     updatePlayers();
 });
 
-cron.schedule('0 8 * * *', () => {
+cron.schedule('0 8 * * *', async () => {
     console.log("Updating goalies and fights");
     await updateGoaliePoints();
     await updateFights();
