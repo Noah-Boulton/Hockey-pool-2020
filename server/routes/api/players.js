@@ -259,6 +259,7 @@ async function updateFights(){
             });
         });
         client.close();
+        
     }catch(e){
         console.error(e);
     }

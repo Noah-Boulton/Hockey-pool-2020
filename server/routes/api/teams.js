@@ -110,56 +110,69 @@ async function updateTeams() {
             owner: team.owner,
             sid: team.sid,
             team: team.team,
-            points: team.points
+            points: team.points,
+            tie_breaker: team.tie_breaker
             };
         var newPoints = 0;
+        var newTieBreaker = 0;
         players.forEach(async (player) => {
             switch(player.p_id){
                 case Number(team.team.forwards.f1.id) :
                     newTeam.team.forwards.f1.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f2.id) :
                     newTeam.team.forwards.f2.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f3.id) :
                     newTeam.team.forwards.f3.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f4.id) :
                     newTeam.team.forwards.f4.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f5.id) :
                     newTeam.team.forwards.f5.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.defensemen.d1.id) :
                     newTeam.team.defensemen.d1.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.defensemen.d2.id) :
                     newTeam.team.defensemen.d2.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.defensemen.d3.id) :
                     newTeam.team.defensemen.d3.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.goalies.g1.id) :
                     newTeam.team.goalies.g1.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 case Number(team.team.goalies.g2.id) :
                     newTeam.team.goalies.g2.points = player.points;
                     newPoints += player.points;
+                    newTieBreaker += player.fights
                     break;
                 default:
                     break;
             }
         });
         newTeam.points = newPoints;
+        newTeam.tie_breaker = newTieBreaker;
         await teamsdb.replaceOne({_id: team._id}, newTeam, (err, res) => {
             if (err) throw err;
         });

@@ -36,9 +36,10 @@ class TeamsService {
                     standings.push({name:team.name, points:team.points, sid:team.sid, team:team.team});
                 });
                 standings = standings.sort((a,b) => {
-                    return  b.points > a.points ? 1
-                            : b.points < a.points ? -1
-                            : 0;
+                    if(b.points > a.points) return 1
+                    if(b.points < a.points) return -1
+                    if(b.tie_breaker > a.tie_breaker) return 1
+                    if(b.tie_breaker < a.tie_breaker) return -1
                 });
                 resolve(standings);
             } catch(err) {
