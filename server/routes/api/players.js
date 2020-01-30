@@ -63,7 +63,6 @@ async function updatePlayers() {
                 var points = 0;
                 var goals = 0;
                 var assists = 0;
-                var pv = 1;
                 var games = data.games;
                 if(player.pos == "G"){
                     // Goalie
@@ -76,25 +75,17 @@ async function updatePlayers() {
                     goals = player.goals;
                     assists = player.assists;
                     points = points + goals + assists;
-                    pv = Math.round(((2*data.shutouts + data.wins)/(data.games+1))*2.75);
                 } else {
                     // Skater
                     goals = data.goals;
                     assists = data.assists;
                     points = goals + assists;
-                    pv = Math.round(((2*goals + assists)/(data.games+1))*1.9);
                 }
                 if(isNaN(points)){
                     points = 0;
                 }
-                if(pv < 1){
-                    pv = 1;
-                }
-                if(pv > 4){
-                    pv = 4;
-                }
-                if(points != player.points || pv != player.pv){
-                    var newValues = { $set: {points: points, goals: goals, assists: assists, pv: pv, games: games} };
+                if(points != player.points){
+                    var newValues = { $set: {points: points, goals: goals, assists: assists, games: games} };
                     await playersdb.updateOne(query, newValues, (err, res) => {
                         if (err) throw err;
                     });
