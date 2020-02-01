@@ -105,7 +105,7 @@ async function updateTeams() {
     const playersdb = playersClient.db('players').collection('players');
     const players = await playersdb.find({}).toArray();
     teams.forEach(async (team) => {
-        var newTeam = {
+        const newTeam = {
             name: team.name,
             owner: team.owner,
             sid: team.sid,
@@ -113,8 +113,8 @@ async function updateTeams() {
             points: team.points,
             tie_breaker: team.tie_breaker
             };
-        var newPoints = 0;
-        var newTieBreaker = 0;
+        let newPoints = 0;
+        let newTieBreaker = 0;
         players.forEach(async (player) => {
             switch(player.p_id){
                 case Number(team.team.forwards.f1.id) :

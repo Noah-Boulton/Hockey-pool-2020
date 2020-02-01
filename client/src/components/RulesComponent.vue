@@ -4,7 +4,7 @@
       <p>The rules are very simple and everyone is encouraged to play (even if you know nothing about hockey). Signing up is entirely free and if you end up winning you will receive $20 as well as the “Top Ho Cup”!</p>
       <p>As long as you follow these rules you have a chance to be crowned Mo’s Top Ho!</p>
       <ol>
-        <li>Mo’s Hockey Ho’s operates on a Player Point Value system. This means that each player has a “point value” that is associated with them. Your team cannot exceed a total Point Value of 25. You can look at all of the Player’s Values here.</li>
+        <li>Mo’s Hockey Ho’s operates on a Player Point Value system. This means that each player has a “point value” that is associated with them. Your team cannot exceed a total Point Value of 25. You can look at all of the Player’s Values <router-link to="/players">here.</router-link></li>
         <li>An approved team consists of 5 forwards, 3 defensemen and 2 goalies. Again to reiterate your total team value must NOT EXCEED 25 points.</li>
         <li>Each player can only be picked once for your team. What I mean is I don’t want to see any hosers picking Sidney Crosby for every forward slot.</li>
         <li><strong>Scoring: </strong>Each Skater will have 1 point awarded for Goals and 1 for Assists. Each Goalie will have 2 points awarded for Wins and 1 additional point for a Shutout. (Goalies also will be awarded points for Goals and Assists if necessary)</li>

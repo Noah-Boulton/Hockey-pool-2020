@@ -60,10 +60,10 @@ async function updatePlayers() {
             if(!res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){
                     
                 const data = res.data.stats[0].splits[0].stat;
-                var points = 0;
-                var goals = 0;
-                var assists = 0;
-                var games = data.games;
+                let points = 0;
+                let goals = 0;
+                let assists = 0;
+                let games = data.games;
                 if(player.pos == "G"){
                     // Goalie
                     points = 2*data.wins;
@@ -85,7 +85,7 @@ async function updatePlayers() {
                     points = 0;
                 }
                 if(points != player.points){
-                    var newValues = { $set: {points: points, goals: goals, assists: assists, games: games} };
+                    const newValues = { $set: {points: points, goals: goals, assists: assists, games: games} };
                     await playersdb.updateOne(query, newValues, (err, res) => {
                         if (err) throw err;
                     });
@@ -102,10 +102,10 @@ async function updateGoaliePoints(){
     try {
         const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
         const playersdb = client.db('players').collection('players');
-        var players = await playersdb.find({}).toArray();
+        let players = await playersdb.find({}).toArray();
         players = players.filter(player => player.pos == "G");
 
-        var d = new Date();
+        let d = new Date();
         d.setDate(d.getDate() - 1); //Yesterday
         const url = `https://statsapi.web.nhl.com/api/v1/schedule?date=${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
         const res = await axios.get(url).catch((error) => {
@@ -161,12 +161,12 @@ async function updateGoaliePoints(){
                     }
                     const query = {p_id : skater.player.id};
                     if(skater.playerType == "Scorer"){
-                        var newValues = { $set: {goals: players[index].goals+1, points: players[index].points+1} };
+                        const newValues = { $set: {goals: players[index].goals+1, points: players[index].points+1} };
                         await playersdb.updateOne(query, newValues, (err, res) => {
                             if (err) throw err;
                         });
                     } else if(skater.playerType == "Assist") {
-                        var newValues = { $set: {assists: players[index].assists+1, points: players[index].points+1} };
+                        const newValues = { $set: {assists: players[index].assists+1, points: players[index].points+1} };
                         await playersdb.updateOne(query, newValues, (err, res) => {
                             if (err) throw err;
                         });
@@ -184,9 +184,9 @@ async function updateFights(){
     try {
         const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
         const playersdb = client.db('players').collection('players');
-        var players = await playersdb.find({}).toArray();
+        let players = await playersdb.find({}).toArray();
 
-        var d = new Date();
+        let d = new Date();
         d.setDate(d.getDate() - 1); //Yesterday
         const url = `https://statsapi.web.nhl.com/api/v1/schedule?date=${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
         const res = await axios.get(url).catch((error) => {
@@ -242,7 +242,7 @@ async function updateFights(){
                         return;
                     }
                     const query = {p_id : skater.player.id};
-                    var newValues = { $set: {fights: players[index].fights+1} };
+                    const newValues = { $set: {fights: players[index].fights+1} };
                     await playersdb.updateOne(query, newValues, (err, res) => {
                         if (err) throw err;
                     });

@@ -4,9 +4,13 @@
       <router-link class="logo" to="/"><img alt="Mo's Top Ho's logo" src="./assets/logo.png" class="logo__img"></router-link>
       <nav class="nav nav--main">
         <ul class="menu">
-          <li class="menu__item"><router-link class="menu__link" to="/standings">Standings</router-link></li>
+          <li v-if="Date.now() >= new Date('April 8, 2020')"  class="menu__item">
+            <router-link class="menu__link" to="/standings">Standings</router-link>
+          </li>
           <li class="menu__item"><router-link class="menu__link" to="/team-submission">Submit a Team</router-link></li>
-          <li class="menu__item"><router-link class="menu__link" to="/teams">Teams</router-link></li>
+          <li v-if="Date.now() >= new Date('April 8, 2020')" class="menu__item">
+            <router-link class="menu__link" to="/teams">Teams</router-link>
+          </li>
           <li class="menu__item"><router-link class="menu__link" to="/rules">Rules</router-link></li>
           <li class="menu__item"><router-link class="menu__link" to="/questions">Questions</router-link></li>
           <li class="menu__item"><router-link class="menu__link" to="/records">The Record Books</router-link></li>
@@ -18,7 +22,7 @@
     <router-view></router-view>
     <footer class="footer">
       <div class="footer__copyright">
-        <a href="https://media.giphy.com/media/ZD2qFuKCzo2lc2RRgR/giphy.gif" style="color:black; text-decoration:none">&copy; {{ new Date().getFullYear() }} Commissioner Mo</a>
+        <a href="https://youtu.be/PJFVQcSTb_w?t=3" style="color:black; text-decoration:none">&copy; {{ new Date().getFullYear() }} Commissioner Mo</a>
         </div>
     </footer>
   </div>
