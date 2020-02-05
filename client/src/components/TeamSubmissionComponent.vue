@@ -301,7 +301,7 @@ export default {
           }
         }
       );
-      this.$router.push('/teams');
+      this.$router.push('/team-submitted');
     },
     updateTeamPoints(){
       this.teamPoints = 0;

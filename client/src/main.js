@@ -12,6 +12,7 @@ import Records from './components/RecordsComponent';
 import Players from './components/PlayersComponent';
 import Standings from './components/StandingsComponent';
 import Podcast from './components/PodcastComponent';
+import TeamSubmitted from './components/TeamSubmittedComponent';
 
 import VueRouter from 'vue-router';
 Vue.config.productionTip = false;
@@ -21,15 +22,16 @@ Vue.use(vueRouter);
 
 // Setup routes
 const routes = [
-  { path: '/', component: Home},
-  { path: '/team-submission', component: TeamSubmission},
-  { path: '/teams', component: Teams},
+  { path: '/', component: Home },
+  { path: '/team-submission', component: TeamSubmission },
+  { path: '/teams', component: Teams },
   { path: '/rules', component: Rules },
-  { path: '/questions', component: Questions},
-  { path: '/records', component: Records},
-  { path: '/players', component: Players},
-  { path: '/standings', component: Standings},
-  { path: '/podcast', component: Podcast}
+  { path: '/questions', component: Questions },
+  { path: '/records', component: Records },
+  { path: '/players', component: Players },
+  { path: '/standings', component: Standings },
+  { path: '/podcast', component: Podcast },
+  { path: '/team-submitted', component: TeamSubmitted }
 ];
 
 const router = new VueRouter({
