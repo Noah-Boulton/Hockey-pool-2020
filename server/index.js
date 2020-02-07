@@ -13,11 +13,13 @@ const teams = require('./routes/api/teams');
 const players = require('./routes/api/players');
 const questions = require('./routes/api/questions');
 const winners = require('./routes/api/winners');
+const skaters = require('./routes/api/skaters');
 
 app.use('/api/teams', teams);
 app.use('/api/players', players);
 app.use('/api/questions', questions);
 app.use('/api/winners', winners);
+app.use('/api/skaters', skaters);
 
 // Handle production 
 if(process.env .NODE_ENV === 'production'){

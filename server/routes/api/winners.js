@@ -5,7 +5,6 @@ dotenv.config();
 
 const router = express.Router();
 
-
 // Get Winners
 router.get('/', async (req, res) => {
     const teams = await loadWinnersCollection();
