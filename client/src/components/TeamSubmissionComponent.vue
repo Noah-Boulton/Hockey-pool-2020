@@ -19,32 +19,12 @@
               </div>
             </div>
             <div class="form__group form__group--sid">
-              <div class="form__item form__item--radio-group form__item--sid">
-                <div class="form__item form__item--radio-option">
-                  <input type="radio" name="gender" id="kid" value="kid" class="sr-only" v-model="sid">
-                  <label class="form__label" for="kid">
-                    <img src="../../public/images/sid-the-kid.jpg" width=150 alt="Sid the Kid">
-                  </label>
-                </div>
-                <div class="form__item form__item--radio-option">
-                  <input type="radio" name="gender" id="man" value="man" class="sr-only" v-model="sid">
-                  <label class="form__label" for="man">
-                    <img src="../../public/images/sid-the-man.jpeg" width=150 alt="Sid the Man">
-                  </label>
-                </div>
-                <div class="form__item form__item--radio-option">
-                  <input type="radio" name="gender" id="beast" value="beast" class="sr-only" v-model="sid">
-                  <label class="form__label" for="beast">
-                    <img src="../../public/images/sid-the-beast.jpg" width=150 alt="Sid the Beast">
-                  </label>
-                </div>
-                <div class="form__item form__item--radio-option">
-                  <input type="radio" name="gender" id="mo" value="mo" class="sr-only" v-model="sid">
-                  <label class="form__label" for="mo">
-                    <img src="../../public/images/mo_8.jpg" style="position:fixed;opacity:0" width=150 alt="Commissioner Mo">
-                  </label>
-                </div>
-              </div>
+              <v-select :options="options" label="title" v-model="sid">
+                <template slot="option" slot-scope="option">
+                    <img v-if="option.value != 'mo'" :src="getImgUrl(option.cardImage)" width=100 />
+                    <img v-if="option.value === 'mo'" :src="getImgUrl(option.cardImage)" width=1 />
+                </template>
+              </v-select>
             </div>
           </div>
           <div class="rink">
@@ -166,7 +146,8 @@
           <div v-if="errors.length" class="card card--horizontal card--errors">
             <img src="../../public/images/error_mo.jpg" alt="Angry Commissioner Mo" class="card__image">
             <div class="card__content">
-              <h4 class="card__title">Please correct the following error(s):</h4>
+              <h4 v-if="errors.length == 1" class="card__title">Please correct the following error:</h4>
+              <h4 v-if="errors.length > 1" class="card__title">Please correct the following errors:</h4>
               <ul>
                 <li v-for="(error, index) in errors"
                 v-bind:key="index">{{ error }}</li>
@@ -216,7 +197,44 @@ export default {
       d2: '',
       d3: '',
       g1: '',
-      g2: ''
+      g2: '',
+      options: [
+        {
+          title: "Kid",
+          cardImage: "sid-the-kid.jpg",
+          value: "kid"
+        },
+        {
+          title: "Man",
+          cardImage: "sid-the-man.jpeg",
+          value: "man"
+        },
+        {
+          title: "Beast",
+          cardImage: "sid-the-beast.jpg",
+          value: "beast"
+        },
+        {
+          title: "ChazzWazza's",
+          cardImage: "ChazzWazza.png",
+          value: "chaz"
+        },
+        {
+          title: "Canadian Finger bacon",
+          cardImage: "canadian-finger-bacon.png",
+          value: "cfb"
+        },
+        {
+          title: "Puck Luck",
+          cardImage: "puck-luck.png",
+          value: "puck-luck"
+        },
+        {
+          title: "Mo",
+          cardImage: "mo_8.jpg",
+          value: "mo"
+        }
+      ]
     }
   },
   async created() {
@@ -246,6 +264,9 @@ export default {
     }
   },
   methods: {
+    getImgUrl(pic) {
+      return require('../../public/images/'+pic)
+    },
     async createTeam() {
       this.errors = [];
       if(!this.name){
@@ -267,7 +288,7 @@ export default {
         this.errors.push('Please select 2 goalies');
       }
       if(!this.sid){
-        this.errors.push('Please select a sid');
+        this.errors.push('Please select a team logo');
       }
       if(this.teamPoints > 25){
         this.errors.push('Your team is over the allowed point total of 25');
@@ -280,7 +301,7 @@ export default {
           name:this.name,
           owner:this.owner,
           email:this.email,
-          sid:this.sid,
+          sid:this.sid.value,
           team: {
                 forwards:{
                   f1:this.f1,
