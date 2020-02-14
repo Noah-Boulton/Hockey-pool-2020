@@ -24,6 +24,7 @@
                     <td v-if="team.sid =='cfb'"> <img src="../../public/images/canadian-finger-bacon.png" alt="Canadian Finger Bacon" height=50 @click="showTeam(index)">  {{team.name}}</td>
                     <td v-if="team.sid =='chazz'"> <img src="../../public/images/ChazzWazza.png" alt="ChazzWazza's" height=50 @click="showTeam(index)">  {{team.name}}</td>
                     <td v-if="team.sid =='puck-luck'"> <img src="../../public/images/puck-luck.png" alt="Puck Luck" height=50 @click="showTeam(index)">  {{team.name}}</td>
+                    <td v-if="team.sid =='kevin-gravel-grinderz'"> <img src="../../public/images/kevin-gravel-grinderz.png" alt="Kevin Gravel Grinderz" height=50 @click="showTeam(index)">  {{team.name}}</td>
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
                   </tr>

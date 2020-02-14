@@ -230,6 +230,11 @@ export default {
           value: "puck-luck"
         },
         {
+          title: "Kevin Gravel Grinderz",
+          cardImage: "kevin-gravel-grinderz.png",
+          value: "kevin-gravel-grinderz"
+        },
+        {
           title: "Mo",
           cardImage: "mo_8.jpg",
           value: "mo"
