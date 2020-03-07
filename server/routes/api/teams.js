@@ -69,6 +69,7 @@ router.post('/', async (req, res) => {
     });
     updateTeams();
     sendMail(req.body.team.name, req.body.team.email, req.body.team.owner);
+    notifyMo(req.body.team);
     res.status(201).send();
 });
 
@@ -84,6 +85,31 @@ Your team ${name} has officially been submitted!
 Teams and Standings will be updated once playoffs start.
 May the Top Ho Win.
         
+Sincerely,
+    Commissioner Mo`
+    };
+      
+    transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+        }
+    });
+}
+
+function notifyMo(team) {
+    let mailOptions = {
+        from: process.env.EMAIL,
+        to: process.env.EMAIL,
+        subject: `Attention Commissioner Mo: ${team.name} just registered for Mo's Hockey Ho's 2019-2020!`,
+        text: `
+    Owner: ${team.owner}
+    Team Name: ${team.name} 
+    Forwards: ${team.team.forwards.f1.name}, ${team.team.forwards.f2.name}, ${team.team.forwards.f3.name}, ${team.team.forwards.f4.name}, ${team.team.forwards.f5.name}
+    Defensemen: ${team.team.defensemen.d1.name}, ${team.team.defensemen.d2.name}, ${team.team.defensemen.d3.name}
+    Goalies: ${team.team.goalies.g1.name}, ${team.team.goalies.g2.name}
+
 Sincerely,
     Commissioner Mo`
     };
