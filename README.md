@@ -18,13 +18,32 @@ npm run serve
 ```
 
 ## TODO
+- [ ] Make moshockeyhos.ca redirect to moshockyhosers.ca - ESIZ
+- [ ] Use Player Values from Sportsnet - NORO
+- [ ] Fix colouring on Standings page & try having logo to the left of team names and bolded  - ESIZ
+- [ ] Fix broken easter eggs - NORO/MO
+- [ ] Test out whole site - WHOLE TEAM
+- [ ] Rework written content - MO
+- [ ] Make the text larger on standings page and move it beside the image
+- [ ] Display player name selected in the "search" bar when making a team- ESIZ
+- [ ] Add "Top Ho's" hockey card display  where top 3 scorers are displayed as hockey cards - ESIZ/NORO
+- [ ] Make site more mobile friendly - ESRAH
+- [ ] Get Jay Baruchel/other celesbians - MO
+- [ ] GTA Wasted "Hosed" Graphic (For team/player being eliminated) - MO
+- [ ] Make podcast player that is similar to a Spotify type player that stays at the bottom of the page and scrolls with you as you navigate - WHOLE TEAM
 - [ ] Add eliminated tag to each player on a team so the player image can be updated with "Hosed" stamp
 - [ ] Style soundcloud page
 - [ ] Add new display for each team 
-- [ ] Most importantly add Easter eggs all over the site
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Make hockey card layout
-- [ ] Make the text larger on standings page and move it beside the image
+- [ ] Clean up code - NORO
+- [x] Change logo selection to drop down - ESIZ/NORO 
+- [x] Hide Standings & Teams pages before we go live
+- [x] Add a hyperlink to The Ho's page at the end of rule 1 where it says "here" 
+- [x] Change tie breaker to fights
+- [x] Podcast turned to extras page
+- [x] Make "The Ho's Page" paged- Change list of players to loading 25 names per page
+- [x] Make a "Your Team Has Been Submitted" throwaway page that you are redirected to when submit a team successfully 
 - [x] Figure out how to track goalie goals and assists
 - [x] Fix player and team update errors to reduce database calls
 - [x] Add team dropdown on click for each team on the standings page
