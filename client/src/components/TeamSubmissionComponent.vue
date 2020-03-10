@@ -238,6 +238,16 @@ export default {
           title: "Mo",
           cardImage: "mo_8.jpg",
           value: "mo"
+        },
+        {
+          title: "Nuck",
+          cardImage: "nuck.png",
+          value: "nuck"
+        },
+        {
+          title: "Will",
+          cardImage: "will.jpg",
+          value: "will"
         }
       ]
     }

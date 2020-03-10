@@ -11,7 +11,13 @@
           <img v-if="team.sid == 'kid'" src="../../public/images/sid-the-kid.jpg" class="card__image" style="border-radius: 50%" width=150 alt="Sid the Kid">
           <img v-if="team.sid == 'man'" src="../../public/images/sid-the-man.jpeg" class="card__image" style="border-radius: 50%" width=150 alt="Sid the Man">
           <img v-if="team.sid == 'beast'" src="../../public/images/sid-the-beast.jpg" class="card__image" style="border-radius: 50%" width=150 alt="Sid the Beast">
-          <img v-if="team.sid == 'mo'" src="../../public/images/mo_8.jpg" class="card__image" width=150 style="border-radius: 50%" alt="Commissioner Mo">          
+          <img v-if="team.sid == 'mo'" src="../../public/images/mo_8.jpg" class="card__image" width=150 style="border-radius: 50%" alt="Commissioner Mo"> 
+          <img v-if="team.sid == 'cfb'" src="../../public/images/canadian-finger-bacon.png" class="card__image" width=150 style="border-radius: 50%" alt="Canadian Finger Bacon">
+          <img v-if="team.sid == 'chazz'" src="../../public/images/ChazzWazza.png" class="card__image" width=150 style="border-radius: 50%" alt="ChazzWazza's"> 
+          <img v-if="team.sid == 'puck-luck'" src="../../public/images/puck-luck.png" class="card__image" width=150 style="border-radius: 50%" alt="Puck Luck">
+          <img v-if="team.sid == 'kevin-gravel-grinderz'" src="../../public/images/kevin-gravel-grinderz.png" class="card__image" width=150 style="border-radius: 50%" alt="Kevin Gravel Grinderz">
+          <img v-if="team.sid == 'nuck'" src="../../public/images/nuck.png" class="card__image" width=150 style="border-radius: 50%" alt="Nuck">
+          <img v-if="team.sid == 'will'" src="../../public/images/will.jpg" class="card__image" width=150 style="border-radius: 50%" alt="Will">
           <div class="card__content">
             <h2 class="card__title">{{ `${team.name}` }}</h2>
             <h3 class="card__subtitle">{{ `${team.owner}` }}</h3>
