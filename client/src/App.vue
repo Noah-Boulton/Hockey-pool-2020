@@ -4,11 +4,11 @@
       <router-link class="logo" to="/"><img alt="Mo's Top Ho's logo" src="./assets/logo.png" class="logo__img"></router-link>
       <nav class="nav nav--main">
         <ul class="menu">
-          <li v-if="Date.now() >= new Date('April 8, 2020')"  class="menu__item">
+          <li v-if="Date.now() >= new Date('September 1, 2020')"  class="menu__item">
             <router-link class="menu__link" to="/standings">Standings</router-link>
           </li>
           <li class="menu__item"><router-link class="menu__link" to="/team-submission">Submit a Team</router-link></li>
-          <li v-if="Date.now() >= new Date('April 8, 2020')" class="menu__item">
+          <li v-if="Date.now() >= new Date('September 1, 2020')" class="menu__item">
             <router-link class="menu__link" to="/teams">Teams</router-link>
           </li>
           <li class="menu__item"><router-link class="menu__link" to="/rules">Rules</router-link></li>
