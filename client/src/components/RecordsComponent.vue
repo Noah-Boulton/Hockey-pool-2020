@@ -13,10 +13,9 @@
    <h1>Mo’s Top Ho by Year</h1>
     <div>
       <div 
-        v-for="(team, index) in winners"
-        v-bind:item="team"
-        v-bind:index="index"
-        v-bind:key="team._id">
+        v-for="team in winners"
+        :item="team"
+        :key="team._id">
         <div class="card card--horizontal card--team">
           <img :src="require('../../public/images/top-ho-'+team.year+'.jpg')" class="card__image" width=150 :alt="`${team.year} Winner`">
           <div class="card__content">
@@ -33,65 +32,23 @@
             <th></th>
             <th>Points</th>
           </tr>
-          <tr>
+          <tr v-for="player in Object.keys(team.team.forwards)" :key="player">
             <td>F</td>
-            <td>{{team.team.forwards.f1.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.forwards.f1.points}}</td>
+            <td>{{team.team.forwards[player].name}}</td>
+            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards[player].id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+            <td>{{team.team.forwards[player].points}}</td>
           </tr>
-          <tr>
-            <td>F</td>
-            <td>{{team.team.forwards.f2.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.forwards.f2.points}}</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td>{{team.team.forwards.f3.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f3.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.forwards.f3.points}}</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td>{{team.team.forwards.f4.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f4.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.forwards.f4.points}}</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td>{{team.team.forwards.f5.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f5.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.forwards.f5.points}}</td>
-          </tr>
-          <tr>
+          <tr v-for="player in Object.keys(team.team.defensemen)" :key="player">
             <td>D</td>
-            <td>{{team.team.defensemen.d1.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.defensemen.d1.points}}</td>
+            <td>{{team.team.defensemen[player].name}}</td>
+            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen[player].id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+            <td>{{team.team.defensemen[player].points}}</td>
           </tr>
-          <tr>
-            <td>D</td>
-            <td>{{team.team.defensemen.d2.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.defensemen.d2.points}}</td>
-          </tr>
-          <tr>
-            <td>D</td>
-            <td>{{team.team.defensemen.d3.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d3.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.defensemen.d3.points}}</td>
-          </tr>
-          <tr>
+          <tr v-for="player in Object.keys(team.team.goalies)" :key="player">
             <td>G</td>
-            <td>{{team.team.goalies.g1.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.goalies.g1.points}}</td>
-          </tr>
-          <tr>
-            <td>G</td>
-            <td>{{team.team.goalies.g2.name}}</td>
-            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
-            <td>{{team.team.goalies.g2.points}}</td>
+            <td>{{team.team.goalies[player].name}}</td>
+            <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies[player].id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+            <td>{{team.team.goalies[player].points}}</td>
           </tr>
         </table>
       </div>

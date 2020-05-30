@@ -51,7 +51,7 @@ async function updatePlayers() {
         const playersdb = client.db('players').collection('players');
         const players = await playersdb.find({}).toArray();
 
-        players.forEach(async (player) => {
+        await Promise.all(players.map(async (player) => {
             const query = {p_id : player.p_id};
 
             if(player.p_id == 1){
@@ -95,17 +95,15 @@ async function updatePlayers() {
                 if(points != player.points){
                     const newValues = { $set: {points: points, goals: goals, assists: assists, games: games} };
                     
-                    await playersdb.updateOne(query, newValues, (err, res) => {
-                        if (err) throw err;
-                    });
+                    await playersdb.updateOne(query, newValues);
                 }
             }
-        });
-
-        client.close();
+        }));
     }catch(e){
         console.error(e);
     }
+
+    client.close();
 }
 
 async function updateGoaliePoints(){
@@ -144,7 +142,7 @@ async function updateGoaliePoints(){
         const games = res.data.dates[0].games;
 
         //Get all the game links for the current day
-        games.forEach(async game => {
+        await Promise.all(games.map(async game => {
             //Use each games scoring plays to check for goalie points 
             const gameURL = `https://statsapi.web.nhl.com${game.link}`;
             const gameres = await axios.get(gameURL).catch((error) => {
@@ -169,9 +167,10 @@ async function updateGoaliePoints(){
             const gameData = gameres.data;
             const scoringPlays = gameData.liveData.plays.scoringPlays;
 
-            scoringPlays.forEach(play => {
+            await Promise.all(scoringPlays.map(async play => {
                 const data = gameData.liveData.plays.allPlays[play];
-                data.players.forEach( async skater => {
+                
+                await Promise.all(data.players.map( async skater => {
                     //Look at all the skaters for each scoring play
                     const index = players.findIndex(player => player.p_id == skater.player.id);
                     
@@ -184,24 +183,20 @@ async function updateGoaliePoints(){
                     if(skater.playerType == "Scorer"){
                         const newValues = { $set: {goals: players[index].goals+1, points: players[index].points+1} };
                         
-                        await playersdb.updateOne(query, newValues, (err, res) => {
-                            if (err) throw err;
-                        });
+                        await playersdb.updateOne(query, newValues);
                     } else if(skater.playerType == "Assist") {
                         const newValues = { $set: {assists: players[index].assists+1, points: players[index].points+1} };
                         
-                        await playersdb.updateOne(query, newValues, (err, res) => {
-                            if (err) throw err;
-                        });
+                        await playersdb.updateOne(query, newValues);
                     }
-                });
-            });
-        });
-
-        client.close();
+                }));
+            }));
+        }));
     }catch(e){
         console.error(e);
     }
+
+    client.close();
 }
 
 async function updateFights(){
@@ -285,11 +280,11 @@ async function updateFights(){
                 });
             });
         });
-        client.close();
-        
     }catch(e){
         console.error(e);
     }
+
+    client.close();
 }
 
 module.exports = router;

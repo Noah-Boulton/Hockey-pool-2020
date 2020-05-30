@@ -32,14 +32,12 @@
 
 export default {
  data() {
-   return {
-
-   }
+   return {}
  }
 }
 </script>
 
 <style>
-@import 'https://fonts.googleapis.com/css?family=Gochi+Hand|PT+Sans:400,700&display=swap';
-@import './assets/styles.css';
+  @import 'https://fonts.googleapis.com/css?family=Gochi+Hand|PT+Sans:400,700&display=swap';
+  @import './assets/styles.css';
 </style>

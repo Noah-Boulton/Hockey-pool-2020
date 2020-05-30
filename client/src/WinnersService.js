@@ -9,6 +9,7 @@ class WinnersService {
             try {
                 const res = await axios.get(url);
                 const data = res.data;
+                
                 resolve(data.sort((a,b) => {
                     return  b.year > a.year ? 1
                             : b.year < a.year ? -1

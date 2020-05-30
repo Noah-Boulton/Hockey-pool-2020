@@ -9,6 +9,7 @@ class TeamsService {
             try {
                 const res = await axios.get(url);
                 const data = res.data;
+
                 resolve(
                     data.map(team => ({
                         ...team,
@@ -32,15 +33,18 @@ class TeamsService {
                 const res = await axios.get(url);
                 const data = res.data;
                 var standings = [];
+
                 data.forEach(team => {
                     standings.push({name:team.name, points:team.points, sid:team.sid, team:team.team});
                 });
+
                 standings = standings.sort((a,b) => {
                     if(b.points > a.points) return 1
                     if(b.points < a.points) return -1
                     if(b.tie_breaker > a.tie_breaker) return 1
                     if(b.tie_breaker < a.tie_breaker) return -1
                 });
+                
                 resolve(standings);
             } catch(err) {
                 reject(err);

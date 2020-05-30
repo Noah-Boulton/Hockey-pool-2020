@@ -21,7 +21,6 @@ Vue.config.productionTip = false;
 
 // Enable routing
 Vue.use(vueRouter);
-
 Vue.component('v-select', vSelect)
 
 // Setup routes
