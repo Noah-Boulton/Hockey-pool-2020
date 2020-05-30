@@ -24,10 +24,11 @@ cron.schedule('15 * * * *', () => {
 // Get Teams
 router.get('/', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    const teams = client.db('teams').collection('teams');
+    const teamsDb = client.db('teams').collection('teams');
+    const teams = await teamsDb.find({}).toArray()
     
     client.close();
-    res.send(await teams.find({}).toArray());
+    res.send(teams);
 });
 
 // Add Team

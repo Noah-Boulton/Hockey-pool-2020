@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
     const winners = await winnersDb.find({}).toArray();
 
     client.close();
-
     res.send(winners);
 });
 
