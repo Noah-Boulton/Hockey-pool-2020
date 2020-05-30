@@ -305,8 +305,8 @@ export default {
       if(!this.sid){
         this.errors.push('Please select a team logo');
       }
-      if(this.teamPoints > 25){
-        this.errors.push('Your team is over the allowed point total of 25');
+      if(this.teamPoints > 30){
+        this.errors.push('Your team is over the allowed point total of 30');
       }
       if(this.errors.length){
         return;
