@@ -15,7 +15,6 @@ let transporter = nodemailer.createTransport({
 
 // Send a question
 router.post('/', async (req, res) => {
-    console.log(req.body);
     let mailOptions = {
         from: req.body.email,
         to: process.env.EMAIL,
@@ -30,6 +29,7 @@ router.post('/', async (req, res) => {
             console.log('Email sent: ' + info.response);
         }
     });
+    
     res.status(201).send();
 });
 

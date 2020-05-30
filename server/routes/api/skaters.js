@@ -8,6 +8,7 @@ const router = express.Router();
 // Get Skaters
 router.get('/', async (req, res) => {
     const skaters = await getSkaters();
+    
     res.json(skaters);
 });
 
@@ -23,7 +24,6 @@ async function getSkaters() {
         let roster = await axios.get(`https://statsapi.web.nhl.com/api/v1/teams/${teamId}/roster`);
         
         roster = roster.data.roster;
-
         roster.forEach(player => playerIds.push(player.person.id));
     }
 
@@ -65,8 +65,8 @@ async function getSkaters() {
     }
     
     skaters.sort((a,b) => (a.team > b.team) ? 1 : ((b.pos > a.pos) ? -1 : 0))
+    
     return skaters;
 }
-
 
 module.exports = router;
