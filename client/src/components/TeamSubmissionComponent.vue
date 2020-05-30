@@ -217,7 +217,7 @@ export default {
         {
           title: "ChazzWazza's",
           cardImage: "ChazzWazza.png",
-          value: "chaz"
+          value: "chazz"
         },
         {
           title: "Canadian Finger bacon",
