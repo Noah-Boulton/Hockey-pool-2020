@@ -9,11 +9,11 @@ const router = express.Router();
 router.get('/', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
     const winnersDb = client.db('teams').collection('winners');
-    const winners = winnersDb.find({});
+    const winners = await winnersDb.find({}).toArray();
 
     client.close();
 
-    res.send(winners.toArray());
+    res.send(winners);
 });
 
 // Add Winner
