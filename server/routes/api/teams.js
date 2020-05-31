@@ -102,8 +102,8 @@ function notifyMo(team) {
         text: `
     Owner: ${team.owner}
     Team Name: ${team.name} 
-    Forwards: ${team.team.forwards.f1.name}, ${team.team.forwards.f2.name}, ${team.team.forwards.f3.name}, ${team.team.forwards.f4.name}, ${team.team.forwards.f5.name}
-    Defensemen: ${team.team.defensemen.d1.name}, ${team.team.defensemen.d2.name}, ${team.team.defensemen.d3.name}
+    Forwards: ${team.team.forwards.f1.name}, ${team.team.forwards.f2.name}, ${team.team.forwards.f3.name}, ${team.team.forwards.f4.name}, ${team.team.forwards.f5.name}, ${team.team.forwards.f6.name}, ${team.team.forwards.f7.name}, ${team.team.forwards.f8.name}
+    Defensemen: ${team.team.defensemen.d1.name}, ${team.team.defensemen.d2.name}, ${team.team.defensemen.d3.name}, ${team.team.defensemen.d4.name}, ${team.team.defensemen.d5.name}
     Goalies: ${team.team.goalies.g1.name}, ${team.team.goalies.g2.name}
 
 Sincerely,

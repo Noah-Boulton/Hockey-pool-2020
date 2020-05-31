@@ -32,21 +32,21 @@
               <h3 class="form__label" for="goalies">Pick your goalies</h3>
               <div class="player-group player-group--2">
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="goalies" name="g1" form="g1"  v-model="g1query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="g1" name="g1" form="g1"  v-model="team.goalies.g1.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="g1-input-list player-picker__list-item" v-for="player in goalies" :key="player.id">
-                      <input v-model="g1" type="radio" :id="'g1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != g2.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.goalies.g1.skater" type="radio" :id="'g1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.goalies.g2.skater.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="goalies" name="g2" form="g2" v-model="g2query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="g2" name="g2" form="g2" v-model="team.goalies.g2.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="g2-input-list player-picker__list-item" v-for="player in goalies" :key="player.id">
-                      <input v-model="g2" type="radio" :id="'g2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != g1.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.goalies.g2.skater" type="radio" :id="'g2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.goalies.g1.skater.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
                     </div>
                   </div>
                 </div>
@@ -58,31 +58,66 @@
               <h3 class="form__label" for="defensemen">Pick your defensemen</h3>
               <div class="player-group player-group--3">
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="defensemen" name="d1" form="d1" v-model="d1query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="d1" name="d1" form="d1" v-model="team.defensemen.d1.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="d1-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
-                      <input v-model="d1" type="radio" :id="'d1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != d2.id && player.p_id != d3.id" v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.defensemen.d1.skater" type="radio" :id="'d1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d4.skater.id && player.p_id != team.defensemen.d5.skater.id" 
+                      v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="defensemen" name="d2" form="d2" v-model="d2query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="d2" name="d2" form="d2" v-model="team.defensemen.d2.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="d2-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
-                      <input v-model="d2" type="radio" :id="'d2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != d1.id && player.p_id != d3.id" v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.defensemen.d2.skater" type="radio" :id="'d2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d4.skater.id && player.p_id != team.defensemen.d5.skater.id" 
+                      v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="defensemen" name="d3" form="d3" v-model="d3query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="d3" name="d3" form="d3" v-model="team.defensemen.d3.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="d3-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
-                      <input v-model="d3" type="radio" :id="'d3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != d1.id && player.p_id != d2.id" v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.defensemen.d3.skater" type="radio" :id="'d3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d4.skater.id && player.p_id != team.defensemen.d5.skater.id"
+                      v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__item form__item--player-picker">
+                  <input type="text" class="player-picker" id="d4" name="d4" form="d4" v-model="team.defensemen.d4.search" placeholder="Search..."/>
+                  <div class="player-picker__list">
+                    <div class="d4-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
+                      <input v-model="team.defensemen.d4.skater" type="radio" :id="'d4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d5.skater.id"
+                      v-show="player.d4visible" :data-player-name="player.name" :for="'d4-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__item form__item--player-picker">
+                  <input type="text" class="player-picker" id="d5" name="d5" form="d5" v-model="team.defensemen.d5.search" placeholder="Search..."/>
+                  <div class="player-picker__list">
+                    <div class="d5-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
+                      <input v-model="team.defensemen.d5.skater" type="radio" :id="'d5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d4.skater.id"
+                      v-show="player.d5visible" :data-player-name="player.name" :for="'d5-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -92,51 +127,105 @@
               <h3 class="form__label" for="forwards">Pick your forwards</h3>
               <div class="player-group player-group--5">
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="forwards" name="f1" form="f1" v-model="f1query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="f1" name="f1" form="f1" v-model="team.forwards.f1.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="f1-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
-                      <input v-model="f1" type="radio" :id="'f1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.forwards.f1.skater" type="radio" :id="'f1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="forwards" name="f2" form="f2" v-model="f2query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="f2" name="f2" form="f2" v-model="team.forwards.f2.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="f2-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
-                      <input v-model="f2" type="radio" :id="'f2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.forwards.f2.skater" type="radio" :id="'f2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="forwards" name="f3" form="f3" v-model="f3query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="f3" name="f3" form="f3" v-model="team.forwards.f3.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="f3-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
-                      <input v-model="f3" type="radio" :id="'f3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.forwards.f3.skater" type="radio" :id="'f3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="forwards" name="f4" form="f4" v-model="f4query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="f4" name="f4" form="f4" v-model="team.forwards.f4.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="f4-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
-                      <input v-model="f4" type="radio" :id="'f4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f5.id" v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.forwards.f4.skater" type="radio" :id="'f4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form__item form__item--player-picker">
-                  <input type="text" class="player-picker" id="forwards" name="f5" form="f5" v-model="f5query" placeholder="Search..."/>
+                  <input type="text" class="player-picker" id="f5" name="f5" form="f5" v-model="team.forwards.f5.search" placeholder="Search..."/>
                   <div class="player-picker__list">
                     <div class="f5-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
-                      <input v-model="f5" type="radio" :id="'f5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id" v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <input v-model="team.forwards.f5.skater" type="radio" :id="'f5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__item form__item--player-picker">
+                  <input type="text" class="player-picker" id="f6" name="f6" form="f6" v-model="team.forwards.f6.search" placeholder="Search..."/>
+                  <div class="player-picker__list">
+                    <div class="f5-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
+                      <input v-model="team.forwards.f6.skater" type="radio" :id="'f6-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f6visible" :data-player-name="player.name" :for="'f6-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__item form__item--player-picker">
+                  <input type="text" class="player-picker" id="f7" name="f7" form="f7" v-model="team.forwards.f7.search" placeholder="Search..."/>
+                  <div class="player-picker__list">
+                    <div class="f7-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
+                      <input v-model="team.forwards.f7.skater" type="radio" :id="'f7-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f8.skater.id"
+                      v-show="player.f7visible" :data-player-name="player.name" :for="'f7-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__item form__item--player-picker">
+                  <input type="text" class="player-picker" id="f8" name="f8" form="f8" v-model="team.forwards.f8.search" placeholder="Search..."/>
+                  <div class="player-picker__list">
+                    <div class="f8-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
+                      <input v-model="team.forwards.f8.skater" type="radio" :id="'f8-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
+                      <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id"
+                      v-show="player.f8visible" :data-player-name="player.name" :for="'f8-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -173,31 +262,79 @@ export default {
       defensemen: [],
       goalies: [],
       errors: [],
-      f1query: '',
-      f2query: '',
-      f3query: '',
-      f4query: '',
-      f5query: '',
-      d1query: '',
-      d2query: '',
-      d3query: '',
-      g1query: '',
-      g2query: '',
+      team: {
+        forwards: {
+          f1: {
+            skater: '',
+            search: ''
+          },
+          f2: {
+            skater: '',
+            search: ''
+          },
+          f3: {
+            skater: '',
+            search: ''
+          },
+          f4: {
+            skater: '',
+            search: ''
+          },
+          f5: {
+            skater: '',
+            search: ''
+          },
+          f6: {
+            skater: '',
+            search: ''
+          },
+          f7: {
+            skater: '',
+            search: ''
+          },
+          f8: {
+            skater: '',
+            search: ''
+          }
+        },
+        defensemen: {
+          d1: {
+            skater: '',
+            search: ''
+          },
+          d2: {
+            skater: '',
+            search: ''
+          },
+          d3: {
+            skater: '',
+            search: ''
+          },
+          d4: {
+            skater: '',
+            search: ''
+          },
+          d5: {
+            skater: '',
+            search: ''
+          }
+        },
+        goalies: {
+          g1: {
+            skater: '',
+            search: ''
+          },
+          g2: {
+            skater: '',
+            search: ''
+          }
+        }
+      },
       teamPoints: 0,
       name: '',
       owner: '',
       email: '',
       sid: '',
-      f1: '',
-      f2: '',
-      f3: '',
-      f4: '',
-      f5: '',
-      d1: '',
-      d2: '',
-      d3: '',
-      g1: '',
-      g2: '',
       options: [
         {
           title: "Kid",
@@ -259,20 +396,19 @@ export default {
       this.defensemen = skaters[1];
       this.goalies = skaters[2];
       this.forwards.forEach(player => {
-        player.f1visible = true;
-        player.f2visible = true;
-        player.f3visible = true;
-        player.f4visible = true;
-        player.f5visible = true;
+        Object.keys(this.team.forwards).forEach(key => {
+          player[`${key}visible`] = true;
+        });
       });
       this.defensemen.forEach(player => {
-        player.d1visible = true;
-        player.d2visible = true;
-        player.d3visible = true;
+        Object.keys(this.team.defensemen).forEach(key => {
+          player[`${key}visible`] = true;
+        });
       });
       this.goalies.forEach(player => {
-        player.g1visible = true;
-        player.g2visible = true;
+        Object.keys(this.team.goalies).forEach(key => {
+          player[`${key}visible`] = true;
+        });
       });
     } catch(error) {
       this.error = error.message;
@@ -293,14 +429,25 @@ export default {
       if(!this.email) {
         this.errors.push('Please enter your email');
       }
-      if(!this.f1 || !this.f2 || !this.f3 || !this.f4 || !this.f5){
-        this.errors.push('Please select 5 forwards');
+
+      const forwardsSelected = Object.keys(this.team.forwards).every(forward => {
+        return !!this.team.forwards[forward].skater;
+      });
+      const defensemenSelected = Object.keys(this.team.defensemen).every(dman => {
+        return !!this.team.defensemen[dman].skater;
+      });
+      const goaliesSelected = Object.keys(this.team.goalies).every(goalie => {
+        return !!this.team.goalies[goalie].skater;
+      });
+
+      if(!forwardsSelected){
+        this.errors.push(`Please select ${Object.keys(this.team.forwards).length} forwards`);
       }
-      if(!this.d1 || !this.d2 || !this.d3){
-        this.errors.push('Please select 3 defensemen');
+      if(!defensemenSelected){
+        this.errors.push(`Please select ${Object.keys(this.team.defensemen).length} defensemen`);
       }
-      if(!this.g1 || !this.g2){
-        this.errors.push('Please select 2 goalies');
+      if(!goaliesSelected){
+        this.errors.push(`Please select ${Object.keys(this.team.goalies).length} goalies`);
       }
       if(!this.sid){
         this.errors.push('Please select a team logo');
@@ -311,6 +458,7 @@ export default {
       if(this.errors.length){
         return;
       }
+
       await TeamsService.insertTeam(
         {
           name:this.name,
@@ -319,20 +467,25 @@ export default {
           sid:this.sid.value,
           team: {
                 forwards:{
-                  f1:this.f1,
-                  f2:this.f2,
-                  f3:this.f3,
-                  f4:this.f4,
-                  f5:this.f5
+                  f1:this.team.forwards.f1.skater,
+                  f2:this.team.forwards.f2.skater,
+                  f3:this.team.forwards.f3.skater,
+                  f4:this.team.forwards.f4.skater,
+                  f5:this.team.forwards.f5.skater,
+                  f6:this.team.forwards.f4.skater,
+                  f7:this.team.forwards.f4.skater,
+                  f8:this.team.forwards.f4.skater
                 },
                 defensemen:{
-                  d1:this.d1,
-                  d2:this.d2,
-                  d3:this.d3
+                  d1:this.team.defensemen.d1.skater,
+                  d2:this.team.defensemen.d2.skater,
+                  d3:this.team.defensemen.d3.skater,
+                  d4:this.team.defensemen.d3.skater,
+                  d5:this.team.defensemen.d3.skater
                 },
                 goalies:{
-                  g1:this.g1,
-                  g2:this.g2
+                  g1:this.team.goalies.g1.skater,
+                  g2:this.team.goalies.g2.skater
               }
           }
         }
@@ -341,179 +494,69 @@ export default {
     },
     updateTeamPoints(){
       this.teamPoints = 0;
-      if(!isNaN(this.f1.pv)){
-        this.teamPoints += this.f1.pv;
-      }
-      if(!isNaN(this.f2.pv)){
-        this.teamPoints += this.f2.pv;
-      }
-      if(!isNaN(this.f3.pv)){
-        this.teamPoints += this.f3.pv;
-      }
-      if(!isNaN(this.f4.pv)){
-        this.teamPoints += this.f4.pv;
-      }
-      if(!isNaN(this.f5.pv)){
-        this.teamPoints += this.f5.pv;
-      }
-      if(!isNaN(this.d1.pv)){
-        this.teamPoints += this.d1.pv;
-      }
-      if(!isNaN(this.d2.pv)){
-        this.teamPoints += this.d2.pv;
-      }
-      if(!isNaN(this.d3.pv)){
-        this.teamPoints += this.d3.pv;
-      }
-      if(!isNaN(this.g1.pv)){
-        this.teamPoints += this.g1.pv;
-      }
-      if(!isNaN(this.g2.pv)){
-        this.teamPoints += this.g2.pv;
-      }
+      Object.keys(this.team.forwards).forEach(skater => {
+        if(!isNaN(this.team.forwards[skater].skater.pv)){
+          this.teamPoints += this.team.forwards[skater].skater.pv;
+        }
+      });
+      Object.keys(this.team.defensemen).forEach(skater => {
+        if(!isNaN(this.team.defensemen[skater].skater.pv)){
+          this.teamPoints += this.team.defensemen[skater].skater.pv;
+        }
+      });
+      Object.keys(this.team.goalies).forEach(skater => {
+        if(!isNaN(this.team.goalies[skater].skater.pv)){
+          this.teamPoints += this.team.goalies[skater].skater.pv;
+        }
+      });
     }
   },
   watch:{
-    f1query:function() {
-      if(this.f1query.length < 3){
-        this.forwards.map(player => player.f1visible = true);
-        return;
-      }
-      this.forwards.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.f1query.toLowerCase())){
-          player.f1visible = false;
+    team: {
+     handler() {
+       this.updateTeamPoints();
+       
+       Object.keys(this.team.forwards).forEach(skater => {
+        if(!this.team.forwards[skater].search || this.team.forwards[skater].search.length < 3) {
+           this.forwards.map(player => player[`${skater}visible`] = true);
+          return;
         }
-      });
-    },
-    f2query:function() {
-      if(this.f2query.length < 3){
-        this.forwards.map(player => player.f2visible = true);
-        return;
-      }
-      this.forwards.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.f2query.toLowerCase())){
-          player.f2visible = false;
+
+        this.forwards.forEach(player => {
+          if(!player.name.toLowerCase().includes(this.team.forwards[skater].search.toLowerCase())){
+            player[`${skater}visible`] = false;
+          }
+        });
+       });
+
+       Object.keys(this.team.defensemen).forEach(skater => {
+        if(!this.team.defensemen[skater].search || this.team.defensemen[skater].search.length < 3) {
+           this.defensemen.map(player => player[`${skater}visible`] = true);
+          return;
         }
-      });
-    },
-    f3query:function() {
-      if(this.f3query.length < 3){
-        this.forwards.map(player => player.f3visible = true);
-        return;
-      }
-      this.forwards.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.f3query.toLowerCase())){
-          player.f3visible = false;
+
+        this.defensemen.forEach(player => {
+          if(!player.name.toLowerCase().includes(this.team.defensemen[skater].search.toLowerCase())){
+            player[`${skater}visible`] = false;
+          }
+        });
+       });
+
+       Object.keys(this.team.goalies).forEach(skater => {
+        if(!this.team.goalies[skater].search || this.team.goalies[skater].search.length < 3) {
+           this.goalies.map(player => player[`${skater}visible`] = true);
+          return;
         }
-      });
-    },
-    f4query:function() {
-      if(this.f4query.length < 3){
-        this.forwards.map(player => player.f4visible = true);
-        return;
-      }
-      this.forwards.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.f4query.toLowerCase())){
-          player.f4visible = false;
-        }
-      });
-    },
-    f5query:function() {
-      if(this.f5query.length < 3){
-        this.forwards.map(player => player.f5visible = true);
-        return;
-      }
-      this.forwards.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.f5query.toLowerCase())){
-          player.f5visible = false;
-        }
-      });
-    },
-    d1query:function() {
-      if(this.d1query.length < 3){
-        this.defensemen.map(player => player.d1visible = true);
-        return;
-      }
-      this.defensemen.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.d1query.toLowerCase())){
-          player.d1visible = false;
-        }
-      });
-    },
-    d2query:function() {
-      if(this.d2query.length < 3){
-        this.defensemen.map(player => player.d2visible = true);
-        return;
-      }
-      this.defensemen.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.d2query.toLowerCase())){
-          player.d2visible = false;
-        }
-      });
-    },
-    d3query:function() {
-      if(this.d3query.length < 3){
-        this.defensemen.map(player => player.d3visible = true);
-        return;
-      }
-      this.defensemen.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.d3query.toLowerCase())){
-          player.d3visible = false;
-        }
-      });
-    },
-    g1query:function() {
-      if(this.g1query.length < 3){
-        this.goalies.map(player => player.g1visible = true);
-        return;
-      }
-      this.goalies.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.g1query.toLowerCase())){
-          player.g1visible = false;
-        }
-      });
-    },
-    g2query:function() {
-      if(this.g2query.length < 3){
-        this.goalies.map(player => player.g2visible = true);
-        return;
-      }
-      this.goalies.forEach(player => {
-        if(!player.name.toLowerCase().includes(this.g2query.toLowerCase())){
-          player.g2visible = false;
-        }
-      });
-    },
-    f1:function() {
-      this.updateTeamPoints();
-    },
-    f2:function() {
-      this.updateTeamPoints();
-    },
-    f3:function() {
-      this.updateTeamPoints();
-    },
-    f4:function() {
-      this.updateTeamPoints();
-    },
-    f5:function() {
-      this.updateTeamPoints();
-    },
-    d1:function() {
-      this.updateTeamPoints();
-    },
-    d2:function() {
-      this.updateTeamPoints();
-    },
-    d3:function() {
-      this.updateTeamPoints();
-    },
-    g1:function() {
-      this.updateTeamPoints();
-    },
-    g2:function() {
-      this.updateTeamPoints();
-    }
+
+        this.goalies.forEach(player => {
+          if(!player.name.toLowerCase().includes(this.team.goalies[skater].search.toLowerCase())){
+            player[`${skater}visible`] = false;
+          }
+        });
+       });
+     },
+     deep: true
+  }
   }
 };
 </script>

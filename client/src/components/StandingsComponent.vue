@@ -42,12 +42,12 @@
                       <td>{{team.team.forwards[player].points}}</td>
                     </tr>
                     <tr v-for="player in Object.keys(team.team.defensemen)" :key="player">
-                      <td>F</td>
+                      <td>D</td>
                       <td>{{team.team.defensemen[player].name}}</td>
                       <td>{{team.team.defensemen[player].points}}</td>
                     </tr>
                     <tr v-for="player in Object.keys(team.team.goalies)" :key="player">
-                      <td>F</td>
+                      <td>G</td>
                       <td>{{team.team.goalies[player].name}}</td>
                       <td>{{team.team.goalies[player].points}}</td>
                     </tr>
