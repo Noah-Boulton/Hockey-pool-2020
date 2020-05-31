@@ -99,11 +99,11 @@ async function updatePlayers() {
                 }
             }
         }));
+
+        client.close();
     }catch(e){
         console.error(e);
     }
-
-    client.close();
 }
 
 async function updateGoaliePoints(){
@@ -192,11 +192,11 @@ async function updateGoaliePoints(){
                 }));
             }));
         }));
+
+        client.close();
     }catch(e){
         console.error(e);
     }
-
-    client.close();
 }
 
 async function updateFights(){
@@ -280,11 +280,11 @@ async function updateFights(){
                 });
             });
         });
+
+        client.close();
     }catch(e){
         console.error(e);
     }
-
-    client.close();
 }
 
 module.exports = router;
