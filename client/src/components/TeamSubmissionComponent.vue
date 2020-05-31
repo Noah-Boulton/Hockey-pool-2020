@@ -36,7 +36,9 @@
                   <div class="player-picker__list">
                     <div class="g1-input-list player-picker__list-item" v-for="player in goalies" :key="player.id">
                       <input v-model="team.goalies.g1.skater" type="radio" :id="'g1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != team.goalies.g2.skater.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != team.goalies.g2.skater.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id"   @click="setSearch('goalies', 'g1', player.name)">
+                        {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -46,7 +48,9 @@
                   <div class="player-picker__list">
                     <div class="g2-input-list player-picker__list-item" v-for="player in goalies" :key="player.id">
                       <input v-model="team.goalies.g2.skater" type="radio" :id="'g2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != team.goalies.g1.skater.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != team.goalies.g1.skater.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id"  @click="setSearch('goalies', 'g2', player.name)">
+                          {{player.name}} {{player.pv}}
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -63,7 +67,7 @@
                     <div class="d1-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="team.defensemen.d1.skater" type="radio" :id="'d1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d4.skater.id && player.p_id != team.defensemen.d5.skater.id" 
-                      v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id">
+                      v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id" @click="setSearch('defensemen', 'd1', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -76,7 +80,7 @@
                     <div class="d2-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="team.defensemen.d2.skater" type="radio" :id="'d2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d4.skater.id && player.p_id != team.defensemen.d5.skater.id" 
-                      v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id">
+                      v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id" @click="setSearch('defensemen', 'd2', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -89,7 +93,7 @@
                     <div class="d3-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="team.defensemen.d3.skater" type="radio" :id="'d3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d4.skater.id && player.p_id != team.defensemen.d5.skater.id"
-                      v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id">
+                      v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id" @click="setSearch('defensemen', 'd3', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -102,7 +106,7 @@
                     <div class="d4-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="team.defensemen.d4.skater" type="radio" :id="'d4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d5.skater.id"
-                      v-show="player.d4visible" :data-player-name="player.name" :for="'d4-radio-' + player.p_id">
+                      v-show="player.d4visible" :data-player-name="player.name" :for="'d4-radio-' + player.p_id" @click="setSearch('defensemen', 'd4', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -115,7 +119,7 @@
                     <div class="d5-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="team.defensemen.d5.skater" type="radio" :id="'d5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.defensemen.d1.skater.id && player.p_id != team.defensemen.d2.skater.id && player.p_id != team.defensemen.d3.skater.id && player.p_id != team.defensemen.d4.skater.id"
-                      v-show="player.d5visible" :data-player-name="player.name" :for="'d5-radio-' + player.p_id">
+                      v-show="player.d5visible" :data-player-name="player.name" :for="'d5-radio-' + player.p_id" @click="setSearch('defensemen', 'd5', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -132,7 +136,7 @@
                     <div class="f1-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f1.skater" type="radio" :id="'f1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id">
+                      v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id" @click="setSearch('forwards', 'f1', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -145,7 +149,7 @@
                     <div class="f2-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f2.skater" type="radio" :id="'f2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id">
+                      v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id" @click="setSearch('forwards', 'f2', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -158,7 +162,7 @@
                     <div class="f3-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f3.skater" type="radio" :id="'f3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id">
+                      v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id" @click="setSearch('forwards', 'f3', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -171,7 +175,7 @@
                     <div class="f4-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f4.skater" type="radio" :id="'f4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id">
+                      v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id" @click="setSearch('forwards', 'f4', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -184,7 +188,7 @@
                     <div class="f5-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f5.skater" type="radio" :id="'f5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id">
+                      v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id" @click="setSearch('forwards', 'f5', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -197,7 +201,7 @@
                     <div class="f5-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f6.skater" type="radio" :id="'f6-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f7.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f6visible" :data-player-name="player.name" :for="'f6-radio-' + player.p_id">
+                      v-show="player.f6visible" :data-player-name="player.name" :for="'f6-radio-' + player.p_id" @click="setSearch('forwards', 'f6', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -210,7 +214,7 @@
                     <div class="f7-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f7.skater" type="radio" :id="'f7-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f8.skater.id"
-                      v-show="player.f7visible" :data-player-name="player.name" :for="'f7-radio-' + player.p_id">
+                      v-show="player.f7visible" :data-player-name="player.name" :for="'f7-radio-' + player.p_id" @click="setSearch('forwards', 'f7', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -223,7 +227,7 @@
                     <div class="f8-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="team.forwards.f8.skater" type="radio" :id="'f8-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != team.forwards.f1.skater.id && player.p_id != team.forwards.f2.skater.id && player.p_id != team.forwards.f3.skater.id && player.p_id != team.forwards.f4.skater.id && player.p_id != team.forwards.f5.skater.id && player.p_id != team.forwards.f6.skater.id && player.p_id != team.forwards.f7.skater.id"
-                      v-show="player.f8visible" :data-player-name="player.name" :for="'f8-radio-' + player.p_id">
+                      v-show="player.f8visible" :data-player-name="player.name" :for="'f8-radio-' + player.p_id" @click="setSearch('forwards', 'f8', player.name)">
                         {{player.name}} {{player.pv}}
                       </label>
                     </div>
@@ -509,6 +513,9 @@ export default {
           this.teamPoints += this.team.goalies[skater].skater.pv;
         }
       });
+    },
+    setSearch(key, pos, name) {
+      this.team[key][pos].search = name;
     }
   },
   watch:{

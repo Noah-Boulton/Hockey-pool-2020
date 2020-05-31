@@ -19,13 +19,13 @@ npm run serve
 
 ## TODO
 - [ ] Make moshockeyhos.ca redirect to moshockyhosers.ca - ESIZ
-- [ ] Use Player Values from Sportsnet - NORO
+- [ ] Update rosters
+- [ ] Use Player Values from Sportsnet - NORO/MO
 - [ ] Fix colouring on Standings page & try having logo to the left of team names and bolded  - ESIZ
 - [ ] Fix broken easter eggs - NORO/MO
 - [ ] Test out whole site - WHOLE TEAM
 - [ ] Rework written content - MO
 - [ ] Make the text larger on standings page and move it beside the image
-- [ ] Display player name selected in the "search" bar when making a team- ESIZ
 - [ ] Add "Top Ho's" hockey card display  where top 3 scorers are displayed as hockey cards - ESIZ/NORO
 - [ ] Make site more mobile friendly - ESRAH
 - [ ] Get Jay Baruchel/other celesbians - MO
@@ -36,7 +36,8 @@ npm run serve
 - [ ] Add new display for each team 
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Make hockey card layout
-- [ ] Clean up code - NORO
+- [x] Display player name selected in the "search" bar when making a team- ESIZ
+- [x] Clean up code - NORO
 - [x] Change logo selection to drop down - ESIZ/NORO 
 - [x] Hide Standings & Teams pages before we go live
 - [x] Add a hyperlink to The Ho's page at the end of rule 1 where it says "here" 
