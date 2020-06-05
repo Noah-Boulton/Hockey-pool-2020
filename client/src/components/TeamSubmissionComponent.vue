@@ -484,8 +484,8 @@ export default {
                   d1:this.team.defensemen.d1.skater,
                   d2:this.team.defensemen.d2.skater,
                   d3:this.team.defensemen.d3.skater,
-                  d4:this.team.defensemen.d3.skater,
-                  d5:this.team.defensemen.d3.skater
+                  d4:this.team.defensemen.d4.skater,
+                  d5:this.team.defensemen.d5.skater
                 },
                 goalies:{
                   g1:this.team.goalies.g1.skater,
