@@ -476,9 +476,9 @@ export default {
                   f3:this.team.forwards.f3.skater,
                   f4:this.team.forwards.f4.skater,
                   f5:this.team.forwards.f5.skater,
-                  f6:this.team.forwards.f4.skater,
-                  f7:this.team.forwards.f4.skater,
-                  f8:this.team.forwards.f4.skater
+                  f6:this.team.forwards.f6.skater,
+                  f7:this.team.forwards.f7.skater,
+                  f8:this.team.forwards.f8.skater
                 },
                 defensemen:{
                   d1:this.team.defensemen.d1.skater,
