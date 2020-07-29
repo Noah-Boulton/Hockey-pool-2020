@@ -24,49 +24,45 @@ cron.schedule('15 * * * *', () => {
 // Get Teams
 router.get('/', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    const teams = client.db('teams').collection('teams');
-    res.send(await teams.find({}).toArray());
+    const teamsDb = client.db('teams').collection('teams');
+    const teams = await teamsDb.find({}).toArray()
+    
+    client.close();
+    res.send(teams);
 });
 
 // Add Team
 router.post('/', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
     const teams = client.db('teams').collection('teams');
-    const f1 = req.body.team.team.forwards.f1;
-    const f2 = req.body.team.team.forwards.f2;
-    const f3 = req.body.team.team.forwards.f3;
-    const f4 = req.body.team.team.forwards.f4;
-    const f5 = req.body.team.team.forwards.f5;
-    const d1 = req.body.team.team.defensemen.d1;
-    const d2 = req.body.team.team.defensemen.d2;
-    const d3 = req.body.team.team.defensemen.d3;
-    const g1 = req.body.team.team.goalies.g1;
-    const g2 = req.body.team.team.goalies.g2;
+    const newTeam = req.body.team.team;
+    const team = {
+        forwards: {},
+        defensemen: {},
+        goalies: {}
+    };
+
+    Object.keys(newTeam).forEach(key => {
+        Object.keys(newTeam[key]).forEach(posistion => {
+            team[key][posistion] = {
+                name: newTeam[key][posistion].name, 
+                id: newTeam[key][posistion].id, 
+                points: 0
+            };
+        });
+    })
+
     await teams.insertOne({
         name: req.body.team.name,
         owner: req.body.team.owner,
         sid: req.body.team.sid,
-        team: {
-            "forwards":{
-                "f1":{"name" : f1.name, "id" : f1.id, "points": 0},
-                "f2":{"name" : f2.name, "id" : f2.id, "points": 0},
-                "f3":{"name" : f3.name, "id" : f3.id, "points": 0},
-                "f4":{"name" : f4.name, "id" : f4.id, "points": 0},
-                "f5":{"name" : f5.name, "id" : f5.id, "points": 0}
-            },
-            "defensemen":{
-                "d1":{"name" : d1.name, "id" : d1.id, "points": 0},
-                "d2":{"name" : d2.name, "id" : d2.id, "points": 0},
-                "d3":{"name" : d3.name, "id" : d3.id, "points": 0}
-            },
-            "goalies":{
-                "g1":{"name" : g1.name, "id" : g1.id, "points": 0},
-                "g2":{"name" : g2.name, "id" : g2.id, "points": 0}
-            }
-        },
+        team,
         points: 0,
         createdAt: new Date()
     });
+
+    client.close();
+
     updateTeams();
     sendMail(req.body.team.name, req.body.team.email, req.body.team.owner);
     notifyMo(req.body.team);
@@ -106,10 +102,9 @@ function notifyMo(team) {
         text: `
     Owner: ${team.owner}
     Team Name: ${team.name} 
-    Forwards: ${team.team.forwards.f1.name}, ${team.team.forwards.f2.name}, ${team.team.forwards.f3.name}, ${team.team.forwards.f4.name}, ${team.team.forwards.f5.name}
-    Defensemen: ${team.team.defensemen.d1.name}, ${team.team.defensemen.d2.name}, ${team.team.defensemen.d3.name}
+    Forwards: ${team.team.forwards.f1.name}, ${team.team.forwards.f2.name}, ${team.team.forwards.f3.name}, ${team.team.forwards.f4.name}, ${team.team.forwards.f5.name}, ${team.team.forwards.f6.name}, ${team.team.forwards.f7.name}, ${team.team.forwards.f8.name}
+    Defensemen: ${team.team.defensemen.d1.name}, ${team.team.defensemen.d2.name}, ${team.team.defensemen.d3.name}, ${team.team.defensemen.d4.name}, ${team.team.defensemen.d5.name}
     Goalies: ${team.team.goalies.g1.name}, ${team.team.goalies.g2.name}
-
 Sincerely,
     Commissioner Mo`
     };
@@ -124,13 +119,13 @@ Sincerely,
 }
 
 async function updateTeams() {
-    const teamsClient = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    const teamsdb = teamsClient.db('teams').collection('teams');
+    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const teamsdb = client.db('teams').collection('teams');
     const teams = await teamsdb.find({}).toArray();
-    const playersClient = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
-    const playersdb = playersClient.db('players').collection('players');
+    const playersdb = client.db('players').collection('players');
     const players = await playersdb.find({}).toArray();
-    teams.forEach(async (team) => {
+
+    await Promise.all(teams.map(async (team) => {
         const newTeam = {
             name: team.name,
             owner: team.owner,
@@ -138,10 +133,12 @@ async function updateTeams() {
             team: team.team,
             points: team.points,
             tie_breaker: team.tie_breaker
-            };
+        };
+
         let newPoints = 0;
         let newTieBreaker = 0;
-        players.forEach(async (player) => {
+
+        players.map(player => {
             switch(player.p_id){
                 case Number(team.team.forwards.f1.id) :
                     newTeam.team.forwards.f1.points = player.points;
@@ -197,14 +194,14 @@ async function updateTeams() {
                     break;
             }
         });
+
         newTeam.points = newPoints;
         newTeam.tie_breaker = newTieBreaker;
-        await teamsdb.replaceOne({_id: team._id}, newTeam, (err, res) => {
-            if (err) throw err;
-        });
-        playersClient.close();
-        teamsClient.close();
-    });
+
+        await teamsdb.replaceOne({_id: team._id}, newTeam);
+    }));
+
+    client.close();
 }
 
 module.exports = router;
