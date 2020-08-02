@@ -4,11 +4,11 @@
           <div class="table-wrapper  span-width--66">
             <h1>Standings</h1>
             <table class="standings-table">
-                <tr>
+                <thead>
                     <th>Position</th>
                     <th>Team</th>
                     <th>Points</th>
-                </tr>
+                </thead>
                 <tbody 
                 v-for="(team, index) in standings"
                 v-bind:item="team"
@@ -17,24 +17,24 @@
                   <tr>
                     <td v-if="team.tied"><a href="https://getyarn.io/yarn-clip/ab19ac3c-6518-4da7-9043-6e0ce0038c5b#/SJZWeWPh5dH.copy" style="color:black; text-decoration:none">{{team.rank}}</a></td>
                     <td v-if="!team.tied">{{team.rank}}</td>
-                    <td v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50 @click="showTeam(index)">{{team.name}}</td>
-                    <td v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='cfb'"> <img src="../../public/images/canadian-finger-bacon.png" alt="Canadian Finger Bacon" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='chazz'"> <img src="../../public/images/ChazzWazza.png" alt="ChazzWazza's" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='puck-luck'"> <img src="../../public/images/puck-luck.png" alt="Puck Luck" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='kevin-gravel-grinderz'"> <img src="../../public/images/kevin-gravel-grinderz.png" alt="Kevin Gravel Grinderz" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='nuck'"> <img src="../../public/images/nuck.png" alt="Nuck" height=50 @click="showTeam(index)">  {{team.name}}</td>
-                    <td v-if="team.sid =='will'"> <img src="../../public/images/will.jpg" alt="Will" height=50 @click="showTeam(index)">  {{team.name}}</td>
+                    <td class="team__td" v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50 class="team__img" @click="showTeam(index)"><h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='cfb'"> <img src="../../public/images/canadian-finger-bacon.png" alt="Canadian Finger Bacon" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='chazz'"> <img src="../../public/images/ChazzWazza.png" alt="ChazzWazza's" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='puck-luck'"> <img src="../../public/images/puck-luck.png" alt="Puck Luck" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='kevin-gravel-grinderz'"> <img src="../../public/images/kevin-gravel-grinderz.png" alt="Kevin Gravel Grinderz" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='nuck'"> <img src="../../public/images/nuck.png" alt="Nuck" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='will'"> <img src="../../public/images/will.jpg" alt="Will" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
                   </tr>
-                  <tr v-if="show == index">                      
+                  <thead v-if="show == index">                      
                     <th>Position</th>
                     <th>Player</th>
                     <th>Points</th>
-                  </tr>
+                  </thead>
                   <tr v-if="show == index">
                     <td>F</td>
                     <td>{{team.team.forwards.f1.name}}</td>
