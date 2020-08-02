@@ -88,19 +88,20 @@ async function updatePlayers() {
                     points = goals + assists;
                 }
 
-                if(isNaN(points)){
-                    points = 0;
-                }
-
+                
                 const today = new Date();
-
+                
                 if(today.getMonth() === 7 && today.getDate() === 8) {
                     preseason = points;
                     data.preseason = points;
                 }
-
+                
                 points -= data.preseason;
-
+                
+                if(isNaN(points)){
+                    points = 0;
+                }
+                
                 if(points != player.points){
                     const newValues = { $set: {points: points, goals: goals, assists: assists, games: games} };
                     
