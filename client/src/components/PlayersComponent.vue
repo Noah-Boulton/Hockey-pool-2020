@@ -6,7 +6,6 @@
             <div >
                 <table class="players-table" ref="table">
                   <thead>
-                <tr>
                     <th @click="sort('name')" class="sortable" v-bind:data-sort="nameSort">Player</th>
                     <th @click="sort('pos')" class="sortable" v-bind:data-sort="posSort">Position</th>
                     <th @click="sort('team')" class="sortable" v-bind:data-sort="teamSort">Team</th>
@@ -15,7 +14,6 @@
                     <th @click="sort('assists')" class="sortable" v-bind:data-sort="assistsSort">Assists</th>
                     <th @click="sort('fights')" class="sortable" v-bind:data-sort="fightsSort">Fights</th>
                     <th @click="sort('points')" class="sortable" v-bind:data-sort="pointsSort">Points</th>
-                </tr>
                 </thead>
                 <tbody>
                 <tr 

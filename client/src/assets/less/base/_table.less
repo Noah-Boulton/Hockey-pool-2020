@@ -23,6 +23,8 @@ table {
     font-size: 1.25rem;
     &.sortable {
       cursor: pointer;
+      position: relative;
+      padding-right: 2rem;
       &:hover,
       &:focus {
         text-decoration: underline;
@@ -31,21 +33,18 @@ table {
         content:'>';
         display: inline-block;
         position: relative;
-        padding-left: 0.5rem;
         transform-origin: center center;
-        transform:rotate(0deg);
-        vertical-align: middle;
+        transform:rotate(0deg) translate(0,-50%);
+        position: absolute;
+        top: 50%;
+        right: 1rem;
         transition: transform 0.5s ease-in-out;
       }
       &[data-sort="asc"]:after {
-        transform:rotate(-90deg);
-        padding-left: 0;
-        padding-top: 1rem;
+        transform:rotate(-90deg) translate(1rem,50%);
       }
       &[data-sort="desc"]:after {
-        transform:rotate(90deg);
-        padding-left: 0;
-        padding-bottom: 0.5rem;
+        transform:rotate(90deg) translate(-1rem,-50%);
       }
     }
   }
