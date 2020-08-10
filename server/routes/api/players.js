@@ -87,16 +87,10 @@ async function updatePlayers() {
                     assists = data.assists;
                     points = goals + assists;
                 }
-
-                
-                const today = new Date();
-                
-                if(today.getMonth() === 7 && today.getDate() === 8) {
-                    preseason = points;
-                    data.preseason = points;
-                }
                 
                 points -= data.preseason;
+                goals -= data.preseason_goals;
+                assists -= data.preseason_assists;
                 
                 if(isNaN(points)){
                     points = 0;
