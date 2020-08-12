@@ -236,7 +236,7 @@ async function updateFights(){
         const games = res.data.dates[0].games;
         
         //Get all the game links for the current day
-        games.forEach(async game => {
+        await Promise.all(games.map(async game => {
             //Use each games scoring plays to check for goalie points 
             const gameURL = `https://statsapi.web.nhl.com${game.link}`;
             const gameres = await axios.get(gameURL).catch((error) => {
@@ -262,7 +262,7 @@ async function updateFights(){
             const gameData = gameres.data;
             const penaltyPlays = gameData.liveData.plays.penaltyPlays;
 
-            penaltyPlays.forEach(play => {
+            await Promise.all(penaltyPlays.map(play => {
                 const data = gameData.liveData.plays.allPlays[play];
                 
                 if(data.result.secondaryType != 'Fighting') { return; }
@@ -282,8 +282,8 @@ async function updateFights(){
                         if (err) throw err;
                     });
                 });
-            });
-        });
+            }));
+        }));
 
         client.close();
     }catch(e){
