@@ -1,18 +1,18 @@
 .player-img-wrapper {
+  display: inline-block;
   position: relative;
   z-index: 0;
-  img {
+  .player-img {
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+  .hosed {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    height: 55px;
     width: 55px;
-    &.player-img {
-      position: relative;
-      top: auto;
-      left: auto;
-      z-index: 0;
-    }
+    height: 55px;
   }
 }
