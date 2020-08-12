@@ -88,9 +88,9 @@ async function updatePlayers() {
                     points = goals + assists;
                 }
                 
-                points -= data.preseason;
-                goals -= data.preseason_goals;
-                assists -= data.preseason_assists;
+                points -= player.preseason;
+                goals -= player.preseason_goals;
+                assists -= player.preseason_assists;
                 
                 if(isNaN(points)){
                     points = 0;
