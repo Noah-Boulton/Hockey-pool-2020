@@ -21,16 +21,16 @@ npm run serve
 - [ ] Make moshockeyhos.ca redirect to moshockyhosers.ca - ESIZ
 - [ ] Test out whole site - WHOLE TEAM
 - [ ] Rework written content - MO
-- [ ] Display player name selected in the "search" bar when making a team- ESIZ
 - [ ] Add "Top Ho's" hockey card display  where top 3 scorers are displayed as hockey cards - ESIZ/NORO [ HOLD ]
 - [ ] Get Jay Baruchel/other celesbians - MO
-- [ ] GTA Wasted "Hosed" Graphic (For team/player being eliminated) - MO
 - [ ] Make podcast player that is similar to a Spotify type player that stays at the bottom of the page and scrolls with you as you navigate - WHOLE TEAM
-- [ ] Add eliminated tag to each player on a team so the player image can be updated with "Hosed" stamp
 - [ ] Style soundcloud page
 - [ ] Add new display for each team 
 - [ ] Figure out a way to add chirps and chatter (Maybe comments on teams page)
 - [ ] Make hockey card layout
+- [x] Display player name selected in the "search" bar when making a team- ESIZ
+- [x] GTA Wasted "Hosed" Graphic (For team/player being eliminated) - MO
+- [x] Add eliminated tag to each player on a team so the player image can be updated with "Hosed" stamp
 - [x] Make site more mobile friendly - ESRAH
 - [x] Make the text larger on standings page and move it beside the image
 - [x] Use Player Values from Sportsnet - NORO
