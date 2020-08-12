@@ -142,51 +142,61 @@ async function updateTeams() {
             switch(player.p_id){
                 case Number(team.team.forwards.f1.id) :
                     newTeam.team.forwards.f1.points = player.points;
+                    newTeam.team.forwards.f1.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f2.id) :
                     newTeam.team.forwards.f2.points = player.points;
+                    newTeam.team.forwards.f2.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f3.id) :
                     newTeam.team.forwards.f3.points = player.points;
+                    newTeam.team.forwards.f3.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f4.id) :
                     newTeam.team.forwards.f4.points = player.points;
+                    newTeam.team.forwards.f4.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.forwards.f5.id) :
                     newTeam.team.forwards.f5.points = player.points;
+                    newTeam.team.forwards.f5.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.defensemen.d1.id) :
                     newTeam.team.defensemen.d1.points = player.points;
+                    newTeam.team.defensemen.d1.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.defensemen.d2.id) :
                     newTeam.team.defensemen.d2.points = player.points;
+                    newTeam.team.defensemen.d2.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.defensemen.d3.id) :
                     newTeam.team.defensemen.d3.points = player.points;
+                    newTeam.team.defensemen.d3.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.goalies.g1.id) :
                     newTeam.team.goalies.g1.points = player.points;
+                    newTeam.team.goalies.g1.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
                 case Number(team.team.goalies.g2.id) :
                     newTeam.team.goalies.g2.points = player.points;
+                    newTeam.team.goalies.g2.eliminated = player.eliminated;
                     newPoints += player.points;
                     newTieBreaker += player.fights
                     break;
