@@ -61,15 +61,14 @@ async function updatePlayers() {
             const url = `https://statsapi.web.nhl.com/api/v1/people/${player.p_id}/stats?stats=statsSingleSeasonPlayoffs&season=20192020`;
             const res = await axios.get(url).catch((err) => console.error(err));
             
-            if(res && !res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){ 
-                
+            if (res && !res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){ 
                 const data = res.data.stats[0].splits[0].stat;
                 let points = 0;
                 let goals = 0;
                 let assists = 0;
                 let games = data.games;
 
-                if(player.pos == "G"){
+                if (player.pos == "G"){
                     // Goalie
                     points = 2*data.wins;
 
@@ -102,6 +101,8 @@ async function updatePlayers() {
                     
                     await playersdb.updateOne(query, newValues);
                 }
+            } else {
+                console.log(`Error getting stats for ${player.name}`);
             }
         }));
 
