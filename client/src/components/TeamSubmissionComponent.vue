@@ -39,7 +39,10 @@
                   <div class="player-picker__list">
                     <div class="g1-input-list player-picker__list-item" v-for="player in goalies" :key="player.id">
                       <input v-model="g1" type="radio" :id="'g1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != g2.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != g2.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -52,7 +55,10 @@
                   <div class="player-picker__list">
                     <div class="g2-input-list player-picker__list-item" v-for="player in goalies" :key="player.id">
                       <input v-model="g2" type="radio" :id="'g2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != g1.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != g1.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -71,7 +77,10 @@
                   <div class="player-picker__list">
                     <div class="d1-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="d1" type="radio" :id="'d1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != d2.id && player.p_id != d3.id" v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != d2.id && player.p_id != d3.id" v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -84,7 +93,10 @@
                   <div class="player-picker__list">
                     <div class="d2-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="d2" type="radio" :id="'d2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != d1.id && player.p_id != d3.id" v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != d1.id && player.p_id != d3.id" v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -97,7 +109,10 @@
                   <div class="player-picker__list">
                     <div class="d3-input-list player-picker__list-item" v-for="player in defensemen" :key="player.id">
                       <input v-model="d3" type="radio" :id="'d3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != d1.id && player.p_id != d2.id" v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != d1.id && player.p_id != d2.id" v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -114,7 +129,10 @@
                   <div class="player-picker__list">
                     <div class="f1-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="f1" type="radio" :id="'f1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -127,7 +145,10 @@
                   <div class="player-picker__list">
                     <div class="f2-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="f2" type="radio" :id="'f2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != f1.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -140,7 +161,10 @@
                   <div class="player-picker__list">
                     <div class="f3-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="f3" type="radio" :id="'f3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -153,7 +177,10 @@
                   <div class="player-picker__list">
                     <div class="f4-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="f4" type="radio" :id="'f4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f5.id" v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f5.id" v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -166,7 +193,10 @@
                   <div class="player-picker__list">
                     <div class="f5-input-list player-picker__list-item" v-for="player in forwards" :key="player.id">
                       <input v-model="f5" type="radio" :id="'f5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
-                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id" v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id">{{player.name}} {{player.pv}}</label>
+                      <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id" v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id">
+                        {{player.name}} {{player.pv}}
+                        <img :src="player.image" width=35>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -294,21 +324,60 @@ export default {
         player.f3visible = true;
         player.f4visible = true;
         player.f5visible = true;
+        player.image = this.getTeamLogo(player.team);
       });
       this.defensemen.forEach(player => {
         player.d1visible = true;
         player.d2visible = true;
         player.d3visible = true;
+        player.image = this.getTeamLogo(player.team);
       });
       this.goalies.forEach(player => {
         player.g1visible = true;
         player.g2visible = true;
+        player.image = this.getTeamLogo(player.team);
       });
     } catch(error) {
       this.error = error.message;
     }
   },
   methods: {
+    getTeamLogo(teamName) {
+      switch(teamName) {
+        case 'New York Islanders':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/2_dark.svg';
+        case 'Philadelphia Flyers':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/4_dark.svg';
+        case 'Boston Bruins':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/6_dark.svg';
+        case 'Arizona Coyotes':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/53_dark.svg';
+        case 'Calgary Flames':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/20_dark.svg';
+        case 'Carolina Hurricanes':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/12_dark.svg';
+        case 'Chicago Blackhawks':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/16_dark.svg';
+        case 'Colorado Avalanche':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/21_dark.svg';
+        case 'Columbus Blue Jackets':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/29_dark.svg';
+        case 'Dallas Stars':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/25_dark.svg';
+        case 'Montréal Canadiens':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/8_dark.svg';
+        case 'St. Louis Blues':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/19_dark.svg';
+        case 'Tampa Bay Lightning':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/14_dark.svg';
+        case 'Vancouver Canucks':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/23_dark.svg';
+        case 'Vegas Golden Knights':
+          return 'https://www-league.nhlstatic.com/images/logos/teams-current-primary-dark/54.svg';
+        case 'Washington Capitals':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/15_dark.svg';
+      }
+    },
     clear(key) {
       event.preventDefault();
       this[key] = '';
