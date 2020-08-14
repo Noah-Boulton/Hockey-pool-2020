@@ -41,7 +41,7 @@
                       <input v-model="g1" type="radio" :id="'g1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != g2.id" v-show="player.g1visible" :data-player-name="player.name" :for="'g1-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -57,7 +57,7 @@
                       <input v-model="g2" type="radio" :id="'g2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != g1.id" v-show="player.g2visible" :data-player-name="player.name" :for="'g2-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -79,7 +79,7 @@
                       <input v-model="d1" type="radio" :id="'d1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != d2.id && player.p_id != d3.id" v-show="player.d1visible" :data-player-name="player.name" :for="'d1-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -95,7 +95,7 @@
                       <input v-model="d2" type="radio" :id="'d2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != d1.id && player.p_id != d3.id" v-show="player.d2visible" :data-player-name="player.name" :for="'d2-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -111,7 +111,7 @@
                       <input v-model="d3" type="radio" :id="'d3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != d1.id && player.p_id != d2.id" v-show="player.d3visible" :data-player-name="player.name" :for="'d3-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -131,7 +131,7 @@
                       <input v-model="f1" type="radio" :id="'f1-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f1visible" :data-player-name="player.name" :for="'f1-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -147,7 +147,7 @@
                       <input v-model="f2" type="radio" :id="'f2-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != f1.id && player.p_id != f3.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f2visible" :data-player-name="player.name" :for="'f2-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -163,7 +163,7 @@
                       <input v-model="f3" type="radio" :id="'f3-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f4.id && player.p_id != f5.id" v-show="player.f3visible" :data-player-name="player.name" :for="'f3-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -179,7 +179,7 @@
                       <input v-model="f4" type="radio" :id="'f4-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f5.id" v-show="player.f4visible" :data-player-name="player.name" :for="'f4-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>
@@ -195,7 +195,7 @@
                       <input v-model="f5" type="radio" :id="'f5-radio-' + player.p_id" :value='{"name":player.name, "id":player.p_id, "pv":player.pv}'>
                       <label v-if="player.p_id != f1.id && player.p_id != f2.id && player.p_id != f3.id && player.p_id != f4.id" v-show="player.f5visible" :data-player-name="player.name" :for="'f5-radio-' + player.p_id">
                         {{player.name}} {{player.pv}}
-                        <img :src="player.image" width=35>
+                        <img :src="player.image" width=35 style='display: unset'>
                       </label>
                     </div>
                   </div>

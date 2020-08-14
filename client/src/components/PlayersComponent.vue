@@ -23,7 +23,10 @@
                 v-bind:key="player._id">
                     <td>{{player.name}}</td>
                     <td>{{player.pos}}</td>
-                    <td>{{player.team}}</td>
+                    <td>
+                      {{player.team}}
+                      <img :src="player.image" width=35 style='display: unset'>
+                    </td>
                     <td>{{player.pv}}</td>
                     <td>{{player.goals}}</td>
                     <td>{{player.assists}}</td>
@@ -70,6 +73,9 @@ export default {
   async created() {
     try {
       this.fullList = await PlayersService.getPlayers();
+      this.fullList.forEach(player => {
+        player.image = this.getTeamLogo(player.team);
+      });
       // this.players = this.players.slice(0,25);
       this.pages = Math.floor(this.fullList.length / 25);
       this.players = this.fullList.slice(0, 25);
@@ -78,6 +84,42 @@ export default {
     }
   },
   methods:{
+    getTeamLogo(teamName) {
+      switch(teamName) {
+        case 'New York Islanders':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/2_dark.svg';
+        case 'Philadelphia Flyers':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/4_dark.svg';
+        case 'Boston Bruins':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/6_dark.svg';
+        case 'Arizona Coyotes':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/53_dark.svg';
+        case 'Calgary Flames':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/20_dark.svg';
+        case 'Carolina Hurricanes':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/12_dark.svg';
+        case 'Chicago Blackhawks':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/16_dark.svg';
+        case 'Colorado Avalanche':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/21_dark.svg';
+        case 'Columbus Blue Jackets':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/29_dark.svg';
+        case 'Dallas Stars':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/25_dark.svg';
+        case 'Montréal Canadiens':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/8_dark.svg';
+        case 'St. Louis Blues':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/19_dark.svg';
+        case 'Tampa Bay Lightning':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/14_dark.svg';
+        case 'Vancouver Canucks':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/23_dark.svg';
+        case 'Vegas Golden Knights':
+          return 'https://www-league.nhlstatic.com/images/logos/teams-current-primary-dark/54.svg';
+        case 'Washington Capitals':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/15_dark.svg';
+      }
+    },
     sort:function(s) {
       if(s === this.currentSort) {
         this.currentSortDir = this.currentSortDir==='asc'?'desc':'asc';
