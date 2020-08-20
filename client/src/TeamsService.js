@@ -9,8 +9,14 @@ class TeamsService {
             try {
                 const res = await axios.get(url);
                 const data = res.data;
+                const teams = data.sort((a,b) => {
+                    if(b.points > a.points) return 1
+                    if(b.points < a.points) return -1
+                    if(b.tie_breaker > a.tie_breaker) return 1
+                    if(b.tie_breaker < a.tie_breaker) return -1
+                });
                 resolve(
-                    data.map(team => ({
+                    teams.map(team => ({
                         ...team,
                         createdAt: new Date(team.createdAt)
                     }))
