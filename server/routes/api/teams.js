@@ -31,6 +31,22 @@ router.get('/', async (req, res) => {
     res.send(teams);
 });
 
+// Hose an entire team
+router.post('/hose/:team', async (req, res) => {
+    const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
+    const players = client.db('players').collection('players');
+    const team = req.params.team.replace('_', ' ');
+    const query = { team : team };
+
+    const newValues = { $set: { eliminated: true } };
+                    
+    await players.updateMany(query, newValues);
+
+    client.close();
+    
+    res.status(204).send();
+});
+
 // Add Team
 router.post('/', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
