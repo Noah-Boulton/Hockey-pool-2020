@@ -43,6 +43,8 @@ router.post('/hose/:team', async (req, res) => {
     await players.updateMany(query, newValues);
 
     client.close();
+
+    await updateTeams();
     
     res.status(204).send();
 });
