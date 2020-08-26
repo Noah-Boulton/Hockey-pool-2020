@@ -7,6 +7,7 @@
                 <thead>
                     <th>Position</th>
                     <th>Team</th>
+                    <th></th>
                     <th>Points</th>
                 </thead>
                 <tbody 
@@ -27,61 +28,124 @@
                     <td class="team__td" v-if="team.sid =='kevin-gravel-grinderz'"> <img src="../../public/images/kevin-gravel-grinderz.png" alt="Kevin Gravel Grinderz" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
                     <td class="team__td" v-if="team.sid =='nuck'"> <img src="../../public/images/nuck.png" alt="Nuck" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
                     <td class="team__td" v-if="team.sid =='will'"> <img src="../../public/images/will.jpg" alt="Will" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td></td>
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
                   </tr>
                   <thead v-if="show == index">                      
                     <th>Position</th>
                     <th>Player</th>
+                    <th></th>
                     <th>Points</th>
                   </thead>
                   <tr v-if="show == index">
                     <td>F</td>
                     <td>{{team.team.forwards.f1.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.forwards.f1.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.forwards.f1.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>F</td>
                     <td>{{team.team.forwards.f2.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.forwards.f2.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.forwards.f2.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>F</td>
                     <td>{{team.team.forwards.f3.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f3.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.forwards.f3.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.forwards.f3.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>F</td>
                     <td>{{team.team.forwards.f4.name}}</td>
-                    <td>{{team.team.forwards.f4.points}}</td>                    </tr>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f4.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.forwards.f4.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
+                    <td>{{team.team.forwards.f4.points}}</td>
+                  </tr>
                   <tr v-if="show == index">
                     <td>F</td>
                     <td>{{team.team.forwards.f5.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f5.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.forwards.f5.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.forwards.f5.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>D</td>
                     <td>{{team.team.defensemen.d1.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.defensemen.d1.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.defensemen.d1.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>D</td>
                     <td>{{team.team.defensemen.d2.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.defensemen.d2.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.defensemen.d2.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>D</td>
                     <td>{{team.team.defensemen.d3.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d3.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.defensemen.d3.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.defensemen.d3.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>G</td>
                     <td>{{team.team.goalies.g1.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.goalies.g1.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.goalies.g1.points}}</td>
                   </tr>
                   <tr v-if="show == index">
                     <td>G</td>
                     <td>{{team.team.goalies.g2.name}}</td>
+                    <td>
+                      <span class="player-img-wrapper">
+                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img v-if="team.team.goalies.g2.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
+                      </span>
+                    </td>
                     <td>{{team.team.goalies.g2.points}}</td>
                   </tr>
                 </tbody>
