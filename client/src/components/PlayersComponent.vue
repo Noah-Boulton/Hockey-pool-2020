@@ -6,7 +6,15 @@
             <div >
                 <table class="players-table" ref="table">
                   <thead>
-                    <th @click="sort('name')" class="sortable" v-bind:data-sort="nameSort">Player</th>
+                    <th class="sortable" v-bind:data-sort="nameSort">
+                      <div @click="sort('name')">
+                        Player
+                      </div>
+                      <div class="player-picker__item-wrapper">
+                        <input type="text" class="player-picker" id="nameQuery"  v-model="nameQuery" placeholder="Search..."/>
+                        <button v-if="nameQuery" class="player-picker__clear" aria-label="clear selection" v-on:click="clear('nameQuery')"></button>
+                      </div>
+                    </th>
                     <th @click="sort('pos')" class="sortable" v-bind:data-sort="posSort">Position</th>
                     <th @click="sort('team')" class="sortable" v-bind:data-sort="teamSort">Team</th>
                     <th @click="sort('pv')" class="sortable" v-bind:data-sort="pvSort">Player Value</th>
@@ -54,6 +62,7 @@ export default {
   data() {
     return {
       players: [],
+      filteredList: [],
       fullList: [],
       pageNumber: 0,
       pages: 1,
@@ -67,7 +76,8 @@ export default {
       goalsSort: '',
       assistsSort: '',
       fightsSort: '',
-      pointsSort: ''
+      pointsSort: '',
+      nameQuery: ''
     }
   },
   async created() {
@@ -76,14 +86,18 @@ export default {
       this.fullList.forEach(player => {
         player.image = this.getTeamLogo(player.team);
       });
-      // this.players = this.players.slice(0,25);
-      this.pages = Math.floor(this.fullList.length / 25);
-      this.players = this.fullList.slice(0, 25);
+      this.pages = Math.floor(this.fullList.length / 25) -1;
+      this.filteredList = this.fullList;
+      this.players = this.filteredList.slice(0, 25);
     } catch(error) {
       this.error = error.message;
     }
   },
   methods:{
+    clear(key) {
+      event.preventDefault();
+      this[key] = '';
+    },
     getTeamLogo(teamName) {
       switch(teamName) {
         case 'New York Islanders':
@@ -204,17 +218,31 @@ export default {
     },
     back: function() {
       this.pageNumber--;
-      this.players = this.fullList.slice(this.pageNumber*25, this.pageNumber*25 + 25);
+      this.players = this.filteredList.slice(this.pageNumber*25, this.pageNumber*25 + 25);
     },
     next: function() {
       this.pageNumber++;
-      this.players = this.fullList.slice(this.pageNumber*25, this.pageNumber*25 + 25);
-      // this.$refs.table.refresh();
+      this.players = this.filteredList.slice(this.pageNumber*25, this.pageNumber*25 + 25);
     }
   },
   watch:{
+    nameQuery:function() {
+      if (this.nameQuery === '') {
+        this.filteredList = this.fullList;
+        this.pages = Math.floor(this.filteredList.length / 25) -1;
+        this.pageNumber = 0;
+        this.players = this.fullList.slice(this.pageNumber*25, this.pageNumber*25 + 25);
+      } else {
+        this.filteredList = this.filteredList.filter(player => {
+          return player.name.toLowerCase().includes(this.nameQuery.toLowerCase());
+        });
+        this.pages = Math.floor(this.filteredList.length / 25) -1;
+        this.pageNumber = 0;
+        this.players = this.filteredList.slice(this.pageNumber*25, this.pageNumber*25 + 25);
+      }
+    },
     currentSort:function() {
-      this.players = this.fullList.sort((a,b) => {
+      this.players = this.filteredList.sort((a,b) => {
         let modifier = 1;
       if(this.currentSortDir === 'desc') modifier = -1;
       if(a[this.currentSort] < b[this.currentSort]) return -1 * modifier;
@@ -223,7 +251,7 @@ export default {
       }).slice(this.pageNumber*25, this.pageNumber*25 + 25);
     },
     currentSortDir:function() {
-      this.players = this.fullList.sort((a,b) => {
+      this.players = this.filteredList.sort((a,b) => {
         let modifier = 1;
       if(this.currentSortDir === 'desc') modifier = -1;
       if(a[this.currentSort] < b[this.currentSort]) return -1 * modifier;
