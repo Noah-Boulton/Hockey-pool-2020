@@ -35,8 +35,9 @@ router.get('/', async (req, res) => {
 router.post('/hose/:team', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
     const players = client.db('players').collection('players');
-    const team = req.params.team.replace('_', ' ');
+    const team = req.params.team.replace('_', ' ').replace('_', ' ');
     const query = { team : team };
+    console.log(team)
 
     const newValues = { $set: { eliminated: true } };
                     
@@ -45,7 +46,7 @@ router.post('/hose/:team', async (req, res) => {
     client.close();
 
     await updateTeams();
-    
+    console.log('done');
     res.status(204).send();
 });
 
