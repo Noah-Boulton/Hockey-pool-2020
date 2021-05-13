@@ -1,7 +1,5 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const dotenv = require('dotenv');
-dotenv.config();
 
 const router = express.Router();
 
@@ -22,7 +20,7 @@ router.post('/', async (req, res) => {
         subject: `Message from ${req.body.name}: ${req.body.email}`,
         text: req.body.message
     };
-      
+
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error);

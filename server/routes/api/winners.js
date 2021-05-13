@@ -1,8 +1,5 @@
 const express = require('express');
 const mongodb = require('mongodb');
-const dotenv = require('dotenv');
-dotenv.config();
-
 const router = express.Router();
 
 // Get Winners
@@ -29,8 +26,8 @@ router.post('/', async (req, res) => {
     Object.keys(newTeam).forEach(key => {
         Object.keys(newTeam[key]).forEach(posistion => {
             team[key][posistion] = {
-                name: newTeam[key][posistion].name, 
-                id: newTeam[key][posistion].id, 
+                name: newTeam[key][posistion].name,
+                id: newTeam[key][posistion].id,
                 points: newTeam[key][posistion].points
             };
         });

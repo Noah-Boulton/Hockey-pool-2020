@@ -1,28 +1,26 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const axios = require('axios');
-dotenv.config();
 
 const router = express.Router();
 
 // Get Skaters
 router.get('/', async (req, res) => {
     const skaters = await getSkaters();
-    
+
     res.json(skaters);
 });
 
 async function getSkaters() {
     const teamIds = [];
     let teams = await axios.get('https://statsapi.web.nhl.com/api/v1/teams');
-    
+
     teams = teams.data.teams;
     teams.forEach(team => teamIds.push(team.id));
     const playerIds = []
 
     for (const teamId of teamIds) {
         let roster = await axios.get(`https://statsapi.web.nhl.com/api/v1/teams/${teamId}/roster`);
-        
+
         roster = roster.data.roster;
         roster.forEach(player => playerIds.push(player.person.id));
     }
@@ -31,9 +29,9 @@ async function getSkaters() {
 
     for (const playerId of playerIds) {
         let skater = await axios.get(`https://statsapi.web.nhl.com/api/v1/people/${playerId}`);
-        
+
         skater = skater.data;
-    
+
         let pos = 'F';
         const pv = 1;
         const number = skater.people[0].primaryNumber;
@@ -58,14 +56,14 @@ async function getSkaters() {
             games,
             goals,
             assists,
-            pv, 
+            pv,
             points,
             fights,
         });
     }
-    
+
     skaters.sort((a,b) => (a.team > b.team) ? 1 : ((b.pos > a.pos) ? -1 : 0))
-    
+
     return skaters;
 }
 

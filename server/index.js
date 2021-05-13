@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const parser = require('body-parser');
 
+require('dotenv').config({path: __dirname + '/.env'})
+
 const app = express();
 
 // Middleware
@@ -21,7 +23,7 @@ app.use('/api/questions', questions);
 app.use('/api/winners', winners);
 app.use('/api/skaters', skaters);
 
-// Handle production 
+// Handle production
 if(process.env .NODE_ENV === 'production'){
     // Static folder
     app.use(express.static(__dirname + '/public'));

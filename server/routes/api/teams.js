@@ -1,9 +1,7 @@
 const express = require('express');
 const mongodb = require('mongodb');
-const dotenv = require('dotenv');
 const cron = require('node-cron');
 const nodemailer = require('nodemailer');
-dotenv.config();
 
 // Setup email transporter
 let transporter = nodemailer.createTransport({
@@ -16,17 +14,17 @@ let transporter = nodemailer.createTransport({
 
 const router = express.Router();
 
-// cron.schedule('*/30 * * * *', () => {
-//     console.log("Updating teams");
-//     updateTeams();
-// });
+cron.schedule('*/30 * * * *', () => {
+    console.log("Updating teams");
+    updateTeams();
+});
 
 // Get Teams
 router.get('/', async (req, res) => {
     const client = await mongodb.MongoClient.connect(process.env.DATABASE_CONNECTION_STRING, {useUnifiedTopology: true, useNewUrlParser: true });
     const teamsDb = client.db('teams').collection('teams');
     const teams = await teamsDb.find({}).toArray()
-    
+
     client.close();
     res.send(teams);
 });
@@ -40,7 +38,7 @@ router.post('/hose/:team', async (req, res) => {
     console.log(team)
 
     const newValues = { $set: { eliminated: true } };
-                    
+
     await players.updateMany(query, newValues);
 
     client.close();
@@ -64,8 +62,8 @@ router.post('/', async (req, res) => {
     Object.keys(newTeam).forEach(key => {
         Object.keys(newTeam[key]).forEach(posistion => {
             team[key][posistion] = {
-                name: newTeam[key][posistion].name, 
-                id: newTeam[key][posistion].id, 
+                name: newTeam[key][posistion].name,
+                id: newTeam[key][posistion].id,
                 points: 0
             };
         });
@@ -92,18 +90,18 @@ function sendMail(name, email, person) {
     let mailOptions = {
         from: process.env.EMAIL,
         to: email,
-        subject: `${name} submitted to Mo's Hockey Ho's 2019-2020!`,
+        subject: `${name} submitted to Mo's Hockey Ho's 2020-2021!`,
         text: `Dear ${person},
-        
+
 Thank you for your submission!
 Your team ${name} has officially been submitted!
 Teams and Standings will be updated once playoffs start.
 May the Top Ho Win.
-        
+
 Sincerely,
     Commissioner Mo`
     };
-      
+
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error);
@@ -117,17 +115,17 @@ function notifyMo(team) {
     let mailOptions = {
         from: process.env.EMAIL,
         to: process.env.EMAIL,
-        subject: `Attention Commissioner Mo: ${team.name} just registered for Mo's Hockey Ho's 2019-2020!`,
+        subject: `Attention Commissioner Mo: ${team.name} just registered for Mo's Hockey Ho's 2020-2021!`,
         text: `
     Owner: ${team.owner}
-    Team Name: ${team.name} 
+    Team Name: ${team.name}
     Forwards: ${team.team.forwards.f1.name}, ${team.team.forwards.f2.name}, ${team.team.forwards.f3.name}, ${team.team.forwards.f4.name}, ${team.team.forwards.f5.name}
     Defensemen: ${team.team.defensemen.d1.name}, ${team.team.defensemen.d2.name}, ${team.team.defensemen.d3.name}
     Goalies: ${team.team.goalies.g1.name}, ${team.team.goalies.g2.name}
 Sincerely,
     Commissioner Mo`
     };
-      
+
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error);

@@ -1,7 +1,5 @@
 const axios = require('axios');
-const dotenv = require('dotenv');
 const cron = require('node-cron');
-dotenv.config();
 
 const express = require('express');
 const mongodb = require('mongodb');
@@ -58,10 +56,10 @@ async function updatePlayers() {
                 return;
             }
 
-            const url = `https://statsapi.web.nhl.com/api/v1/people/${player.p_id}/stats?stats=statsSingleSeasonPlayoffs&season=20192020`;
+            const url = `https://statsapi.web.nhl.com/api/v1/people/${player.p_id}/stats?stats=statsSingleSeasonPlayoffs&season=${process.env.SEASON}`;
             const res = await axios.get(url).catch((err) => console.error(err));
-            
-            if (res && !res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){ 
+
+            if (res && !res.err && res.data.stats[0].splits && res.data.stats[0].splits[0] && res.data.stats[0].splits[0].stat){
                 const data = res.data.stats[0].splits[0].stat;
                 let points = 0;
                 let goals = 0;
@@ -76,7 +74,7 @@ async function updatePlayers() {
                         points += data.shutouts;
                     }
 
-                    //Use the values we already have for goalies because we have to 
+                    //Use the values we already have for goalies because we have to
                     // track goalie goals and assists seperately
                     goals = player.goals;
                     assists = player.assists;
@@ -87,18 +85,18 @@ async function updatePlayers() {
                     assists = data.assists;
                     points = goals + assists;
                 }
-                
+
                 points -= player.preseason;
                 goals -= player.preseason_goals;
                 assists -= player.preseason_assists;
-                
+
                 if(isNaN(points)){
                     points = 0;
                 }
-                
+
                 if(points != player.points){
                     const newValues = { $set: {points: points, goals: goals, assists: assists, games: games} };
-                    
+
                     await playersdb.updateOne(query, newValues);
                 }
             } else {
@@ -121,9 +119,9 @@ async function updateGoaliePoints(){
         players = players.filter(player => player.pos == "G");
 
         let d = new Date();
-        
+
         d.setDate(d.getDate() - 1); //Yesterday
-        
+
         const url = `https://statsapi.web.nhl.com/api/v1/schedule?date=${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
         const res = await axios.get(url).catch((error) => {
             if (error.response) {
@@ -149,7 +147,7 @@ async function updateGoaliePoints(){
 
         //Get all the game links for the current day
         await Promise.all(games.map(async game => {
-            //Use each games scoring plays to check for goalie points 
+            //Use each games scoring plays to check for goalie points
             const gameURL = `https://statsapi.web.nhl.com${game.link}`;
             const gameres = await axios.get(gameURL).catch((error) => {
                 if (error.response) {
@@ -175,24 +173,24 @@ async function updateGoaliePoints(){
 
             await Promise.all(scoringPlays.map(async play => {
                 const data = gameData.liveData.plays.allPlays[play];
-                
+
                 await Promise.all(data.players.map( async skater => {
                     //Look at all the skaters for each scoring play
                     const index = players.findIndex(player => player.p_id == skater.player.id);
-                    
+
                     if(index == -1){
                         return;
                     }
-                    
+
                     const query = {p_id : skater.player.id};
-                    
+
                     if(skater.playerType == "Scorer"){
                         const newValues = { $set: {goals: players[index].goals+1, points: players[index].points+1} };
-                        
+
                         await playersdb.updateOne(query, newValues);
                     } else if(skater.playerType == "Assist") {
                         const newValues = { $set: {assists: players[index].assists+1, points: players[index].points+1} };
-                        
+
                         await playersdb.updateOne(query, newValues);
                     }
                 }));
@@ -213,7 +211,7 @@ async function updateFights(){
         let d = new Date();
 
         d.setDate(d.getDate() - 1); //Yesterday
-        
+
         const url = `https://statsapi.web.nhl.com/api/v1/schedule?date=${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
         const res = await axios.get(url).catch((error) => {
             if (error.response) {
@@ -236,10 +234,10 @@ async function updateFights(){
         });
 
         const games = res.data.dates[0].games;
-        
+
         //Get all the game links for the current day
         await Promise.all(games.map(async game => {
-            //Use each games scoring plays to check for goalie points 
+            //Use each games scoring plays to check for goalie points
             const gameURL = `https://statsapi.web.nhl.com${game.link}`;
             const gameres = await axios.get(gameURL).catch((error) => {
                 if (error.response) {
@@ -257,7 +255,7 @@ async function updateFights(){
                     // Something happened in setting up the request that triggered an Error
                     console.log('Error', error.message);
                 }
-                
+
                 return;
             });
 
@@ -266,20 +264,20 @@ async function updateFights(){
 
             await Promise.all(penaltyPlays.map(play => {
                 const data = gameData.liveData.plays.allPlays[play];
-                
+
                 if(data.result.secondaryType != 'Fighting') { return; }
 
                 data.players.forEach( async skater => {
                     //Look at all the skaters for each fighting penalty
                     const index = players.findIndex(player => player.p_id == skater.player.id);
-                    
+
                     if(index == -1){
                         return;
                     }
 
                     const query = {p_id : skater.player.id};
                     const newValues = { $set: {fights: players[index].fights+1} };
-                    
+
                     await playersdb.updateOne(query, newValues, (err, res) => {
                         if (err) throw err;
                     });
