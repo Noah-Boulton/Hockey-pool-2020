@@ -12,7 +12,7 @@
   <hr>
    <h1>Mo’s Top Ho by Year</h1>
     <div>
-      <div 
+      <div
         v-for="(team, index) in winners"
         v-bind:item="team"
         v-bind:index="index"
@@ -25,7 +25,7 @@
             <h3 class="card__subtitle">{{ `Points: ${team.points}` }}</h3>
           </div>
         </div>
-        
+
         <table class="team-table">
           <tbody>
             <tr>
@@ -37,61 +37,61 @@
             <tr>
               <td>F</td>
               <td>{{team.team.forwards.f1.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.forwards.f1.points}}</td>
             </tr>
             <tr>
               <td>F</td>
               <td>{{team.team.forwards.f2.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.forwards.f2.points}}</td>
             </tr>
             <tr>
               <td>F</td>
               <td>{{team.team.forwards.f3.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f3.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f3.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.forwards.f3.points}}</td>
             </tr>
             <tr>
               <td>F</td>
               <td>{{team.team.forwards.f4.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f4.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f4.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.forwards.f4.points}}</td>
             </tr>
             <tr>
               <td>F</td>
               <td>{{team.team.forwards.f5.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f5.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f5.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.forwards.f5.points}}</td>
             </tr>
             <tr>
               <td>D</td>
               <td>{{team.team.defensemen.d1.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.defensemen.d1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.defensemen.d1.points}}</td>
             </tr>
             <tr>
               <td>D</td>
               <td>{{team.team.defensemen.d2.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.defensemen.d2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.defensemen.d2.points}}</td>
             </tr>
             <tr>
               <td>D</td>
               <td>{{team.team.defensemen.d3.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d3.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.defensemen.d3.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.defensemen.d3.points}}</td>
             </tr>
             <tr>
               <td>G</td>
               <td>{{team.team.goalies.g1.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.goalies.g1.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.goalies.g1.points}}</td>
             </tr>
             <tr>
               <td>G</td>
               <td>{{team.team.goalies.g2.name}}</td>
-              <td><img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
+              <td><img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.goalies.g2.id}.jpg`" @error="replaceWithMo" width=55 height=55></td>
               <td>{{team.team.goalies.g2.points}}</td>
             </tr>
           </tbody>

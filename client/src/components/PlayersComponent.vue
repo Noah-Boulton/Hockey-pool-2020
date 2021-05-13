@@ -24,7 +24,7 @@
                     <th @click="sort('points')" class="sortable" v-bind:data-sort="pointsSort">Points</th>
                 </thead>
                 <tbody>
-                <tr 
+                <tr
                 v-for="(player, index) in players"
                 v-bind:item="player"
                 v-bind:index="index"
@@ -45,7 +45,7 @@
                 </table>
             </div>
         </div>
-        <div> 
+        <div>
           <button v-if="pageNumber != 0" v-on:click="back" class="button button--players-back">Back</button>
         </div>
         <div>
@@ -99,6 +99,7 @@ export default {
       this[key] = '';
     },
     getTeamLogo(teamName) {
+      // TODO: Add all team logos
       switch(teamName) {
         case 'New York Islanders':
           return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/2_dark.svg';

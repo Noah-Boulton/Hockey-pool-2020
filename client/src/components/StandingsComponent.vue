@@ -10,7 +10,7 @@
                     <th></th>
                     <th>Points</th>
                 </thead>
-                <tbody 
+                <tbody
                 v-for="(team, index) in standings"
                 v-bind:item="team"
                 v-bind:index="index"
@@ -32,7 +32,7 @@
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
                   </tr>
-                  <thead v-if="show == index">                      
+                  <thead v-if="show == index">
                     <th>Position</th>
                     <th>Player</th>
                     <th></th>
@@ -43,7 +43,7 @@
                     <td>{{team.team.forwards.f1.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.forwards.f1.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -54,7 +54,7 @@
                     <td>{{team.team.forwards.f2.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.forwards.f2.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -65,7 +65,7 @@
                     <td>{{team.team.forwards.f3.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f3.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f3.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.forwards.f3.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -76,7 +76,7 @@
                     <td>{{team.team.forwards.f4.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f4.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f4.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.forwards.f4.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -87,7 +87,7 @@
                     <td>{{team.team.forwards.f5.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.forwards.f5.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.forwards.f5.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.forwards.f5.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -98,7 +98,7 @@
                     <td>{{team.team.defensemen.d1.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.defensemen.d1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.defensemen.d1.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -109,7 +109,7 @@
                     <td>{{team.team.defensemen.d2.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.defensemen.d2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.defensemen.d2.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -120,7 +120,7 @@
                     <td>{{team.team.defensemen.d3.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.defensemen.d3.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.defensemen.d3.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.defensemen.d3.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -131,7 +131,7 @@
                     <td>{{team.team.goalies.g1.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.goalies.g1.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.goalies.g1.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -142,7 +142,7 @@
                     <td>{{team.team.goalies.g2.name}}</td>
                     <td>
                       <span class="player-img-wrapper">
-                        <img :src="`https://nhl.bamcontent.com/images/headshots/current/168x168/${team.team.goalies.g2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
+                        <img :src="`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${team.team.goalies.g2.id}.jpg`" @error="replaceWithMo" width=55 height=55 class="player-img">
                         <img v-if="team.team.goalies.g2.eliminated" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed">
                       </span>
                     </td>
@@ -210,7 +210,7 @@ export default {
   },
   watch:{
     show:function(){
-      
+
     }
   },
 };
