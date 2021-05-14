@@ -14,9 +14,11 @@ async function getSkaters() {
     const teamIds = [];
     try {
         let teams = await axios.get('https://statsapi.web.nhl.com/api/v1/teams');
+        const currentTeams = ['Edmonton Oilers', 'Boston Bruins', 'Carolina Hurricanes', 'Colorado Avalanche', 'Minnesota Wild', 'Nashville Predators', 'New York Islanders', 'Pittsburgh Penguins', 'St. Louis Blues', 'Tampa Bay Lightning', 'Toronto Maple Leafs', 'Vegas Golden Knights', 'Washington Capitals', 'Winnipeg Jets', 'Florida Panthers', 'Montréal Canadiens'];
 
         teams = teams.data.teams;
-        teams.forEach(team => teamIds.push(team.id));
+        teams.filter(team => currentTeams.indexOf(team.name) !== -1).forEach(team => teamIds.push(team.id));
+
         const playerIds = []
 
         for (const teamId of teamIds) {

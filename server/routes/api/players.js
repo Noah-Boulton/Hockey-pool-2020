@@ -6,16 +6,16 @@ const mongodb = require('mongodb');
 
 const router = express.Router();
 
-cron.schedule('*/15 * * * *', () => {
-    console.log("Updating players");
-    updatePlayers();
-});
+// cron.schedule('*/15 * * * *', () => {
+//     console.log("Updating players");
+//     updatePlayers();
+// });
 
-cron.schedule('0 8 * * *', async () => {
-    console.log("Updating goalies and fights");
-    await updateGoaliePoints();
-    await updateFights();
-});
+// cron.schedule('0 8 * * *', async () => {
+//     console.log("Updating goalies and fights");
+//     await updateGoaliePoints();
+//     await updateFights();
+// });
 
 // Get Players
 router.get('/', async (req, res) => {
@@ -85,10 +85,6 @@ async function updatePlayers() {
                     assists = data.assists;
                     points = goals + assists;
                 }
-
-                points -= player.preseason;
-                goals -= player.preseason_goals;
-                assists -= player.preseason_assists;
 
                 if(isNaN(points)){
                     points = 0;

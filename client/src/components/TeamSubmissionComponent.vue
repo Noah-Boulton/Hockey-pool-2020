@@ -376,6 +376,20 @@ export default {
           return 'https://www-league.nhlstatic.com/images/logos/teams-current-primary-dark/54.svg';
         case 'Washington Capitals':
           return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/15_dark.svg';
+        case 'Florida Panthers':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/13_dark.svg';
+        case 'Toronto Maple Leafs':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/10_dark.svg';
+        case 'Nashville Predators':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/18_dark.svg';
+        case 'Edmonton Oilers':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/22_dark.svg';
+        case 'Minnesota Wild':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/30_dark.svg';
+        case 'Winnipeg Jets':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/52_dark.svg';
+        case 'Pittsburgh Penguins':
+          return 'https://www-league.nhlstatic.com/builds/site-core/01c1bfe15805d69e3ac31daa090865845c189b1d_1458063644/images/team/logo/current/5_dark.svg';
       }
     },
     clear(key) {
