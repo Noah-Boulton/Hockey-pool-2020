@@ -14,10 +14,12 @@ let transporter = nodemailer.createTransport({
 
 const router = express.Router();
 
-// cron.schedule('*/30 * * * *', () => {
-//     console.log("Updating teams");
-//     updateTeams();
-// });
+cron.schedule('*/30 * * * *', () => {
+    if(Date.now() >= new Date(1621119540 * 1000)) {
+        console.log("Updating teams");
+        updateTeams();
+    }
+});
 
 // Get Teams
 router.get('/', async (req, res) => {

@@ -6,16 +6,20 @@ const mongodb = require('mongodb');
 
 const router = express.Router();
 
-// cron.schedule('*/15 * * * *', () => {
-//     console.log("Updating players");
-//     updatePlayers();
-// });
+cron.schedule('*/15 * * * *', () => {
+    if(Date.now() >= new Date(1621119540 * 1000)) {
+        console.log("Updating players");
+        updatePlayers();
+    }
+});
 
-// cron.schedule('0 8 * * *', async () => {
-//     console.log("Updating goalies and fights");
-//     await updateGoaliePoints();
-//     await updateFights();
-// });
+cron.schedule('0 8 * * *', async () => {
+    if(Date.now() >= new Date(1621119540 * 1000)) {
+        console.log("Updating goalies and fights");
+        await updateGoaliePoints();
+        await updateFights();
+    }
+});
 
 // Get Players
 router.get('/', async (req, res) => {
