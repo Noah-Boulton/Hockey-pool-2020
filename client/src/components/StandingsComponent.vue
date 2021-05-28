@@ -18,16 +18,76 @@
                   <tr>
                     <td v-if="team.tied"><a href="https://getyarn.io/yarn-clip/ab19ac3c-6518-4da7-9043-6e0ce0038c5b#/SJZWeWPh5dH.copy" style="color:black; text-decoration:none">{{team.rank}}</a></td>
                     <td v-if="!team.tied">{{team.rank}}</td>
-                    <td class="team__td" v-if="team.sid =='kid'"> <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50 class="team__img" @click="showTeam(index)"><h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='man'"> <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='beast'"> <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='mo'"> <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='cfb'"> <img src="../../public/images/canadian-finger-bacon.png" alt="Canadian Finger Bacon" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='chazz'"> <img src="../../public/images/ChazzWazza.png" alt="ChazzWazza's" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='puck-luck'"> <img src="../../public/images/puck-luck.png" alt="Puck Luck" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='kevin-gravel-grinderz'"> <img src="../../public/images/kevin-gravel-grinderz.png" alt="Kevin Gravel Grinderz" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='nuck'"> <img src="../../public/images/nuck.png" alt="Nuck" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
-                    <td class="team__td" v-if="team.sid =='will'"> <img src="../../public/images/will.jpg" alt="Will" height=50 class="team__img" @click="showTeam(index)">  <h3 class="team__name">{{team.name}}</h3></td>
+                    <td class="team__td" v-if="team.sid =='kid'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/sid-the-kid.jpg" alt="Sid the Kid" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='man'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/sid-the-man.jpeg" alt="Sid the Man" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='beast'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/sid-the-beast.jpg" alt="Sid the Beast" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='mo'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/mo_8.jpg" alt="Commissioner Mo" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='cfb'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/canadian-finger-bacon.png" alt="Canadian Finger Bacon" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='chazz'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/ChazzWazza.png" alt="ChazzWazza's" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='puck-luck'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/puck-luck.png" alt="Puck Luck" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='kevin-gravel-grinderz'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/kevin-gravel-grinderz.png" alt="Kevin Gravel Grinderz" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='nuck'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/nuck.png" alt="Nuck" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
+                    <td class="team__td" v-if="team.sid =='will'">
+                      <span class="player-img-wrapper">
+                        <img src="../../public/images/will.jpg" alt="Will" height=50 class="team__img" @click="showTeam(index)">
+                        <img v-if="Object.keys(team.team.forwards).filter(player => !team.team.forwards[player].eliminated).length === 0 && Object.keys(team.team.defensemen).filter(player => !team.team.defensemen[player].eliminated).length === 0 && Object.keys(team.team.goalies).filter(player => !team.team.goalies[player].eliminated).length === 0" src='../../public/images/hosed_stamp.png' width=55 height=55 class="hosed" @click="showTeam(index)">
+                      </span>
+                      <h3 class="team__name">{{team.name}}</h3>
+                    </td>
                     <td></td>
                     <td v-if="team.points == 69"><a href="https://youtu.be/f6JKM2Na0vg?t=49" style="color:black; text-decoration:none">{{team.points}}</a></td>
                     <td v-if="team.points != 69">{{team.points}}</td>
